@@ -5,7 +5,7 @@ precision mediump float;
 
 uniform float u_time;
 uniform vec2 u_resolution;
-uniform sampler2D u_tex0; //ko8y68wfsk251.jpg
+uniform sampler2D u_tex0; //texture_test/ko8y68wfsk251.jpg
 
 void main(void){
     vec2 st = 2.0 * gl_FragCoord.xy / u_resolution - 1.0;
