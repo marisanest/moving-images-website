@@ -1,41 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shader crash course</title>
-   
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
-  <script src="./js/masonry.pkgd.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shader crash course</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/masonry.pkgd.min.js"></script>
+    <script src="./js/jquery-3.6.0.slim.min.js"></script>
+    <script src="./js/isotope.pkgd.min.js"></script>
 </head>
- 
+
 <body>
-
-
 <div class="container">
     <div class="button-group filters-button-group">
         <button class="button is-checked" data-filter="*">All</button>
         <button class="button" data-filter=".red">Red</button>
         <button class="button" data-filter=".green">Green</button>
-        <button class="button" data-filter=".blu">Blue</button>
+        <button class="button" data-filter=".blue">Blue</button>
     </div>
 
-    <div class="row">
-      <div class="col">
-        <a href = "shaders/index.html?data=template.frag">Test Red</a>
-      </div>
-      <div class="col">
-        <a href = "shaders/index.html?data=template_texture.frag">Texture Example</a>
-      </div>
-      <div class="col">
-        <a href = "shaders/index.html?data=template.frag">Test Blu</a>
-      </div>
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item red">
+            <a href = "shaders/index.html?data=template.frag">Test Red</a>
+        </div>
+        <div class="grid-item green">
+            <a href = "shaders/index.html?data=template_texture.frag">Texture Example</a>
+        </div>
+        <div class="grid-item blue">
+            <a href = "shaders/index.html?data=template.frag">Test Blue</a>
+        </div>
     </div>
-  </div>
-
- <!-- TODO, add filter code from masonry https://isotope.metafizzy.co/ add the missing js library-->
-
-
-  </body>
+</div>
+</body>
+<script src="./js/index.js"></script>
+</html>
