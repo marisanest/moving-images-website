@@ -5,3 +5,10 @@
 .is-checked {
     background: #ceced5;
 }
+
+body {
+    background: #000;
+    /*font-family: "ocr-a-std", "courier new", courier, monospace;*/
+    font-family: 'Roboto Mono', monospace;
+}
+
