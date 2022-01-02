@@ -1,14 +1,75 @@
-.grid-sizer {
-    width: 33%;
-}
-
-.is-checked {
-    background: #ceced5;
+h1 {
+    font-weight: 700;
 }
 
 body {
-    background: #000;
-    /*font-family: "ocr-a-std", "courier new", courier, monospace;*/
     font-family: 'Roboto Mono', monospace;
+    background: #f0e9d0;
 }
 
+.container {
+    max-width: 80%;
+}
+
+.header, .image-caption-wrapper  {
+    padding: 1rem;
+}
+
+.header {
+    padding-top: 2rem;
+}
+
+.title, .filters-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 40%;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 10%;
+}
+
+.title a, .menu a, .filter, .caption a {
+    text-decoration: none;
+    color: black;
+}
+
+.title a:hover, .menu a:hover, .filter:hover, .filter.is-checked, .caption a:hover {
+    color: #ea1f4c;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 20%;
+}
+
+.image-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.image-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.image:hover {
+    opacity: 0.5;
+}
+
+.caption {
+    padding-top: 1.2rem;
+}
