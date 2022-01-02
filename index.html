@@ -15,23 +15,91 @@
 
 <body>
 <div class="container">
-    <div class="button-group filters-button-group">
-        <button class="button is-checked" data-filter="*">All</button>
-        <button class="button" data-filter=".red">Red</button>
-        <button class="button" data-filter=".green">Green</button>
-        <button class="button" data-filter=".blue">Blue</button>
+    <div class="header">
+        <div class="title">
+            <a href="./index.html"><h1>Moving Images: <br/>Design with Code</h1></a>
+        </div>
+        <div class="filters-wrapper">
+            <div>Filter:</div>
+            <div>&nbsp;&nbsp;<a href="#" class="filter is-checked" data-filter="*">All</a></div>
+            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".lila">Lila</a></div>
+            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".pink">Pink</a></div>
+            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".blue">Blue</a></div>
+            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".black">Black</a></div>
+            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".green">Green</a></div>
+        </div>
+        <div class="menu">
+            <div><a href="#">About</a></div>
+            <div><a href="#">Imprint</a></div>
+        </div>
     </div>
 
     <div class="grid">
         <div class="grid-sizer"></div>
-        <div class="grid-item red">
-            <a href = "shaders/index.html?data=template.frag">Test Red</a>
+
+        <div class="grid-item lila black">
+            <div class="image-caption-wrapper">
+                <div class="image-wrapper">
+                    <a class="image-link" href="shaders/index.html?data=001.frag">
+                        <img class="image" src="./shaders/001.png" alt="#">
+                    </a>
+                </div>
+                <div class="caption small">
+                    <a href="shaders/index.html?data=001.frag">Marisa - 001</a>
+                </div>
+            </div>
         </div>
+
+        <div class="grid-item pink black">
+            <div class="image-caption-wrapper">
+                <div class="image-wrapper">
+                    <a class="image-link" href="shaders/index.html?data=002.frag">
+                        <img class="image" src="./shaders/002.png" alt="#">
+                    </a>
+                </div>
+                <div class="caption small">
+                    <a href="shaders/index.html?data=002.frag">Alex - Pulse Ah</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item lila black">
+            <div class="image-caption-wrapper">
+                <div class="image-wrapper">
+                    <a class="image-link" href="shaders/index.html?data=003.frag">
+                        <img class="image" src="./shaders/003.png" alt="#">
+                    </a>
+                </div>
+                <div class="caption small">
+                    <a href="shaders/index.html?data=003.frag">Ulrike - Distance Field</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-item blue black">
+            <div class="image-caption-wrapper">
+                <div class="image-wrapper">
+                    <a class="image-link" href="shaders/index.html?data=004.frag">
+                        <img class="image" src="./shaders/004.png" alt="#">
+                    </a>
+                </div>
+                <div class="caption small">
+                    <a href="shaders/index.html?data=004.frag">Ulrike - Distance Field Pattern</a>
+                </div>
+            </div>
+        </div>
+
         <div class="grid-item green">
-            <a href = "shaders/index.html?data=template_texture.frag">Texture Example</a>
-        </div>
-        <div class="grid-item blue">
-            <a href = "shaders/index.html?data=template.frag">Test Blue</a>
+            <div class="image-caption-wrapper">
+                <div class="image-wrapper">
+                    <a class="image-link" href="shaders/index.html?data=005.frag">
+                        <img class="image" src="./shaders/005.png" alt="#">
+                    </a>
+                </div>
+                <div class="caption small">
+                    <a href="shaders/index.html?data=005.frag">Ulrike - Christmas Pattern Parallax</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
