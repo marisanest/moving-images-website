@@ -9,9 +9,13 @@ grid.isotope({
     }
 });
 
+let stampElem = $('.stamp');
+grid.isotope('stamp', stampElem);
+
 filtersWrapper.on( 'click', '.filter', function() {
     filtersWrapper.find('.is-checked').removeClass('is-checked');
     $( this ).addClass('is-checked');
     let filterValue = $( this ).attr('data-filter');
     grid.isotope({ filter: filterValue });
 });
+
