@@ -9,6 +9,10 @@ grid.isotope({
     }
 });
 
+if (window.innerWidth > 980) {
+    grid.isotope('shuffle');
+}
+
 let stampElem = $('.stamp');
 grid.isotope('stamp', stampElem);
 
@@ -18,4 +22,3 @@ filtersWrapper.on( 'click', '.filter', function() {
     let filterValue = $( this ).attr('data-filter');
     grid.isotope({ filter: filterValue });
 });
-

@@ -19,9 +19,13 @@ body {
     width: 40%;
 }
 
-/*.title {
+.title {
     width: 480px !important;
-}*/
+}
+
+@media only screen and (max-width: 980px) {
+    .title {width: 240px !important}
+}
 
 .menu {
     display: inline-block;
@@ -35,7 +39,7 @@ body {
     color: black;
 }
 
-.title a:hover, .menu a:hover, .filter:hover, .filter.is-checked, .caption a:hover {
+.title a:hover, .menu a:hover, .filter:hover, .filter.is-checked {
     color: #ea1f4c;
 }
 
