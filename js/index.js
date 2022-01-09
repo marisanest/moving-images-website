@@ -4,7 +4,8 @@ let filtersWrapper = $('.filters-wrapper');
 grid.isotope({
     itemSelector: '.grid-item',
     masonry: {
-        columnWidth: '.grid-sizer'
+        columnWidth: '.grid-sizer',
+        gutter: 20
     }
 });
 

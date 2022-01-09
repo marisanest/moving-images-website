@@ -9,13 +9,6 @@ body {
 
 .container {
     max-width: 80%;
-}
-
-.header, .image-caption-wrapper  {
-    padding: 1rem;
-}
-
-.header {
     padding-top: 2rem;
 }
 
@@ -24,6 +17,10 @@ body {
     vertical-align: top;
     text-align: left;
     width: 40%;
+}
+
+.title {
+    width: 480px !important;
 }
 
 .menu {
