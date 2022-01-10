@@ -1,24 +1,27 @@
-let grid = $('.grid');
-let filtersWrapper = $('.filters-wrapper');
-
-grid.isotope({
-    itemSelector: '.grid-item',
+let headerGrid = $('.header-grid');
+headerGrid.isotope({
+    itemSelector: '.header-grid-item',
     masonry: {
-        columnWidth: '.grid-sizer',
-        gutter: 20
+        columnWidth: '.header-grid-sizer',
+        gutter: 20,
+        isFitWidth: true
     }
 });
 
-if (window.innerWidth > 980) {
-    grid.isotope('shuffle');
-}
+let bodyGrid = $('.body-grid');
+bodyGrid.isotope({
+    itemSelector: '.body-grid-item',
+    masonry: {
+        columnWidth: '.body-grid-sizer',
+        gutter: 20,
+        isFitWidth: true
+    }
+});
 
-let stampElem = $('.stamp');
-grid.isotope('stamp', stampElem);
-
-filtersWrapper.on( 'click', '.filter', function() {
-    filtersWrapper.find('.is-checked').removeClass('is-checked');
+let filters = $('.filters');
+filters.on( 'click', '.filter', function() {
+    filters.find('.is-checked').removeClass('is-checked');
     $( this ).addClass('is-checked');
     let filterValue = $( this ).attr('data-filter');
-    grid.isotope({ filter: filterValue });
+    bodyGrid.isotope({ filter: filterValue });
 });

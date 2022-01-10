@@ -1,3 +1,59 @@
+:root {
+    --base-grid-item-width: 512px;
+}
+
+@media only screen and (max-width: 1280px) {
+    :root {
+        --base-grid-item-width: 448px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    :root {
+        --base-grid-item-width: 384px;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    :root {
+        --base-grid-item-width: 352px;
+    }
+    .title {
+        width: var(--base-grid-item-width) !important
+    }
+}
+
+@media only screen and (max-width: 835px) {
+    :root {
+        --base-grid-item-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    :root {
+        --base-grid-item-width: 512px;
+    }
+}
+
+@media only screen and (max-width: 645px) {
+    :root {
+        --base-grid-item-width: 448px;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    :root {
+        --base-grid-item-width: 384px;
+    }
+}
+
+
+@media only screen and (max-width: 440px) {
+    :root {
+        --base-grid-item-width: 320px;
+    }
+}
+
 h1 {
     font-weight: 700;
 }
@@ -8,30 +64,36 @@ body {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 90%;
     padding-top: 2rem;
 }
 
-.title, .filters-wrapper {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    width: 40%;
+.header-grid,
+.body-grid {
+    margin: 0 auto;
 }
 
-.title {
-    width: 480px !important;
+.header-grid-sizer,
+.body-grid-sizer {
+    width: var(--base-grid-item-width);
 }
 
-@media only screen and (max-width: 980px) {
-    .title {width: 240px !important}
+.header-grid-item,
+.body-grid-item {
+    width: var(--base-grid-item-width);
+    margin-bottom: 20px;
 }
 
+.grid-item--width2 {
+    width: calc(var(--base-grid-item-width) * 2);
+}
+
+.title,
+.filters,
 .menu {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    width: 10%;
 }
 
 .title a, .menu a, .filter, .caption a {
@@ -39,14 +101,11 @@ body {
     color: black;
 }
 
-.title a:hover, .menu a:hover, .filter:hover, .filter.is-checked {
+.title a:hover,
+.menu a:hover,
+.filter:hover,
+.filter.is-checked {
     color: #ea1f4c;
-}
-
-.grid-sizer,
-.grid-item {
-    width: 240px;
-    margin-bottom: 20px;
 }
 
 .image-caption-wrapper:hover .image {
