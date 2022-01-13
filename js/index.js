@@ -3,7 +3,7 @@ headerGrid.isotope({
     itemSelector: '.header-grid-item',
     masonry: {
         columnWidth: '.header-grid-sizer',
-        gutter: 20,
+        // gutter: 20,
         percentPosition: true
     }
 });
@@ -13,7 +13,7 @@ bodyGrid.isotope({
     itemSelector: '.body-grid-item',
     masonry: {
         columnWidth: '.body-grid-sizer',
-        gutter: 20,
+        // gutter: 20,
         percentPosition: true
     }
 });

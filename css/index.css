@@ -1,6 +1,7 @@
 @media only screen {
     :root {
-        --base-grid-item-width: calc(20% - (20px * 4 / 5));
+        --grid-item--width: 16.666%;
+        --grid-item--width2: 33.333%;
     }
     .large {
         font-size: 36px;
@@ -13,21 +14,24 @@
     }
 }
 
-@media only screen and (max-width: 1599px) {
-    :root {
-        --base-grid-item-width: calc(25% - (20px * 3 / 4));
+@media only screen and (max-width: 1394px) {
+    :root{
+        --grid-item--width: 20%;
+        --grid-item--width2: 40%;
     }
 }
 
 @media only screen and (max-width: 965px) {
     :root {
-        --base-grid-item-width: calc(33% - (20px * 2 / 3));
+        --grid-item--width: 25%;
+        --grid-item--width2: 50%;
     }
 }
 
 @media only screen and (max-width: 767px) {
     :root {
-        --base-grid-item-width: calc(50% - (20px / 2));
+        --grid-item--width: 33.001%;
+        --grid-item--width2: 66%;
     }
     .large {
         font-size: 25px;
@@ -39,6 +43,22 @@
     }
 }
 
+@media only screen and (max-width: 596px) {
+    :root {
+        --grid-item--width: 50%;
+        --grid-item--width2: 100%;
+    }
+    .large {
+        font-size: 25px;
+        line-height: 27px;
+    }
+    .normal {
+        font-size: 16px;
+        line-height: 27px;
+    }
+}
+
+
 body {
     font-family: 'Roboto Mono', monospace;
     background: #f0e9d0;
@@ -46,22 +66,27 @@ body {
 
 .container {
     max-width: 100%;
-    padding: 2rem;
+    padding: 32px;
+}
+
+.header-grid,
+.body-grid {
+	width: 100%;
 }
 
 .header-grid-sizer,
 .body-grid-sizer {
-    width: var(--base-grid-item-width);
+    width: 1%;
 }
 
 .header-grid-item,
 .body-grid-item {
-    width: var(--base-grid-item-width);
-    margin-bottom: 4%;
+    width: var(--grid-item--width);
+    padding: 10px;
 }
 
 .grid-item--width2 {
-    width: calc(var(--base-grid-item-width) * 2);
+    width: var(--grid-item--width2);
 }
 
 .title,
