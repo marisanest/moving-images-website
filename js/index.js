@@ -4,7 +4,7 @@ headerGrid.isotope({
     masonry: {
         columnWidth: '.header-grid-sizer',
         gutter: 20,
-        isFitWidth: true
+        percentPosition: true
     }
 });
 
@@ -14,7 +14,7 @@ bodyGrid.isotope({
     masonry: {
         columnWidth: '.body-grid-sizer',
         gutter: 20,
-        isFitWidth: true
+        percentPosition: true
     }
 });
 

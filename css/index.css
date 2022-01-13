@@ -1,61 +1,42 @@
-:root {
-    --base-grid-item-width: 512px;
-}
-
-@media only screen and (max-width: 1280px) {
+@media only screen {
     :root {
-        --base-grid-item-width: 448px;
+        --base-grid-item-width: calc(20% - (20px * 4 / 5));
+    }
+    .large {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    
+    .normal {
+        font-size: 22px;
+        line-height: 30px;
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1599px) {
     :root {
-        --base-grid-item-width: 384px;
+        --base-grid-item-width: calc(25% - (20px * 3 / 4));
     }
 }
 
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 965px) {
     :root {
-        --base-grid-item-width: 352px;
-    }
-    .title {
-        width: var(--base-grid-item-width) !important
+        --base-grid-item-width: calc(33% - (20px * 2 / 3));
     }
 }
 
-@media only screen and (max-width: 835px) {
+@media only screen and (max-width: 767px) {
     :root {
-        --base-grid-item-width: 320px;
+        --base-grid-item-width: calc(50% - (20px / 2));
     }
-}
-
-@media only screen and (max-width: 760px) {
-    :root {
-        --base-grid-item-width: 512px;
+    .large {
+        font-size: 25px;
+        line-height: 27px;
     }
-}
-
-@media only screen and (max-width: 645px) {
-    :root {
-        --base-grid-item-width: 448px;
+    .normal {
+        font-size: 16px;
+        line-height: 27px;
     }
-}
-
-@media only screen and (max-width: 525px) {
-    :root {
-        --base-grid-item-width: 384px;
-    }
-}
-
-
-@media only screen and (max-width: 440px) {
-    :root {
-        --base-grid-item-width: 320px;
-    }
-}
-
-h1 {
-    font-weight: 700;
 }
 
 body {
@@ -64,13 +45,8 @@ body {
 }
 
 .container {
-    max-width: 90%;
-    padding-top: 2rem;
-}
-
-.header-grid,
-.body-grid {
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 2rem;
 }
 
 .header-grid-sizer,
@@ -81,7 +57,7 @@ body {
 .header-grid-item,
 .body-grid-item {
     width: var(--base-grid-item-width);
-    margin-bottom: 20px;
+    margin-bottom: 4%;
 }
 
 .grid-item--width2 {
