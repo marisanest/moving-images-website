@@ -25,3 +25,18 @@ filters.on( 'click', '.filter', function() {
     let filterValue = $( this ).attr('data-filter');
     bodyGrid.isotope({ filter: filterValue });
 });
+
+let collapsible = $('.collapsible')
+var initHeight = $('.header-grid').css("height");
+collapsible.on("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+        content.style.maxHeight = null;
+        $('.header-grid').css("height", initHeight);
+    } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        // a hack but it works
+        $('.header-grid').css("height", content.getBoundingClientRect().top + content.scrollHeight + "px");
+    } 
+});
