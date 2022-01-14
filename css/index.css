@@ -56,6 +56,29 @@
         font-size: 16px;
         line-height: 27px;
     }
+
+    .header-grid {
+        transition: height .2s ease-out;
+    }
+
+    .collapsible {
+        cursor: s-resize;
+    }
+
+    .collapsible:after {
+        content: '\002B';
+        float: right;
+    }
+
+    .active:after {
+        content: "\2212";
+    }
+
+    .filter-menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .2s ease-out;
+    }
 }
 
 
