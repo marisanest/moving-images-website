@@ -3,7 +3,6 @@ headerGrid.isotope({
     itemSelector: '.header-grid-item',
     masonry: {
         columnWidth: '.header-grid-sizer',
-        // gutter: 20,
         percentPosition: true
     }
 });
@@ -13,7 +12,6 @@ bodyGrid.isotope({
     itemSelector: '.body-grid-item',
     masonry: {
         columnWidth: '.body-grid-sizer',
-        // gutter: 20,
         percentPosition: true
     }
 });
@@ -27,16 +25,16 @@ filters.on( 'click', '.filter', function() {
 });
 
 let collapsible = $('.collapsible')
-var initHeight = $('.header-grid').css("height");
+let initHeight = headerGrid.css("height");
 collapsible.on("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
     if (content.style.maxHeight){
         content.style.maxHeight = null;
-        $('.header-grid').css("height", initHeight);
+        headerGrid.css("height", initHeight);
     } else {
         content.style.maxHeight = content.scrollHeight + "px";
         // a hack but it works
-        $('.header-grid').css("height", content.getBoundingClientRect().top + content.scrollHeight + "px");
+        headerGrid.css("height", content.getBoundingClientRect().top + content.scrollHeight + "px");
     } 
 });
