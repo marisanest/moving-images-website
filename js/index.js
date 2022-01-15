@@ -33,7 +33,7 @@ $('.collapsible').on("click", function() {
     currents = $(this);
     currents.toggleClass("active");
 
-    let parents = currents.parents();
+    let parents = currents.closest('.filter-menu');
     let contents = currents.next();
 
     if (contents.css('maxHeight') != '0px'){
