@@ -1,9 +1,14 @@
+$(window).resize(function() {
+    $('.filter-menu').css('height', '');
+    $('.filters').css('maxHeight', '');
+  });
+
 let headerGrid = $('.header-grid');
 headerGrid.isotope({
     itemSelector: '.header-grid-item',
     masonry: {
         columnWidth: '.header-grid-sizer',
-        percentPosition: true
+        percentPosition: true,
     }
 });
 
@@ -12,29 +17,31 @@ bodyGrid.isotope({
     itemSelector: '.body-grid-item',
     masonry: {
         columnWidth: '.body-grid-sizer',
-        percentPosition: true
+        percentPosition: true,
     }
 });
 
-let filters = $('.filters');
-filters.on( 'click', '.filter', function() {
-    filters.find('.is-checked').removeClass('is-checked');
-    $( this ).addClass('is-checked');
-    let filterValue = $( this ).attr('data-filter');
-    bodyGrid.isotope({ filter: filterValue });
+let filterMenu = $('.filter-menu');
+filterMenu.on( 'click', '.filter', function() {
+    filterMenu.find('.is-checked').removeClass('is-checked');
+    $(this).addClass('is-checked');
+    let filterValue = $(this).attr('data-filter');
+    bodyGrid.isotope({filter: filterValue});
 });
 
-let collapsible = $('.collapsible')
-let initHeight = headerGrid.css("height");
-collapsible.on("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-        content.style.maxHeight = null;
-        headerGrid.css("height", initHeight);
+$('.collapsible').on("click", function() {
+    currents = $(this);
+    currents.toggleClass("active");
+
+    let parents = currents.parents();
+    let contents = currents.next();
+
+    if (contents.css('maxHeight') != '0px'){
+        contents.css('maxHeight', '0px');
+        parents.css('height', parents.outerHeight() - contents.outerHeight() + "px");
     } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        // a hack but it works
-        headerGrid.css("height", content.getBoundingClientRect().top + content.scrollHeight + "px");
-    } 
+        contents.css('maxHeight', contents.prop('scrollHeight') + "px");
+        parents.css('height', parents.outerHeight() + contents.prop('scrollHeight') + "px");
+    }
+    headerGrid.masonry();
 });

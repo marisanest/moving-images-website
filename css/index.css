@@ -12,6 +12,29 @@
         font-size: 22px;
         line-height: 30px;
     }
+
+    .header-grid {
+        transition: height .2s ease-out;
+    }
+
+    .collapsible {
+        cursor: s-resize;
+    }
+
+    .collapsible:after {
+        content: '\002B';
+        float: right;
+    }
+
+    .active:after {
+        content: "\2212";
+    }
+
+    .filters {
+        overflow: hidden;
+        transition: max-height .2s ease-out;
+        max-height: 0;
+    }
 }
 
 @media only screen and (max-width: 1394px) {
@@ -56,29 +79,6 @@
         font-size: 16px;
         line-height: 27px;
     }
-
-    .header-grid {
-        transition: height .2s ease-out;
-    }
-
-    .collapsible {
-        cursor: s-resize;
-    }
-
-    .collapsible:after {
-        content: '\002B';
-        float: right;
-    }
-
-    .active:after {
-        content: "\2212";
-    }
-
-    .filter-menu {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height .2s ease-out;
-    }
 }
 
 
@@ -113,7 +113,7 @@ body {
 }
 
 .title,
-.filters,
+.filter-menu,
 .menu {
     display: inline-block;
     vertical-align: top;
