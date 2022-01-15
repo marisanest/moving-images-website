@@ -1,4 +1,5 @@
 $(window).resize(function() {
+    $('.collapsible').toggleClass("active", false)
     $('.filter-menu').css('height', '');
     $('.filters').css('maxHeight', '');
   });
