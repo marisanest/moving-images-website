@@ -15,29 +15,30 @@
 
 <body>
 <div class="container">
-    <div class="header">
-        <div class="title">
-            <a href="./index.html"><h1>Moving Images: <br/>Design with Code</h1></a>
+    <div class="header-grid">
+        <div class="header-grid-sizer"></div>
+        <div class="header-grid-item grid-item--width2 title">
+            <a class="large" href="./index.html">Moving Images: <br/>Design with Code</a>
         </div>
-        <div class="filters-wrapper">
-            <div>Filter:</div>
-            <div>&nbsp;&nbsp;<a href="#" class="filter is-checked" data-filter="*">All</a></div>
-            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".lila">Lila</a></div>
-            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".pink">Pink</a></div>
-            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".blue">Blue</a></div>
-            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".black">Black</a></div>
-            <div>&nbsp;&nbsp;<a href="#" class="filter" data-filter=".green">Green</a></div>
+        <div class="header-grid-item filter-menu">
+            <div class="normal collapsible">Filter:</div>
+            <div class="filters">
+                <div>&nbsp;&nbsp;<a href="#" class="filter is-checked normal" data-filter="*">All</a></div>
+                <div>&nbsp;&nbsp;<a href="#" class="filter normal" data-filter=".lila">Lila</a></div>
+                <div>&nbsp;&nbsp;<a href="#" class="filter normal" data-filter=".pink">Pink</a></div>
+                <div>&nbsp;&nbsp;<a href="#" class="filter normal" data-filter=".blue">Blue</a></div>
+                <div>&nbsp;&nbsp;<a href="#" class="filter normal" data-filter=".black">Black</a></div>
+                <div>&nbsp;&nbsp;<a href="#" class="filter normal" data-filter=".green">Green</a></div>
+            </div>
         </div>
-        <div class="menu">
-            <div><a href="#">About</a></div>
-            <div><a href="#">Imprint</a></div>
+        <div class="header-grid-item grid-item menu">
+            <div><a class="normal" href="#">About</a></div>
+            <div><a class="normal" href="#">Imprint</a></div>
         </div>
     </div>
-
-    <div class="grid">
-        <div class="grid-sizer"></div>
-
-        <div class="grid-item lila black">
+    <div class="body-grid">
+        <div class="body-grid-sizer"></div>
+        <div class="body-grid-item grid-item--width2 lila black">
             <div class="image-caption-wrapper">
                 <div class="image-wrapper">
                     <a class="image-link" href="shaders/index.html?data=001.frag">
@@ -50,7 +51,7 @@
             </div>
         </div>
 
-        <div class="grid-item pink black">
+        <div class="body-grid-item pink black">
             <div class="image-caption-wrapper">
                 <div class="image-wrapper">
                     <a class="image-link" href="shaders/index.html?data=002.frag">
@@ -63,7 +64,7 @@
             </div>
         </div>
 
-        <div class="grid-item lila black">
+        <div class="body-grid-item lila black">
             <div class="image-caption-wrapper">
                 <div class="image-wrapper">
                     <a class="image-link" href="shaders/index.html?data=003.frag">
@@ -76,7 +77,7 @@
             </div>
         </div>
 
-        <div class="grid-item blue black">
+        <div class="body-grid-item blue black">
             <div class="image-caption-wrapper">
                 <div class="image-wrapper">
                     <a class="image-link" href="shaders/index.html?data=004.frag">
@@ -89,7 +90,7 @@
             </div>
         </div>
 
-        <div class="grid-item green">
+        <div class="body-grid-item green">
             <div class="image-caption-wrapper">
                 <div class="image-wrapper">
                     <a class="image-link" href="shaders/index.html?data=005.frag">
