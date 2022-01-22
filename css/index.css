@@ -1,20 +1,26 @@
 @media only screen {
-    :root {
-        --grid-item--width: 16.666%;
-        --grid-item--width2: 33.333%;
+    :root{
+        --grid-item--width: 11%;
+        --grid-item--width2: 22%;
     }
+
     .large {
         font-size: 36px;
         line-height: 36px;
     }
     
-    .normal {
+    .medium {
         font-size: 22px;
         line-height: 30px;
     }
 
+    .small-medium {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
     .small {
-        font: 12px;
+        font-size: 14px;
         line-height: 24px;
     }
 
@@ -46,6 +52,27 @@
     }
 }
 
+@media only screen and (max-width: 2252px) {
+    :root {
+        --grid-item--width: 12%;
+        --grid-item--width2: 25%;
+    }
+}
+
+@media only screen and (max-width: 1912px) {
+    :root {
+        --grid-item--width: 14%;
+        --grid-item--width2: 28%;
+    }
+}
+
+@media only screen and (max-width: 1724px) {
+    :root {
+        --grid-item--width: 16%;
+        --grid-item--width2: 32%;
+    }
+}
+
 @media only screen and (max-width: 1394px) {
     :root{
         --grid-item--width: 20%;
@@ -62,7 +89,7 @@
 
 @media only screen and (max-width: 767px) {
     :root {
-        --grid-item--width: 33.001%;
+        --grid-item--width: 33%;
         --grid-item--width2: 66%;
     }
     .large {
@@ -114,7 +141,7 @@ body {
 .header-grid-item,
 .body-grid-item {
     width: var(--grid-item--width);
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 .grid-item--width2 {
