@@ -1,8 +1,11 @@
 $(window).resize(function() {
-    $('.collapsible').toggleClass("active", false)
-    $('.filter-menu').css('height', '');
-    $('.filters').css('maxHeight', '');
-  });
+    let cachedWidth = $(window).width();
+    if ($(window).width() != cachedWidth) {
+        $('.collapsible').toggleClass("active", false)
+        $('.filter-menu').css('height', '');
+        $('.filters').css('maxHeight', '');
+    }
+});
 
 let headerGrid = $('.header-grid');
 headerGrid.isotope({
