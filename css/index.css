@@ -13,6 +13,11 @@
         line-height: 30px;
     }
 
+    .small {
+        font: 12px;
+        line-height: 24px;
+    }
+
     .header-grid {
         transition: height .2s ease-out;
     }
@@ -171,3 +176,7 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/* .imprint {
+    display: none;
+} */
