@@ -1,8 +1,11 @@
 $(window).resize(function() {
-    $('.collapsible').toggleClass("active", false)
-    $('.filter-menu').css('height', '');
-    $('.filters').css('maxHeight', '');
-  });
+    let cachedWidth = $(window).width();
+    if ($(window).width() != cachedWidth) {
+        $('.collapsible').toggleClass("active", false)
+        $('.filter-menu').css('height', '');
+        $('.filters').css('maxHeight', '');
+    }
+});
 
 let headerGrid = $('.header-grid');
 headerGrid.isotope({
@@ -24,9 +27,14 @@ bodyGrid.isotope({
 
 let filterMenu = $('.filter-menu');
 filterMenu.on( 'click', '.filter', function() {
-    filterMenu.find('.is-checked').removeClass('is-checked');
-    $(this).addClass('is-checked');
-    let filterValue = $(this).attr('data-filter');
+    let filterValue;
+    if ($(this).is('.is-checked')) {
+        filterValue = '*';
+    } else {
+        filterValue = $(this).attr('data-filter');
+        filterMenu.find('.is-checked').removeClass('is-checked');
+    }
+    $(this).toggleClass('is-checked')
     bodyGrid.isotope({filter: filterValue});
 });
 
