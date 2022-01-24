@@ -4,35 +4,35 @@
       "filename": "Alex_PulseAh",
       "title":  "Pulse Ah",
       "author": "Alex",
-      "filters": "pink black",
+      "filters": ["pink", "black"],
       "format": "1:1"
     },
     {
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
-      "filters": "lila black",
+      "filters": ["lila", "black"],
       "format": "1:1"
     },
     {
       "filename": "Ulrike_DistanceField",
       "title":  "Distance Field",
       "author": "Ulrike",
-      "filters": "green",
+      "filters": ["green"],
       "format": "1:1"
     },
     {
       "filename": "Ulrike_DistancePattern",
       "title":  "Distance Pattern",
       "author": "Ulrike",
-      "filters": "green",
+      "filters": ["green"],
       "format": "1:1"
     },
     {
       "filename": "Ulrike_ChristmasPatternParallax",
       "title":  "Christmas Pattern Parallax",
       "author": "Ulrike",
-      "filters": "green",
+      "filters": ["green"],
       "format": "1:1"
     }
   ],

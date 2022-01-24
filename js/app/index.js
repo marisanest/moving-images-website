@@ -1,5 +1,5 @@
 const shadersTemplate = {
-    '<>':'div', 'class': 'body-grid-item ${filters}', 'html': [
+    '<>':'div', 'class': function(){return('body-grid-item ' + this.filters.join(" "))}, 'html': [
         {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
                 {'<>':'div', 'class': 'image-wrapper', 'html': [
                         {'<>':'a', 'class': 'image-link', 'href':'/app/show.html?data=${filename}.frag', 'html': [
@@ -8,6 +8,10 @@ const shadersTemplate = {
                 },
                 {'<>':'div', 'class':'caption small', 'html': [
                         {'<>':'a', 'href':'/app/show.html?data=${filename}.frag', 'text':'${author} - ${title}'}]
+                },
+
+                {"<>":"div", "class": "filter-menu overlay", "html":[
+                    {"<>":"a", "obj":function(){return(this.filters);}, "href": "#", "class": "filter overlay", "data-filter": ".${value}", "text": function(){return(this.value.charAt(0).toUpperCase()+this.value.substring(1))}}]
                 }]
         }]
 };
