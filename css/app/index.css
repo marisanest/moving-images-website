@@ -148,13 +148,14 @@ body {
     padding-bottom: 5px;
     padding-right: 10px;
     padding-left: 10px;
+    margin: 0.2rem;
 }
 
 .filter-menu.overlay {
     opacity: 0;
     position: absolute;
-    top: 30px;
-    left: 20px;
+    top: 25px;
+    left: 17px;
 }
 
 .title,
