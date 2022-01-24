@@ -1,0 +1,51 @@
+{
+  "shaders":  [
+    {
+      "filename": "Alex_PulseAh",
+      "title":  "Pulse Ah",
+      "author": "Alex",
+      "filters": "pink black",
+      "format": "1:1"
+    },
+    {
+      "filename": "Marisa_001",
+      "title":  "001",
+      "author": "Marisa",
+      "filters": "lila black",
+      "format": "1:1"
+    },
+    {
+      "filename": "Ulrike_DistanceField",
+      "title":  "Distance Field",
+      "author": "Ulrike",
+      "filters": "green",
+      "format": "1:1"
+    },
+    {
+      "filename": "Ulrike_DistancePattern",
+      "title":  "Distance Pattern",
+      "author": "Ulrike",
+      "filters": "green",
+      "format": "1:1"
+    },
+    {
+      "filename": "Ulrike_ChristmasPatternParallax",
+      "title":  "Christmas Pattern Parallax",
+      "author": "Ulrike",
+      "filters": "green",
+      "format": "1:1"
+    }
+  ],
+  "menu": [
+    {
+      "title": "Headline About",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "filters": "about"
+    },
+    {
+      "title": "Headline Imprint",
+      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "filters": "imprint"
+    }
+  ]
+}
