@@ -70,11 +70,13 @@ fetch("/data/data.json", {
             let filterValue;
             if ($(this).is('.is-checked')) {
                 filterValue = '*';
+                $('.filter-menu .is-checked').removeClass('is-checked');
+                console.log($('.filter-menu .is-checked'))
             } else {
                 filterValue = $(this).attr('data-filter');
-                filterMenu.find('.is-checked').removeClass('is-checked');
+                $('.filter-menu .is-checked').removeClass('is-checked');
+                $(".filter-menu [data-filter='"+filterValue+"']").addClass('is-checked');
             }
-            $(this).toggleClass('is-checked')
             bodyGrid.isotope({filter: filterValue});
         });
 
