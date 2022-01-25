@@ -1,6 +1,6 @@
 @media only screen {
     :root {
-        --grid-item--width: 12%;
+        --grid-item--width: 12.5%;
         --grid-item--width2: 25%;
     }
 
@@ -45,24 +45,24 @@
         content: "\2212";
     }
 
-    .filters {
+    .filter-list {
         overflow: hidden;
         transition: max-height .2s ease-out;
         max-height: 0;
     }
-}s
+}
 
 @media only screen and (max-width: 1912px) {
     :root {
-        --grid-item--width: 14%;
-        --grid-item--width2: 28%;
+        --grid-item--width: 14.2%;
+        --grid-item--width2: 28.5%;
     }
 }
 
 @media only screen and (max-width: 1724px) {
     :root {
-        --grid-item--width: 16%;
-        --grid-item--width2: 32%;
+        --grid-item--width: 16.6%;
+        --grid-item--width2: 33.3%;
     }
 }
 
@@ -82,8 +82,8 @@
 
 @media only screen and (max-width: 767px) {
     :root {
-        --grid-item--width: 33%;
-        --grid-item--width2: 66%;
+        --grid-item--width: 33.3%;
+        --grid-item--width2: 66.6%;
     }
     .large {
         font-size: 25px;
@@ -110,6 +110,9 @@
     }
 }
 
+ul {
+    margin-bottom: 0.2rem;
+}
 
 body {
     font-family: 'Roboto Mono', monospace;
@@ -118,7 +121,11 @@ body {
 
 .container {
     max-width: 100%;
-    padding: 32px;
+    padding: 2rem;
+}
+
+.header-grid {
+    margin-bottom: 1rem;
 }
 
 .header-grid,
@@ -128,7 +135,7 @@ body {
 
 .header-grid-sizer,
 .body-grid-sizer {
-    width: 1%;
+    width: 0.1%;
 }
 
 .header-grid-item,
@@ -144,14 +151,11 @@ body {
 .filter.overlay {
     border-radius: 25px;
     background: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 5px 10px;
     margin: 0.2rem;
 }
 
-.filter-menu.overlay {
+.filters.overlay {
     opacity: 0;
     position: absolute;
     top: 25px;
@@ -159,20 +163,18 @@ body {
 }
 
 .title,
-.filter-menu,
-.menu {
+.filters {
     display: inline-block;
     vertical-align: top;
     text-align: left;
 }
 
-.title a, .menu a, .filter, .caption a {
+.title a, .filter, .caption a {
     text-decoration: none;
     color: black;
 }
 
 .title a:hover,
-.menu a:hover,
 .filter:hover,
 .filter.is-checked {
     color: #ea1f4c;
@@ -186,7 +188,7 @@ body {
     opacity: 1;
 }
 
-.image-caption-wrapper:hover .filter-menu.overlay {
+.image-caption-wrapper:hover .filters.overlay {
     opacity: 1;
 }
 
