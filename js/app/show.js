@@ -1,27 +1,10 @@
-<html>
-<head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Title of your shader</title>
-    <link type="text/css" rel="stylesheet" href="https://rawgit.com/patriciogonzalezvivo/glslEditor/gh-pages/build/glslEditor.css">
-    <script type="application/javascript" src="https://rawgit.com/patriciogonzalezvivo/glslEditor/gh-pages/build/glslEditor.js"></script>
-    <link type="text/css" rel="stylesheet" href="../css/shader.editor.css">
-</head>
-
-<body>
-    <div id="glsl_editor" data="template.frag"></div>
-</body>
-
-<script type="text/javascript">
+$(document).ready(function() {
     let params = {};
     location.search.slice(1).split("&").forEach(function(pair) {
         pair = pair.split("=");
         params[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1]);
     });
     document.title = params.data.split('.')[0].replace('_', " - ").replace(/([a-z])([A-Z])/g, '$1 $2');
-
 
     if (params['data'] !== null && params['data'].endsWith('.frag')){
         let srcFile = params['data'];
@@ -34,8 +17,7 @@
             watchHash: true,
             fileDrops: true,
             menu: false,
-    });
-    glslEditor.open(srcFile);
+        });
+        glslEditor.open("/data/shaders/" + srcFile);
     }
-</script>
-</html>
+});
