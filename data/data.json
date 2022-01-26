@@ -1,6 +1,20 @@
 {
   "images":  [
     {
+      "filename": "Alex_BitsAndBytes",
+      "title":  "Bits and Bytes",
+      "author": "Alex",
+      "filters": ["pink", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Alex_Fire",
+      "title":  "Fire",
+      "author": "Alex",
+      "filters": ["pink", "black"],
+      "format": "1:1"
+    },
+    {
       "filename": "Alex_PulseAh",
       "title":  "Pulse Ah",
       "author": "Alex",
@@ -11,6 +25,48 @@
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
+      "filters": ["lila", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Marisa_002",
+      "title":  "002",
+      "author": "Marisa",
+      "filters": ["lila", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Marisa_003",
+      "title":  "003",
+      "author": "Marisa",
+      "filters": ["lila", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Marisa_004",
+      "title":  "004",
+      "author": "Marisa",
+      "filters": ["lila", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Marisa_005",
+      "title":  "005",
+      "author": "Marisa",
+      "filters": ["lila", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Nour_01",
+      "title":  "01",
+      "author": "Nour",
+      "filters": ["lila", "black"],
+      "format": "1:1"
+    },
+    {
+      "filename": "Nour_02",
+      "title":  "02",
+      "author": "Nour",
       "filters": ["lila", "black"],
       "format": "1:1"
     },
