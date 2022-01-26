@@ -3,8 +3,8 @@
 ## How to add your sketch to the website
 
 Please submit your shader in the following format: 
-* upload Firstname_NameOfMyShader.frag (respect upper and lower case) to `data/shaders`.
-* upload a screenshot of your shader in the dimensions 512x512 to `data/images`. PNG and JPG are both fine.
+* upload *Firstname_NameOfMyShader.frag* (respect upper and lower case) to `data/shaders`.
+* upload a screenshot of your shader in the dimensions 512x512 as *Firstname_NameOfMyShader.png* to `data/images`.
 * create a new entry in the `data/data.json` file with all necessary information. Below the current template:
   ```
   {
