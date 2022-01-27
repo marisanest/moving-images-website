@@ -223,3 +223,8 @@ body {
 .hidden {
     display: none;
 }
+
+.footer {
+    background-color: grey;
+    margin-top: 100px;
+}

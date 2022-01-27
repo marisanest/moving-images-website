@@ -19,9 +19,9 @@ $(document).ready(function() {
     };
 
     let text_template = {
-        '<>':'div', 'class': 'body-grid-item grid-item--width2 ${filters}', 'html': [
+        '<>':'div', 'id': 'texts',  'class': 'hidden body-grid-item grid-item--width2 ${filters}', 'html': [
             {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
-                    {'<>':'div', 'class': 'small', 'html': [
+                    {'<>':'div', 'class': 'medium', 'html': [
                             {'<>':'p', 'class': 'medium', 'text':'${title}'}], 'text':'${text}'
                     }]
             }]
@@ -77,13 +77,27 @@ $(document).ready(function() {
             $('.filter').click(function() {
                 let filterValue;
 
-                if ($(this).is('.is-checked')) {
+                if ($(this).is('.is-checked')) {                    
                     filterValue = '*';
                     $('.filter.is-checked').removeClass('is-checked');
+                    
+                  
+                    // ADD ABOUT AND IMPRIT TEXT
+                    const text = document.querySelector('#texts')
+                    text.classList.add("hidden");
+                    
+
                 } else {
                     filterValue = $(this).attr('data-filter');
                     $('.filter.is-checked').removeClass('is-checked');
                     $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
+
+
+                    // REMOVE ABOUT AND IMPRIT TEXT
+                    const text = document.querySelector('#texts');
+                    if (text.classList.contains("hidden")) {
+                        text.classList.remove("hidden");
+                    }
                 }
 
                 bodyGrid.isotope({filter: filterValue});
