@@ -1,6 +1,6 @@
 $(document).ready(function() {
     let image_template = {
-        '<>':'div', 'class': function(){return('body-grid-item ' + this.filters.join(" "))}, 'html': [
+        '<>':'div', 'class': function(){return('body-grid-item ' + Object.values(this.filters).join().replaceAll(",", " "))}, 'html': [
             {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
                     {'<>':'div', 'class': 'image-wrapper', 'html': [
                             {
@@ -12,8 +12,10 @@ $(document).ready(function() {
                             {'<>':'a', 'href':'/app/show.html?data=${filename}.frag', 'text':'${author} - ${title}'}]
                     },
 
-                    {"<>":"div", "class": "filters overlay", "html":[
-                            {"<>":"a", "obj":function(){return(this.filters)}, "href": "#", "class": "filter overlay", "data-filter": ".${value}", "text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
+                    {"<>":"div", "class": "filters overlay extra-small", "html": [
+                            {"<>": "div", "class": "flexoverlay", "html": [
+                                {"<>":"a", "obj":function(){return(Object.values(this.filters).flat())}, "href": "#", "class": "filter overlay", "data-filter": ".${value}", "text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
+                            }]                    
                     }]
             }]
     };
@@ -28,14 +30,16 @@ $(document).ready(function() {
     };
 
     let filter_template = {
-        "<>":"ul", 'html': [
-            {'<>':'a', "href": "#", 'class':'filter small-medium', 'data-filter':'.${value}', "text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}
-            }]
-    }
+        '<>':'div', 'obj':function(){return (this.filters)}, 'class':'filter-list', 'html':[
+                {'<>':'span', 'class': 'filtertype small', 'html':function(){return Object.keys(this).join().charAt(0).toUpperCase() + Object.keys(this).join().substring(1)+":"}},
+                {'<>':'div', 'class':function(){return(Object.keys(this).join())}, 'html': [
+                        {'<>':'a', 'obj':function(){return (Object.values(this).flat())}, 'href':'#','class':'filter small ${value}','data-filter':'.${value}',"text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
+                }]
+        };
 
     let headerGrid = $('.header-grid');
     let bodyGrid = $('.body-grid');
-    let filterList = $('.filter-list');
+    let category = $('.category-menu');
 
     fetch("/data/data.json", {
         headers: {
@@ -48,13 +52,20 @@ $(document).ready(function() {
             bodyGrid.json2html(data["images"], image_template);
             bodyGrid.json2html(data["texts"], text_template);
 
-            let filters = new Set();
-            for (let image of data["images"]) {
-                for (let filter of image["filters"]) {
-                    filters.add(filter);
-                }
-            }
-            filterList.json2html(Array.from(filters).sort(), filter_template);
+            let filters = {
+                "filters": [
+                    {"color": [] },
+                    {"shapes": [] },
+                    {"category": [] }
+                ]
+            };
+
+            data.images.map(function(filtertype){
+                filters.filters[0].color.push.apply(filters.filters[0].color, filtertype.filters.color.filter((item) => filters.filters[0].color.indexOf(item) < 0));
+                filters.filters[1].shapes.push.apply(filters.filters[1].shapes, filtertype.filters.shapes.filter((item) => filters.filters[1].shapes.indexOf(item) < 0));
+                filters.filters[2].category.push.apply(filters.filters[2].category, filtertype.filters.category.filter((item) => filters.filters[2].category.indexOf(item) < 0));
+            });
+            category.json2html(filters, filter_template);
 
         })
         .then(() => {
@@ -92,17 +103,13 @@ $(document).ready(function() {
             $('.collapsible').click(function() {
                 let collapsible = $(this);
                 collapsible.toggleClass("active");
-                let filters = collapsible.closest('.filters');
-                let filterList = collapsible.next();
+                let filterList = $('.category-menu');
 
                 if (filterList.css('maxHeight') != '0px'){
                     filterList.css('maxHeight', '0px');
-                    filters.css('height', filters.outerHeight() - filterList.outerHeight() + "px");
                 } else {
                     filterList.css('maxHeight', filterList.prop('scrollHeight') + "px");
-                    filters.css('height', filters.outerHeight() + filterList.prop('scrollHeight') + "px");
                 }
-                headerGrid.masonry();
             });
         });
 });

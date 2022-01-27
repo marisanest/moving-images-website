@@ -4,91 +4,144 @@
       "filename": "Alex_BitsAndBytes",
       "title":  "Bits and Bytes",
       "author": "Alex",
-      "filters": ["pink", "black"],
+      "filters": {
+        "color": ["pink"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Alex_Fire",
       "title":  "Fire",
       "author": "Alex",
-      "filters": ["pink", "black"],
+      "filters": {
+        "color": ["pink", "black"],
+        "shapes": ["line", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Alex_PulseAh",
       "title":  "Pulse Ah",
       "author": "Alex",
-      "filters": ["pink", "black"],
+      "filters": {
+        "color": ["pink", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
-      "filters": ["lila", "black"],
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "polygon"],
+        "category": ["truchet", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Marisa_002",
       "title":  "002",
       "author": "Marisa",
-      "filters": ["lila", "black"],
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Marisa_003",
       "title":  "003",
       "author": "Marisa",
-      "filters": ["lila", "black"],
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "texture"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Marisa_004",
       "title":  "004",
       "author": "Marisa",
-      "filters": ["lila", "black"],
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["transform", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Marisa_005",
       "title":  "005",
       "author": "Marisa",
-      "filters": ["lila", "black"],
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["swizzle", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Nour_01",
       "title":  "01",
       "author": "Nour",
-      "filters": ["lila", "black"],
+      "author": "Nour",
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Nour_02",
       "title":  "02",
       "author": "Nour",
-      "filters": ["lila", "black"],
+      "filters": {
+        "color": ["lila", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Ulrike_DistanceField",
       "title":  "Distance Field",
       "author": "Ulrike",
-      "filters": ["black","lila"],
+      "filters": {
+        "color": ["black", "lila"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Ulrike_DistancePattern",
       "title":  "Distance Pattern",
       "author": "Ulrike",
-      "filters": ["black", "blue"],
+      "filters": {
+        "color": ["purple", "blue"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     },
     {
       "filename": "Ulrike_ChristmasPatternParallax",
       "title":  "Christmas Pattern Parallax",
       "author": "Ulrike",
-      "filters": ["green"],
+      "filters": {
+        "color": ["green", "black"],
+        "shapes": ["circle", "rectangle"],
+        "category": ["pattern", "noise"]
+      },
       "format": "1:1"
     }
   ],
