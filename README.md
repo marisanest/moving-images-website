@@ -8,11 +8,15 @@ Please submit your shader in the following format:
 * create a new entry in the `data/data.json` file with all necessary information. Below the current template:
   ```
   {
-  "filename": "Firstname_NameOfMyShader",
-  "title":  "Name of your Shader",
-  "author": "Firstname",
-  "filters": ["color", "shape", "..."],
-  "format": "1:1"
+    "filename": "Alex_PulseAh",
+    "title":  "Pulse Ah",
+    "author": "Alex",
+    "filters": {
+      "color": ["black", "..."],
+      "shapes": ["circle", "rectangle" "..."],
+      "category": ["pattern", "noise" "..."]
+    },
+    "format": "1:1"
   }
   ```
 To use textures upload your image into the folder `data/textures/`. In your shader add the URL as a comment next to the texture uniform. See [template_texture.frag](https://github.com/marisanest/moving-images-website/blob/108672c1e7638b19cbbb1f1baf713abc56f5b82d/shaders/template_texture.frag#L8) for reference.
