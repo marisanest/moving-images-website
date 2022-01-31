@@ -156,9 +156,15 @@
     }
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Roboto Mono', monospace;
     background: #eaeceb;
+    display: flex;
+    flex-direction: column;
 }
 
 hr {
@@ -168,6 +174,7 @@ hr {
 .container {
     max-width: 100%;
     padding: 2rem;
+    flex: 1 0 auto;
 }
 
 .header {
@@ -280,5 +287,7 @@ hr {
 }
 
 .footer {
-    padding: 0.5rem;   
+    flex-shrink: 0;
+    max-width: 100%;
+    padding: 0 2.5rem 0.5rem;
 }
