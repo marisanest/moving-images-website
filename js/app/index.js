@@ -115,3 +115,10 @@ $(document).ready(function() {
             });
         });
 });
+
+$(window).resize(function() {
+    let cachedWidth = $(window).width();
+    if ($(window).width() != cachedWidth) {
+        $('.category-menu').css('height', $('.category-menu').prop('scrollHeight') + "px");
+    }
+});
