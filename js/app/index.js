@@ -1,6 +1,6 @@
 $(document).ready(function() {
     let image_template = {
-        '<>':'div', 'class': function(){return('body-grid-item ' + Object.values(this.filters).join().replaceAll(",", " "))}, 'html': [
+        '<>':'div', 'class': function(){return('body-grid-item ' + this.author + ' ' + Object.values(this.filters).join().replaceAll(",", " "))}, 'html': [
             {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
                     {'<>':'div', 'class': 'image-wrapper', 'html': [
                             {
@@ -9,7 +9,8 @@ $(document).ready(function() {
                             }]
                     },
                     {'<>':'div', 'class':'caption small', 'html': [
-                            {'<>':'a', 'href':'/app/show.html?data=${filename}.frag', 'text':'${author} - ${title}'}]
+                            {'<>':'a', 'class': 'filter extra-small', "data-filter": ".${author}", 'href':'#', 'text':'${author}'},
+                            {'<>':'a', 'href':'/app/show.html?data=${filename}.frag', 'text':' - ${title}'}]
                     },
 
                     {"<>":"div", "class": "filters overlay extra-small", "html": [
