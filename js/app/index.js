@@ -9,7 +9,7 @@ $(document).ready(function() {
                             }]
                     },
                     {'<>':'div', 'class':'caption small', 'html': [
-                            {'<>':'a', 'class': 'filter extra-small', "data-filter": ".${author}", 'href':'#', 'text':'${author}'},
+                            {'<>':'a', 'class': 'filter', "data-filter": ".${author}", 'href':'#', 'text':'${author}'},
                             {'<>':'a', 'href':'/app/show.html?data=${filename}.frag', 'text':' - ${title}'}]
                     },
 
@@ -101,10 +101,10 @@ $(document).ready(function() {
                 } else {
                     filterValue = $(this).attr('data-filter');
                     $('.filter.is-checked').removeClass('is-checked');
+                    $('#about,#imprint').addClass('hidden')
                     $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
 
                     if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
-                        $('#about,#imprint').addClass('hidden')
                         $($(this).attr('data-filter')).removeClass('hidden');
                     }
                 }
