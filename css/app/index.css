@@ -119,6 +119,10 @@ body {
     background: #eaeceb;
 }
 
+hr {
+    margin: 0;
+}
+
 .container {
     max-width: 100%;
     padding: 2rem;
@@ -130,7 +134,7 @@ body {
 
 .header-grid,
 .body-grid {
-	width: 100%;
+    width: 100%;
 }
 
 .header-grid-sizer,
@@ -225,10 +229,5 @@ body {
 }
 
 .footer {
-    background-color: grey;
-    margin-top: 100px;
-}
-
-#imprintButton {
-    padding: 8px;
+    padding: 0.5rem;   
 }

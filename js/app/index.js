@@ -77,42 +77,22 @@ $(document).ready(function() {
             $('.filter').click(function() {
                 let filterValue;
 
-                var about = document.getElementById('aboutButton');
-                var imprint = document.getElementById('imprintButton');
-
-                var aboutText = document.getElementById('about');
-                var imprintText = document.getElementById('imprint');
-
                 if ($(this).is('.is-checked')) {                    
                     filterValue = '*';
                     $('.filter.is-checked').removeClass('is-checked');
-                    
-                    if(about.classList.contains('is-checked')){
-                        aboutText.classList.remove('hidden');
-                    } else {
-                        aboutText.classList.add('hidden');
-                    }
 
-                    if(imprint.classList.contains('is-checked')){
-                        imprintText.classList.remove('hidden');
-                    } else {
-                        imprintText.classList.add('hidden');
-                    }
+                    if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
+                        $($(this).attr('data-filter')).addClass('hidden');
+                        }
+
                 } else {
                     filterValue = $(this).attr('data-filter');
                     $('.filter.is-checked').removeClass('is-checked');
                     $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
-    
-                    if(about.classList.contains('is-checked')){
-                        aboutText.classList.remove('hidden');
-                    } else {
-                        aboutText.classList.add('hidden');
-                    }
 
-                    if(imprint.classList.contains('is-checked')){
-                        imprintText.classList.remove('hidden');
-                    } else {
-                        imprintText.classList.add('hidden');
+                    if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
+                        $('#about,#imprint').addClass('hidden')
+                        $($(this).attr('data-filter')).removeClass('hidden');
                     }
                 }
                 bodyGrid.isotope({filter: filterValue});
