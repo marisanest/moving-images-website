@@ -228,3 +228,7 @@ body {
     background-color: grey;
     margin-top: 100px;
 }
+
+#imprintButton {
+    padding: 8px;
+}
