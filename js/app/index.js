@@ -19,7 +19,7 @@ $(document).ready(function() {
     };
 
     let text_template = {
-        '<>':'div', 'id': 'texts',  'class': 'hidden body-grid-item grid-item--width2 ${filters}', 'html': [
+        '<>':'div', 'id': '${filters}',  'class': 'hidden body-grid-item grid-item--width2 ${filters}', 'html': [
             {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
                     {'<>':'div', 'class': 'medium', 'html': [
                             {'<>':'p', 'class': 'medium', 'text':'${title}'}], 'text':'${text}'
@@ -77,26 +77,45 @@ $(document).ready(function() {
             $('.filter').click(function() {
                 let filterValue;
 
+                var about = document.getElementById('about');
+                var imprint = document.getElementById('imprint');
+
+
                 if ($(this).is('.is-checked')) {                    
                     filterValue = '*';
                     $('.filter.is-checked').removeClass('is-checked');
                     
-                  
-                    // ADD ABOUT AND IMPRIT TEXT
-                    const text = document.querySelector('#texts')
-                    text.classList.add("hidden");
                     
+                    if(about.classList.contains('is-checked')){
+                        console.log('ABOUT YES');
+                        about.classList.contains
+                    } else {
+                        console.log('ABOUT NO');
+                    }
 
+                    if(imprint.classList.contains('is-checked')){
+                        console.log('IMPRINT YES');
+                    } else {
+                        console.log('IMPRINT NO');
+                    }
+
+                
                 } else {
                     filterValue = $(this).attr('data-filter');
                     $('.filter.is-checked').removeClass('is-checked');
                     $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
+            
+                
+                    if(about.classList.contains('is-checked')){
+                        console.log('ABOUT YES');
+                    } else {
+                        console.log('ABOUT NO');
+                    }
 
-
-                    // REMOVE ABOUT AND IMPRIT TEXT
-                    const text = document.querySelector('#texts');
-                    if (text.classList.contains("hidden")) {
-                        text.classList.remove("hidden");
+                    if(imprint.classList.contains('is-checked')){
+                        console.log('IMPRINT YES');
+                    } else {
+                        console.log('IMPRINT NO');
                     }
                 }
 
