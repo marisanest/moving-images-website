@@ -4,13 +4,13 @@ $(document).ready(function() {
             {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
                     {'<>':'div', 'class': 'image-wrapper', 'html': [
                             {
-                                '<>': 'a', 'class': 'image-link', 'href': '/app/show.html?data=${filename}.frag', 'html': [
-                                    {'<>': 'img', 'class': 'image', 'src': "/data/images/${filename}.png"}]
+                                '<>': 'a', 'class': 'image-link', 'href': '../app/show.html?data=${filename}.frag', 'html': [
+                                    {'<>': 'img', 'class': 'image', 'src': "../data/images/${filename}.png"}]
                             }]
                     },
                     {'<>':'div', 'class':'caption small', 'html': [
                             {'<>':'a', 'class': 'filter', "data-filter": ".${author}", 'href':'#', 'text':'${author}'},
-                            {'<>':'a', 'href':'/app/show.html?data=${filename}.frag', 'text':' - ${title}'}]
+                            {'<>':'a', 'href':'../app/show.html?data=${filename}.frag', 'text':' - ${title}'}]
                     },
 
                     {"<>":"div", "class": "filters overlay extra-small", "html": [
@@ -42,7 +42,7 @@ $(document).ready(function() {
     let bodyGrid = $('.body-grid');
     let category = $('.category-menu');
 
-    fetch("/data/data.json", {
+    fetch("../data/data.json", {
         headers: {
             'Concept-type': 'application/json',
             'Accept': 'application/json'

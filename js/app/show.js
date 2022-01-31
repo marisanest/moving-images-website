@@ -18,6 +18,6 @@ $(document).ready(function() {
             fileDrops: true,
             menu: false,
         });
-        glslEditor.open("/data/shaders/" + srcFile);
+        glslEditor.open("../data/shaders/" + srcFile);
     }
 });
