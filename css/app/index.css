@@ -140,7 +140,7 @@
 
 @media only screen and (max-width: 400px) {
     :root {
-        --grid-item--width: 50%;
+        --grid-item--width: 49%;
         --grid-item--width2: 100%;
     }
     .large {
@@ -154,6 +154,10 @@
     .container {
         padding: 1rem!important;
     }
+
+    .footer {
+        padding: 0 1.5rem 0.5rem!important;
+    }
 }
 
 html, body {
@@ -161,7 +165,7 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: abc;
     background: #eaeceb;
     display: flex;
     flex-direction: column;
