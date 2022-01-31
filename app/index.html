@@ -6,38 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Moving Images: Design with Code</title>
 
-    <link rel="stylesheet" href="/css/libs/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/app/index.css">
+    <link rel="stylesheet" href="../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app/index.css">
 
-    <script src="/js/libs/masonry.pkgd.min.js"></script>
-    <script src="/js/libs/jquery-3.6.0.slim.min.js"></script>
-    <script src="/js/libs/isotope.pkgd.min.js"></script>
-    <script src="/js/libs/json2html.min.js"></script>
-    <script src="/js/app/index.js"></script>
+    <script src="../js/libs/masonry.pkgd.min.js"></script>
+    <script src="../js/libs/jquery-3.6.0.slim.min.js"></script>
+    <script src="../js/libs/isotope.pkgd.min.js"></script>
+    <script src="../js/libs/json2html.min.js"></script>
+    <script src="../js/app/index.js"></script>
 </head>
 
 <body>
 <div class="container">
-    <div class="header-grid">
-        <div class="header-grid-sizer"></div>
-        <div class="header-grid-item grid-item--width2 title">
+    <div class="header">
+        <div class="title">
             <a class="large" href="/app/index.html">Moving Images: <br/>Design with Code</a>
         </div>
-        <div class="header-grid-item filters">
-            <div class="collapsible medium">Filters:</div>
-            <div class="filter-list"></div>
-        </div>
-        <div class="header-grid-item filters">
-            <div><a id="aboutButton" class="filter medium" href="#" data-filter=".about">About</a></div>
-            
-        </div>
+        <div class="menu">
+            <a id="aboutButton" class="filter small-medium" href="#" data-filter=".about">About</a>
+            <div class="filters">
+                <div class="collapsible small-medium">Filters</div>
+            </div>
+        </div>       
     </div>
-    
+    <div class="category-menu"></div> 
     <div class="body-grid">
         <div class="body-grid-sizer"></div>
     </div>
+</div>
 
-    <div class="footer small">
+<div class="footer small">
         <hr>
         <a id="imprintButton" class="filter " href="#" data-filter=".imprint">Legal Notice</a>
         <span> | source code can be found </span>
