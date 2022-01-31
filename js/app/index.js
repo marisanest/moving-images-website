@@ -88,44 +88,33 @@ $(document).ready(function() {
                     $('.filter.is-checked').removeClass('is-checked');
                     
                     if(about.classList.contains('is-checked')){
-                        console.log('ABOUT YES');
                         aboutText.classList.remove('hidden');
                     } else {
-                        console.log('ABOUT NO');
                         aboutText.classList.add('hidden');
                     }
 
                     if(imprint.classList.contains('is-checked')){
-                        console.log('IMPRINT YES');
                         imprintText.classList.remove('hidden');
                     } else {
-                        console.log('IMPRINT NO');
                         imprintText.classList.add('hidden');
                     }
-
-                
                 } else {
                     filterValue = $(this).attr('data-filter');
                     $('.filter.is-checked').removeClass('is-checked');
                     $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
     
                     if(about.classList.contains('is-checked')){
-                        console.log('ABOUT YES');
                         aboutText.classList.remove('hidden');
                     } else {
-                        console.log('ABOUT NO');
                         aboutText.classList.add('hidden');
                     }
 
                     if(imprint.classList.contains('is-checked')){
-                        console.log('IMPRINT YES');
                         imprintText.classList.remove('hidden');
                     } else {
-                        console.log('IMPRINT NO');
                         imprintText.classList.add('hidden');
                     }
                 }
-
                 bodyGrid.isotope({filter: filterValue});
             });
 
