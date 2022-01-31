@@ -30,10 +30,10 @@ $(document).ready(function() {
     };
 
     let filter_template = {
-        '<>':'div', 'obj':function(){return (this.filters)}, 'class':'filter-list', 'html':[
+        '<>':'div', 'obj':function(){return this}, 'class':'filter-list', 'html':[
                 {'<>':'span', 'class': 'filtertype small', 'html':function(){return Object.keys(this).join().charAt(0).toUpperCase() + Object.keys(this).join().substring(1)+":"}},
-                {'<>':'div', 'class':function(){return(Object.keys(this).join())}, 'html': [
-                        {'<>':'a', 'obj':function(){return (Object.values(this).flat())}, 'href':'#','class':'filter small ${value}','data-filter':'.${value}',"text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
+                {'<>':'div', 'class':function(){return Object.keys(this).join()}, 'html': [
+                        {'<>':'a', 'obj':function(){return Object.values(this).flat()}, 'href':'#','class':'filter small ${value}','data-filter':'.${value}',"text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
                 }]
         };
 
@@ -52,20 +52,21 @@ $(document).ready(function() {
             bodyGrid.json2html(data["images"], image_template);
             bodyGrid.json2html(data["texts"], text_template);
 
-            let filters = {
-                "filters": [
-                    {"color": [] },
-                    {"shapes": [] },
-                    {"category": [] }
-                ]
-            };
+            let allFilters = [];
 
-            data.images.map(function(filtertype){
-                filters.filters[0].color.push.apply(filters.filters[0].color, filtertype.filters.color.filter((item) => filters.filters[0].color.indexOf(item) < 0));
-                filters.filters[1].shapes.push.apply(filters.filters[1].shapes, filtertype.filters.shapes.filter((item) => filters.filters[1].shapes.indexOf(item) < 0));
-                filters.filters[2].category.push.apply(filters.filters[2].category, filtertype.filters.category.filter((item) => filters.filters[2].category.indexOf(item) < 0));
-            });
-            category.json2html(filters, filter_template);
+            for (let image of data.images) {
+                for (let filtertype in image.filters) {
+                    if(!(allFilters.some(e => e.hasOwnProperty(filtertype)))) {
+                        allFilters.push( {[filtertype]: image.filters[filtertype] })
+                    } else {
+                        idx = allFilters.findIndex(obj => obj.hasOwnProperty(filtertype));
+                        allFilters[idx][filtertype] = allFilters[idx][filtertype].concat(image.filters[filtertype].filter((item) => allFilters[idx][filtertype].indexOf(item) < 0))
+                    }
+                    
+                }
+
+            }
+            category.json2html(allFilters, filter_template);
 
         })
         .then(() => {
