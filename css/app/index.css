@@ -110,8 +110,8 @@
 
 @media only screen and (max-width: 767px) {
     :root {
-        --grid-item--width: 33%;
-        --grid-item--width2: 66%;
+        --grid-item--width: 33.3%;
+        --grid-item--width2: 66.6%;
     }
     .large {
         font-size: 25px;
@@ -178,7 +178,7 @@ body {
 }
 
 .body-grid-sizer {
-    width: 1%;
+    width: 0.1%;
 }
 
 .body-grid-item {
