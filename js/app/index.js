@@ -22,9 +22,9 @@ $(document).ready(function() {
     };
 
     let text_template = {
-        '<>':'div', 'class': 'body-grid-item grid-item--width2 ${filters}', 'html': [
+        '<>':'div', 'id': '${filters}',  'class': 'hidden body-grid-item grid-item--width2 ${filters}', 'html': [
             {'<>':'div', 'class': 'image-caption-wrapper', 'html': [
-                    {'<>':'div', 'class': 'small', 'html': [
+                    {'<>':'div', 'class': 'medium', 'html': [
                             {'<>':'p', 'class': 'medium', 'text':'${title}'}], 'text':'${text}'
                     }]
             }]
@@ -90,15 +90,24 @@ $(document).ready(function() {
             $('.filter').click(function() {
                 let filterValue;
 
-                if ($(this).is('.is-checked')) {
+                if ($(this).is('.is-checked')) {                    
                     filterValue = '*';
                     $('.filter.is-checked').removeClass('is-checked');
+
+                    if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
+                        $($(this).attr('data-filter')).addClass('hidden');
+                        }
+
                 } else {
                     filterValue = $(this).attr('data-filter');
                     $('.filter.is-checked').removeClass('is-checked');
                     $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
-                }
 
+                    if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
+                        $('#about,#imprint').addClass('hidden')
+                        $($(this).attr('data-filter')).removeClass('hidden');
+                    }
+                }
                 bodyGrid.isotope({filter: filterValue});
             });
 

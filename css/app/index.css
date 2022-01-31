@@ -161,6 +161,10 @@ body {
     background: #eaeceb;
 }
 
+hr {
+    margin: 0;
+}
+
 .container {
     max-width: 100%;
     padding: 2rem;
@@ -174,7 +178,7 @@ body {
 }
 
 .body-grid {
-	width: 100%;
+    width: 100%;
 }
 
 .body-grid-sizer {
@@ -271,6 +275,10 @@ body {
     padding: 15px 20px;
 }
 
-/* .imprint {
+.hidden {
     display: none;
+}
+
+.footer {
+    padding: 0.5rem;   
 }
