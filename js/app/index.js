@@ -33,7 +33,7 @@ $(document).ready(function() {
     let filter_template = {
         '<>':'div', 'obj':function(){return this}, 'class':'filter-list', 'html':[
                 {'<>':'span', 'class': 'filtertype small', 'html':function(){return Object.keys(this).join().charAt(0).toUpperCase() + Object.keys(this).join().substring(1)+":"}},
-                {'<>':'div', 'class':function(){return Object.keys(this).join()}, 'html': [
+                {'<>':'div', 'class':function(){return 'filter-items ' + Object.keys(this).join()}, 'html': [
                         {'<>':'a', 'obj':function(){return Object.values(this).flat()}, 'href':'#','class':'filter small ${value}','data-filter':'.${value}',"text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
                 }]
         };
