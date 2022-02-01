@@ -118,7 +118,7 @@
       "filters": {
         "color": ["black", "lila"],
         "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "category": ["pattern", "fract", "length"]
       },
       "format": "1:1"
     },
@@ -127,9 +127,9 @@
       "title":  "Distance Pattern",
       "author": "Ulrike",
       "filters": {
-        "color": ["purple", "blue"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["turquoise", "black"],
+        "shapes": ["rectangle"],
+        "category": ["pattern", "modulo", "animated"]
       },
       "format": "1:1"
     },
@@ -138,9 +138,31 @@
       "title":  "Christmas Pattern Parallax",
       "author": "Ulrike",
       "filters": {
-        "color": ["green", "black"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["green", "red", "yellow"],
+        "shapes": ["circle", "star"],
+        "category": ["pattern", "parallax", "mix", "animated"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Ulrike_RandomClouds",
+      "title":  "Random Clouds",
+      "author": "Ulrike",
+      "filters": {
+        "color": ["blue", "black"],
+        "shapes": ["lines"],
+        "category": ["pattern", "random", "modulo", "moire", "fract", "length", "animated"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Ulrike_RandomColorDistance",
+      "title":  "Random Color and Distance",
+      "author": "Ulrike",
+      "filters": {
+        "color": ["multiple", "pink", "green"],
+        "shapes": ["circle", "lines"],
+        "category": ["pattern", "random", "fract", "length", "animated"]
       },
       "format": "1:1"
     }
