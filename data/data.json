@@ -156,6 +156,28 @@
       "format": "1:1"
     },
     {
+      "filename": "Ulrike_RunningInk",
+      "title":  "Running Ink",
+      "author": "Ulrike",
+      "filters": {
+        "color": ["pink", "green", "lila"],
+        "shapes": ["lines", "curves"],
+        "category": ["pattern", "noise", "fract", "length", "animated"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Ulrike_StarKaleidoscope",
+      "title":  "Star Kaleidoscope",
+      "author": "Ulrike",
+      "filters": {
+        "color": ["pink", "black"],
+        "shapes": ["star", "flower"],
+        "category": ["pattern", "noise", "fract", "rotate", "animated"]
+      },
+      "format": "1:1"
+    },
+    {
       "filename": "Ulrike_RandomColorDistance",
       "title":  "Random Color and Distance",
       "author": "Ulrike",
