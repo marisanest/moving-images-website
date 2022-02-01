@@ -71,9 +71,7 @@
         padding: 5px 10px;
     }
 
-    .color,
-    .shapes,
-    .category {
+    .filter-items {
         display: flex;
         flex-flow: row wrap;
         flex-basis: 33.3%;
@@ -136,6 +134,12 @@
         font-size: 14px;
         line-height: 18px;
     }
+    .category-menu {
+        flex-flow: column;
+    }
+    .filter-list {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -165,7 +169,7 @@ html, body {
 }
 
 body {
-    font-family: abc;
+    font-family: 'Roboto Mono', monospace;
     background: #eaeceb;
     display: flex;
     flex-direction: column;
