@@ -142,12 +142,11 @@
         line-height: 18px;
     }
     .container {
-        padding: 1rem!important;
+        padding: 1rem !important;
     }
-
-    /*.footer {*/
-    /*    padding: 0 1.5rem 0.5rem!important;*/
-    /*}*/
+    .footer {
+        padding: 0 1.5rem 1.5rem 1.5rem!important;
+    }
 }
 
 html, body {
@@ -280,9 +279,9 @@ hr {
     display: none;
 }
 
-.footer {
+footer {
     flex-shrink: 0;
     max-width: 100%;
-    padding: 0.5rem 0.5rem 0 0.5rem;
+    padding: 0 2.5rem 2.5rem 2.5rem;
     opacity: 0.7;
 }
