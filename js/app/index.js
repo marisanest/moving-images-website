@@ -24,9 +24,6 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    let cachedWidth = $(window).width();
-    if ($(window).width() !== cachedWidth) {
-        let categoryMenu = $('.category-menu');
-        categoryMenu.css('height', categoryMenu.prop('scrollHeight') + "px");
-    }
+    let categoryMenu = $('.category-menu');
+    categoryMenu.css('max-height', categoryMenu.prop('scrollHeight') + "px");
 });
