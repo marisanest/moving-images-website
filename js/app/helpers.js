@@ -90,6 +90,8 @@ function initFilters() {
             }
 
             if (filterValue === '.about' || filterValue ==='.imprint') {
+                $(".filter").removeClass('is-checked');
+                if($(".collapsible").hasClass('active')) {$(".collapsible").click()}
                 $(".body-grid-item" + filterValue).removeClass('hidden');
                 filterValues = [filterValue];
             } else {
