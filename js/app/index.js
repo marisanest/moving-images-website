@@ -14,7 +14,7 @@ $(document).ready(function() {
                     },
 
                     {"<>":"div", "class": "filters overlay extra-small", "html": [
-                            {"<>": "div", "class": "flexoverlay", "html": [
+                            {"<>": "div", "class": "flex-overlay", "html": [
                                 {"<>":"a", "obj":function(){return(Object.values(this.filters).flat())}, "href": "#", "class": "filter overlay", "data-filter": ".${value}", "text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
                             }]                    
                     }]
@@ -29,14 +29,6 @@ $(document).ready(function() {
                     }]
             }]
     };
-
-    let filter_template = {
-        '<>':'div', 'obj':function(){return this}, 'class':'filter-list', 'html':[
-                {'<>':'span', 'class': 'filtertype small', 'html':function(){return Object.keys(this).join().charAt(0).toUpperCase() + Object.keys(this).join().substring(1)+":"}},
-                {'<>':'div', 'class':function(){return 'filter-items ' + Object.keys(this).join()}, 'html': [
-                        {'<>':'a', 'obj':function(){return Object.values(this).flat()}, 'href':'#','class':'filter small ${value}','data-filter':'.${value}',"text":function(){return this.value.charAt(0).toUpperCase() + this.value.substring(1)}}]
-                }]
-        };
 
     let headerGrid = $('.header-grid');
     let bodyGrid = $('.body-grid');
@@ -53,22 +45,30 @@ $(document).ready(function() {
             bodyGrid.json2html(data["images"], image_template);
             bodyGrid.json2html(data["texts"], text_template);
 
-            let allFilters = [];
+            let filterMap = new Map();
 
             for (let image of data.images) {
-                for (let filtertype in image.filters) {
-                    if(!(allFilters.some(e => e.hasOwnProperty(filtertype)))) {
-                        allFilters.push( {[filtertype]: image.filters[filtertype] })
+                for (let filterType in image.filters) {
+                    if(filterMap.has(filterType)) {
+                        filterMap.set(filterType, filterMap.get(filterType).add(...image.filters[filterType]))
                     } else {
-                        idx = allFilters.findIndex(obj => obj.hasOwnProperty(filtertype));
-                        allFilters[idx][filtertype] = allFilters[idx][filtertype].concat(image.filters[filtertype].filter((item) => allFilters[idx][filtertype].indexOf(item) < 0))
+                        filterMap.set(filterType, new Set(image.filters[filterType]))
                     }
-                    
                 }
-
             }
-            category.json2html(allFilters, filter_template);
 
+            let filterDict = {"filters": []};
+            filterMap.forEach(function(values, key) {
+                filterDict["filters"].push({"filter": {"type": key, "values": [...values]}});
+            });
+
+            $(".category-menu")
+                .html(
+                    Mustache.to_html(
+                        $("#filter-template").html(),
+                        filterDict
+                    )
+                );
         })
         .then(() => {
             headerGrid.isotope({

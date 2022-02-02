@@ -13,6 +13,7 @@
     <script src="../js/libs/jquery-3.6.0.slim.min.js"></script>
     <script src="../js/libs/isotope.pkgd.min.js"></script>
     <script src="../js/libs/json2html.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
     <script src="../js/app/index.js"></script>
 </head>
 
@@ -29,7 +30,21 @@
             </div>
         </div>       
     </div>
-    <div class="category-menu"></div> 
+    <div class="category-menu">
+        <script id="filter-template" type="text/template">
+                {{#filters}}
+                <div class="filter-list">
+                <span class="filter-type small">{{filter.type}}:</span>
+                <div class="filter-items {{filter.type}}">
+                {{#filter.values}}
+                    <a href="#" class="filter small {{.}}" data-filter={{.}}>{{.}}</a>
+                {{/filter.values}}
+                </div>
+                </div>
+                {{/filters}}
+        </script>
+    </div>
+
     <div class="body-grid">
         <div class="body-grid-sizer"></div>
     </div>
@@ -42,6 +57,5 @@
         <a href="https://github.com/marisanest/moving-images-website">here</a>
     </div>
 </div>
-
 </body>
 </html>

@@ -67,7 +67,7 @@
         max-width: 33.3%;
     }
 
-    .filtertype {
+    .filter-type {
         padding: 5px 10px;
     }
 
@@ -75,20 +75,6 @@
         display: flex;
         flex-flow: row wrap;
         flex-basis: 33.3%;
-    }
-}
-
-@media only screen and (max-width: 1912px) {
-    :root {
-        --grid-item--width: 14.2%;
-        --grid-item--width2: 28.5%;
-    }
-}
-
-@media only screen and (max-width: 1724px) {
-    :root {
-        --grid-item--width: 16.6%;
-        --grid-item--width2: 33.3%;
     }
 }
 
@@ -209,7 +195,7 @@ hr {
     width: var(--grid-item--width2);
 }
 
-.flexoverlay .filter,
+.flex-overlay .filter,
 .filter-list .filter ,
 .caption .filter  {
     border-radius: 25px;
@@ -227,7 +213,7 @@ hr {
     pointer-events: none; 
 }
 
-.flexoverlay {
+.flex-overlay {
     display: flex;
     flex-flow: row wrap;
 }
