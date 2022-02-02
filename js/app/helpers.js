@@ -62,28 +62,44 @@ function initIsotope(grid) {
 
 
 function initFilters() {
+    let filterValues = [];
+
     $('.filter').click(function() {
-        let filterValue;
+        let filterValue = $(this).attr('data-filter');
 
         if ($(this).is('.is-checked')) {
-            filterValue = '*';
-            $('.filter.is-checked').removeClass('is-checked');
-
-            if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
-                $($(this).attr('data-filter')).addClass('hidden');
+            if (filterValue === '.about' || filterValue ==='.imprint') {
+                $(".body-grid-item" + filterValue).addClass('hidden');
+                filterValues = ['*'];
+            } else {
+                filterValues = filterValues.filter(value => value !== filterValue);
+                if (!filterValues.length){
+                    filterValues = ['*'];
+                }
             }
 
+            $(".filter.is-checked[data-filter='" + filterValue + "']").removeClass('is-checked');
         } else {
-            filterValue = $(this).attr('data-filter');
-            $('.filter.is-checked').removeClass('is-checked');
-            $('#about, #imprint').addClass('hidden')
-            $(".filter[data-filter='"+filterValue+"']").addClass('is-checked');
-
-            if ($(this).is('#aboutButton') || $(this).is('#imprintButton')) {
-                $($(this).attr('data-filter')).removeClass('hidden');
+            if (filterValues.includes('*')) {
+                filterValues = [];
             }
+
+            if (filterValues.includes('.about') || filterValues.includes('.imprint')) {
+                $("[data-filter='.about'],[data-filter='.imprint']").removeClass('is-checked');
+                filterValues = [];
+            }
+
+            if (filterValue === '.about' || filterValue ==='.imprint') {
+                $(".body-grid-item" + filterValue).removeClass('hidden');
+                filterValues = [filterValue];
+            } else {
+                filterValues.push(filterValue);
+            }
+
+            $("[data-filter='" + filterValue + "']").addClass('is-checked');
         }
-        $('.body-grid').isotope({filter: filterValue});
+
+        $('.body-grid').isotope({filter: filterValues.join('')});
     });
 }
 
