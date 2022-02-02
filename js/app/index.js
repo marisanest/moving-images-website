@@ -24,6 +24,8 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    let categoryMenu = $('.category-menu');
-    categoryMenu.css('max-height', categoryMenu.prop('scrollHeight') + "px");
+    if (!$('.collapsible').hasClass('active')) {
+        let categoryMenu = $('.category-menu');
+        categoryMenu.css('max-height', categoryMenu.prop('scrollHeight') + "px");
+    }
 });
