@@ -12,50 +12,81 @@
     <script src="../js/libs/masonry.pkgd.min.js"></script>
     <script src="../js/libs/jquery-3.6.0.slim.min.js"></script>
     <script src="../js/libs/isotope.pkgd.min.js"></script>
-    <script src="../js/libs/json2html.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="../js/libs/mustache.min.js"></script>
+    <script src="../js/app/helpers.js"></script>
     <script src="../js/app/index.js"></script>
 </head>
 
 <body>
-<div class="container">
-    <div class="header">
-        <div class="title">
-            <a class="large" href="/app/index.html">Moving Images: <br/>Design with Code</a>
-        </div>
-        <div class="menu">
-            <a id="aboutButton" class="filter small-medium" href="#" data-filter=".about">About</a>
-            <div class="filters">
-                <div class="collapsible small-medium">Filters</div>
+<script id="template" type="text/template">
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <a class="large" href="/app/index.html">Moving Images: <br/>Design with Code</a>
             </div>
-        </div>       
-    </div>
-    <div class="category-menu">
-        <script id="filter-template" type="text/template">
-                {{#filters}}
-                <div class="filter-list">
-                <span class="filter-type small">{{filter.type}}:</span>
-                <div class="filter-items {{filter.type}}">
-                {{#filter.values}}
-                    <a href="#" class="filter small {{.}}" data-filter={{.}}>{{.}}</a>
-                {{/filter.values}}
+            <div class="menu">
+                <a id="aboutButton" class="filter small-medium" href="#" data-filter=".about">About</a>
+                <div class="filters">
+                    <div class="collapsible small-medium">Filters</div>
                 </div>
+            </div>
+        </div>
+        <div class="category-menu">
+            {{#filters}}
+            <div class="filter-list">
+                <span class="filter-type small">{{type.upper}}:</span>
+                <div class="filter-items {{type.lower}}">
+                    {{#values}}
+                    <a href="#" class="filter small {{lower}}" data-filter=".{{lower}}">{{upper}}</a>
+                    {{/values}}
                 </div>
-                {{/filters}}
-        </script>
+            </div>
+            {{/filters}}
+        </div>
+        <div class="body-grid">
+            <div class="body-grid-sizer"></div>
+            {{#images}}
+            <div class="body-grid-item {{author}} {{filters.joined}}">
+                <div class="image-caption-wrapper">
+                    <div class="image-wrapper">
+                        <a class="image-link" href="../app/show.html?data={{filename}}.frag">
+                            <img class="image" src="../data/images/{{filename}}.png">
+                        </a>
+                    </div>
+                    <div class="caption small">
+                        <a class="filter" data-filter=".{{author}}" href="#">{{author}}</a>
+                        <a href="../app/show.html?data={{filename}}.frag"> - {{title}}</a>
+                    </div>
+                    <div class="filters overlay extra-small">
+                        <div class="flex-overlay">
+                            {{#filters.separate}}
+                            {{#values}}
+                            <a href="#" class="filter overlay" data-filter=".{{lower}}">{{upper}}</a>
+                            {{/values}}
+                            {{/filters.separate}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/images}}
+            {{#texts}}
+            <div id={{filter}} class="hidden body-grid-item grid-item--width2 {{filter}}">
+                <div class="image-caption-wrapper">
+                    <div class="medium">
+                        <p class="medium">{{title}}</p>
+                        {{text}}
+                    </div>
+                </div>
+            </div>
+            {{/texts}}
+        </div>
+        <div class="footer extra-small">
+            <hr>
+            <a id="imprintButton" class="filter " href="#" data-filter=".imprint">Legal Notice</a>
+            <span> | Source Code can be found </span>
+            <a href="https://github.com/marisanest/moving-images-website">here</a>.
+        </div>
     </div>
-
-    <div class="body-grid">
-        <div class="body-grid-sizer"></div>
-    </div>
-</div>
-
-<div class="footer extra-small">
-        <hr>
-        <a id="imprintButton" class="filter " href="#" data-filter=".imprint">Legal Notice</a>
-        <span> | source code can be found </span>
-        <a href="https://github.com/marisanest/moving-images-website">here</a>
-    </div>
-</div>
+</script>
 </body>
 </html>
