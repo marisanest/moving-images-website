@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "ABCOracle";
+    src: url("ABCOraclePlusVariable.woff") format("woff-variations");
+    font-weight: 300 700;
+}
+
 @media only screen {
     :root {
         --grid-item--width: 20%;
@@ -157,7 +163,8 @@ html, body {
 }
 
 body {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'ABCOracle';
+    font-weight: 300;
     background: #eaeceb;
     display: flex;
     flex-direction: column;
@@ -227,13 +234,14 @@ hr {
     flex-direction: column;
 }
 
-.title a, .filter, .caption a {
+.title a, .filter, .caption a, span > a {
     text-decoration: none;
     color: black;
 }
 
 .title a:hover,
 .filter:hover,
+span > a:hover,
 .filter.is-checked {
     color: #ea1f4c;
 }
