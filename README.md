@@ -19,11 +19,7 @@ Please submit your shader in the following format:
     "format": "1:1"
   }
   ```
-To use textures upload your image into the folder `data/textures/`. In your shader add the URL as a comment next to the texture uniform. See [template_texture.frag](https://github.com/marisanest/moving-images-website/blob/108672c1e7638b19cbbb1f1baf713abc56f5b82d/shaders/template_texture.frag#L8) for reference.
-
-## How to add your name to the list of students
-
-* in the `data/data.json` file is a section for the students names. You can also add a link to your personal website or Instagram:
+* to add your name to the student list enter your name and a link to the students section in the `data/data.json` file.
 
   ```
   {
@@ -32,5 +28,8 @@ To use textures upload your image into the folder `data/textures/`. In your shad
   },
   
   ```
+To use textures upload your image into the folder `data/textures/`. In your shader add the URL as a comment next to the texture uniform. See [template_texture.frag](https://github.com/marisanest/moving-images-website/blob/108672c1e7638b19cbbb1f1baf713abc56f5b82d/shaders/template_texture.frag#L8) for reference.
+
+
 
 The lessons for the course can be found in [this repo](https://github.com/edap/udk-shaders)
