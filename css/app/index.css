@@ -204,6 +204,10 @@ hr {
     width: var(--grid-item--width2);
 }
 
+.grid-item--full {
+    width: 100%;
+}
+
 .flex-overlay .filter,
 .filter-list .filter ,
 .caption .filter  {
@@ -290,6 +294,22 @@ span > a:hover,
     display: none;
 }
 
+.about-body {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.about-body a {
+    text-decoration: underline;
+}
+
+.about-students {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     flex-shrink: 0;
     max-width: 100%;
@@ -299,4 +319,31 @@ footer {
 
 footer > span {
     line-height: 2.0rem;
+}
+
+.triple {
+    font-variation-settings: "TRIP" 1, "slnt" -13;
+}
+
+.dinamo:after {
+    content: '\F8FF';
+    font-size: 40px;
+    vertical-align: middle;
+
+    transition: font-variation-settings 0.3s ease;
+    animation-name: glyph-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    /*animation-timing-function: ease-in-out;*/
+    animation-timing-function: cubic-bezier(1., 0.5, 0., 0.5);
+}
+
+@keyframes glyph-animation {
+    from {
+        font-variation-settings: "TRIP" 0;
+    }
+    to {
+        font-variation-settings: "TRIP" 1;
+    }
 }

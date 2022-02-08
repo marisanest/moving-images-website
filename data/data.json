@@ -188,16 +188,34 @@
       "format": "1:1"
     }
   ],
-  "texts": [
+  "students" : [
     {
-      "title": "About",
-      "text": "The Shading Class at Universität der Künste Berlin … Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At",
-      "filter": "about"
+      "name": "Max Mustermann",
+      "link": "https://www.schulhomepage.de"
     },
     {
-      "title": "Legal Notice",
-      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor ",
-      "filter": "imprint"
+      "name": "Erika Musterfrau",
+      "link": "erikamusterfrau.com"
+    },
+    {
+      "name": "Esmae Burn",
+      "link": "erikamusterfrau.com"
+    },
+    {
+      "name": "Raul Garrett",
+      "link": "erikamusterfrau.com"
+    },
+    {
+      "name": "Daisie Barrett",
+      "link": "erikamusterfrau.com"
+    },
+    {
+      "name": "Aimie Reilly",
+      "link": "erikamusterfrau.com"
+    },
+    {
+      "name": "Nyah Dolan",
+      "link": "erikamusterfrau.com"
     }
   ]
 }
