@@ -88,7 +88,7 @@
     .about-body {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        gap: 20px;
+        gap: 25px;
         grid-template-areas: 
             "text   students" 
             "thanks students";
@@ -321,6 +321,7 @@ span > a:hover,
 
 .about-text {
     grid-area: text;
+    text-align: justify;
 }
 
 .about-thanks {
