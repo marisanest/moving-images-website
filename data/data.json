@@ -190,32 +190,24 @@
   ],
   "students" : [
     {
-      "name": "Max Mustermann",
-      "link": "https://www.schulhomepage.de"
+      "name": "Alex Hahn",
+      "link": ""
     },
     {
-      "name": "Erika Musterfrau",
-      "link": "erikamusterfrau.com"
+      "name": "Felix Müller",
+      "link": ""
     },
     {
-      "name": "Esmae Burn",
-      "link": "erikamusterfrau.com"
+      "name": "Lukas Esser",
+      "link": "https://lukasesser.co/"
     },
     {
-      "name": "Raul Garrett",
-      "link": "erikamusterfrau.com"
+      "name": "Marisa Nest",
+      "link": ""
     },
     {
-      "name": "Daisie Barrett",
-      "link": "erikamusterfrau.com"
-    },
-    {
-      "name": "Aimie Reilly",
-      "link": "erikamusterfrau.com"
-    },
-    {
-      "name": "Nyah Dolan",
-      "link": "erikamusterfrau.com"
+      "name": "Ulrike Rausch",
+      "link": ""
     }
   ]
 }
