@@ -353,7 +353,7 @@ footer > span {
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(1., 0.5, 0., 0.5);
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes glyph-animation {
