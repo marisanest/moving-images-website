@@ -114,6 +114,12 @@
         font-size: 16px;
         line-height: 27px;
     }
+    .about-body {
+        grid-template-areas: 
+            "text"   
+            "students" 
+            "thanks";
+    }
 }
 
 @media only screen and (max-width: 596px) {
@@ -154,7 +160,7 @@
         padding: 1rem !important;
     }
     .footer {
-        padding: 0 1.5rem 1.5rem 1.5rem!important;
+        padding: 0 1rem 1rem 1rem!important;
     }
 }
 
@@ -176,7 +182,7 @@ hr {
 
 .container {
     max-width: 100%;
-    padding: 2rem;
+    padding: 0rem 2rem;
     flex: 1 0 auto;
 }
 
@@ -296,9 +302,11 @@ span > a:hover,
 
 .about-body {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-areas: 
+        "text   students" 
+        "thanks thanks";
 }
 
 .about-body a {
@@ -306,8 +314,17 @@ span > a:hover,
 }
 
 .about-students {
+    grid-area: students;
     display: flex;
     flex-direction: column;
+}
+
+.about-text {
+    grid-area: text;
+}
+
+.about-thanks {
+    grid-area: thanks;
 }
 
 footer {
@@ -335,7 +352,6 @@ footer > span {
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    /*animation-timing-function: ease-in-out;*/
     animation-timing-function: cubic-bezier(1., 0.5, 0., 0.5);
 }
 
