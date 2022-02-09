@@ -186,6 +186,17 @@
         "category": ["pattern", "random", "fract", "length", "animated"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "Yun_01",
+      "title":  "01",
+      "author": "Yun",
+      "filters": {
+        "color": ["red", "black"],
+        "shapes": ["line"],
+        "category": ["pattern"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
@@ -208,6 +219,10 @@
     {
       "name": "Ulrike Rausch",
       "link": ""
+    },
+    {
+      "name": "Yun Kuo",
+      "link": "https://www.instagram.com/yunkuo__/"
     }
   ]
 }
