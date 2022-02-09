@@ -50,16 +50,10 @@
             {{#images}}
             <div class="body-grid-item {{author}} {{filters.joined}}">
                 <div class="image-caption-wrapper">
-                    <div class="image-wrapper">
-                        <a class="image-link" href="../app/show.html?data={{filename}}.frag">
-                            <img class="image" src="../data/images/{{filename}}.png">
-                        </a>
-                    </div>
-                    <div class="caption small">
-                        <a class="filter" data-filter=".{{author}}" href="#">{{author}}</a>
-                        <a href="../app/show.html?data={{filename}}.frag"> - {{title}}</a>
-                    </div>
-                    <div class="filters overlay extra-small">
+                    <a class="image-link" href="../app/show.html?data={{filename}}.frag">
+                        <img class="image" src="../data/images/{{filename}}.png">
+                    </a>
+                    <div class="filters overlay small">
                         <div class="flex-overlay">
                             {{#filters.separate}}
                             {{#values}}
@@ -67,6 +61,10 @@
                             {{/values}}
                             {{/filters.separate}}
                         </div>
+                    </div>
+                    <div class="caption small">
+                        <a class="filter" data-filter=".{{author}}" href="#">{{author}}</a>
+                        <a href="../app/show.html?data={{filename}}.frag">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</a>
                     </div>
                 </div>
             </div>

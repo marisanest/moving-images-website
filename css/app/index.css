@@ -226,24 +226,42 @@ hr {
 .flex-overlay .filter,
 .filter-list .filter ,
 .caption .filter  {
-    border-radius: 25px;
+    border-radius: 2rem;
     background: white;
-    padding: 5px 10px;
+    padding: .4rem .8rem;
     margin: 0.2rem;
-    pointer-events: all; 
+    pointer-events: all;
+    /*pointer-events: auto;  */
 }
 
 .filters.overlay {
     opacity: 0;
     position: absolute;
-    top: 15px;
-    left: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
     pointer-events: none; 
 }
 
 .flex-overlay {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
+}
+
+.caption {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem 0.7rem;
 }
 
 .menu {
@@ -264,6 +282,11 @@ span > a:hover,
 .filter.is-checked {
     color: #ea1f4c;
 }
+.image-caption-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
 
 .image-caption-wrapper:hover .image {
     opacity: 0.3;
@@ -277,12 +300,6 @@ span > a:hover,
     opacity: 1;
 }
 
-.image-wrapper {
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-}
-
 .image-link {
     position: absolute;
     top: 0;
@@ -294,15 +311,6 @@ span > a:hover,
 .image {
     width: 100%;
     max-height: 100%;
-}
-
-.caption {
-    opacity: 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    /*transform: translate(-50%, -50%);*/
-    padding: 15px 20px;
 }
 
 .hidden {
