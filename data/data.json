@@ -219,6 +219,61 @@
         "category": ["pattern"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "Dain_01",
+      "title":  "Merge Circles",
+      "author": "Dain",
+      "filters": {
+        "color": ["blue", "black"],
+        "shapes": ["circle"],
+        "category": ["random", "transform"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Dain_02",
+      "title":  "Merge Circles_02",
+      "author": "Dain",
+      "filters": {
+        "color": ["blue", "black"],
+        "shapes": ["circle"],
+        "category": ["random", "transform"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Dain_03",
+      "title":  "Light",
+      "author": "Dain",
+      "filters": {
+        "color": ["red", "black"],
+        "shapes": ["line", "circle", "curves"],
+        "category": ["random", "transform", "mix"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Dain_04",
+      "title":  "Mod",
+      "author": "Dain",
+      "filters": {
+        "color": ["silver", "black"],
+        "shapes": ["line", "rect"],
+        "category": ["random", "transform", "mod"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Dain_05",
+      "title":  "Mod2",
+      "author": "Dain",
+      "filters": {
+        "color": ["green", "black"],
+        "shapes": ["line", "rect", "circle"],
+        "category": ["random", "transform", "mod", "sin", "cos", "distance"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
@@ -245,6 +300,10 @@
     {
       "name": "Yun Kuo",
       "link": "https://www.instagram.com/yunkuo__/"
+    },
+    {
+      "name": "Dain Park",
+      "link": "https://github.com/DainPark-web"
     }
   ]
 }
