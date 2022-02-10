@@ -265,7 +265,7 @@ hr {
     }
 
     .image-caption-wrapper:hover .caption,
-    .image-caption-wrapper:hover .caption {
+    .image-caption-wrapper:hover .filters.overlay {
         opacity: 1;
     }
 }
