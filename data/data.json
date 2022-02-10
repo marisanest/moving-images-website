@@ -34,6 +34,28 @@
       "format": "1:1"
     },
     {
+      "filename": "Lukas_SimplexCircle",
+      "title":  "Simplex Circle",
+      "author": "Lukas",
+      "filters": {
+        "color": ["white", "black"],
+        "shapes": ["circle"],
+        "category": ["SDF", "noise"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Lukas_SimplexSymmetry",
+      "title":  "Simplex Symmetry",
+      "author": "Lukas",
+      "filters": {
+        "color": ["white", "black"],
+        "shapes": ["circle"],
+        "category": ["SDF", "noise"]
+      },
+      "format": "1:1"
+    },
+    {
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
@@ -186,6 +208,17 @@
         "category": ["pattern", "random", "fract", "length", "animated"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "Yun_01",
+      "title":  "01",
+      "author": "Yun",
+      "filters": {
+        "color": ["red", "black"],
+        "shapes": ["line"],
+        "category": ["pattern"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
@@ -208,6 +241,10 @@
     {
       "name": "Ulrike Rausch",
       "link": ""
+    },
+    {
+      "name": "Yun Kuo",
+      "link": "https://www.instagram.com/yunkuo__/"
     }
   ]
 }

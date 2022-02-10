@@ -231,7 +231,6 @@ hr {
     padding: .4rem .8rem;
     margin: 0.2rem;
     pointer-events: all;
-    /*pointer-events: auto;  */
 }
 
 .filters.overlay {
@@ -271,33 +270,36 @@ hr {
     flex-direction: column;
 }
 
-.title a, .filter, .caption a, span > a {
-    text-decoration: none;
-    color: black;
-}
-
-.title a:hover,
-.filter:hover,
-span > a:hover,
-.filter.is-checked {
-    color: #ea1f4c;
-}
 .image-caption-wrapper {
     width: 100%;
     padding-top: 100%;
     position: relative;
 }
 
-.image-caption-wrapper:hover .image {
-    opacity: 0.3;
+@media (hover: hover) {
+    .title a:hover,
+    .filter:hover,
+    span > a:hover {
+        color: #ea1f4c;
+    }
+
+    .image-caption-wrapper:hover .image {
+        opacity: 0.3;
+    }
+
+    .image-caption-wrapper:hover .caption,
+    .image-caption-wrapper:hover .filters.overlay {
+        opacity: 1;
+    }
 }
 
-.image-caption-wrapper:hover .caption {
-    opacity: 1;
+.filter.is-checked {
+    color: #ea1f4c !important;
 }
 
-.image-caption-wrapper:hover .filters.overlay {
-    opacity: 1;
+.title a, .filter, .caption a, span > a {
+    text-decoration: none;
+    color: black !important;
 }
 
 .image-link {
