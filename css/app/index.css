@@ -225,7 +225,7 @@ hr {
 
 .flex-overlay .filter,
 .filter-list .filter ,
-.caption .filter  {
+.image-caption .filter  {
     border-radius: 2rem;
     background: white;
     padding: .4rem .8rem;
@@ -250,7 +250,7 @@ hr {
     align-items: center;
 }
 
-.caption {
+.image-caption {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -270,50 +270,57 @@ hr {
     flex-direction: column;
 }
 
-.image-caption-wrapper {
+.image-wrapper {
     width: 100%;
     padding-top: 100%;
     position: relative;
 }
 
 @media (hover: hover) {
-    .title a:hover,
-    .filter:hover,
-    span > a:hover {
-        color: #ea1f4c;
-    }
+    /*todo: following is not working*/
+    /*.title a:hover,*/
+    /*.filter:hover,*/
+    /*span > a:hover {*/
+    /*    color: #ea1f4c;*/
+    /*}*/
 
-    .image-caption-wrapper:hover .image {
+    .image-wrapper:hover .image {
         opacity: 0.3;
     }
 
-    .image-caption-wrapper:hover .caption,
-    .image-caption-wrapper:hover .filters.overlay {
+    .image-wrapper:hover .image-caption,
+    .image-wrapper:hover .filters.overlay {
         opacity: 1;
     }
+}
+.filter {
+    cursor: pointer;
 }
 
 .filter.is-checked {
     color: #ea1f4c !important;
 }
 
-.title a, .filter, .caption a, span > a {
+.title a {
     text-decoration: none;
     color: black !important;
 }
 
-.image-link {
+.image {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-}
-
-.image {
     width: 100%;
     max-height: 100%;
 }
+
+/*.image > img {*/
+/*    */
+/*    width: 100%;*/
+/*    max-height: 100%;*/
+/*}*/
 
 .hidden {
     display: none;
