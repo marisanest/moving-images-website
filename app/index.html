@@ -22,10 +22,10 @@
     <div class="container">
         <div class="header">
             <div class="title">
-                <a class="large" href="/app/index.html">Moving Images: <br/>Design with Code</a>
+                <a class="large" href="/app/index.html">Moving Images:<br/>Design with Code</a>
             </div>
             <div class="menu">
-                <div class="filter small-medium" data-filter=".about">About</div>
+                <div class="filter small-medium" filter-value=".about">About</div>
                 <div class="filters">
                     <div class="collapsible small-medium">Filters</div>
                 </div>
@@ -38,7 +38,7 @@
                 <span class="filter-type small">{{type.upper}}:</span>
                 <div class="filter-items {{type.lower}}">
                     {{#values}}
-                    <div class="filter small" data-filter=".{{lower}}">{{upper}}</div>
+                    <div class="filter small" filter-value=".{{lower}}">{{upper}}</div>
                     {{/values}}
                 </div>
             </div>
@@ -51,23 +51,28 @@
             <div class="body-grid-item {{author}} {{filters.joined}}">
                 <div class="image-wrapper">
                     <img class="image" src="../data/images/{{filename}}.png" alt={{filename}} href="../app/show.html?data={{filename}}.frag">
-                    <div class="filters overlay">
-                        <div class="flex-overlay">
+                    <div class="image-filters-wrapper">
+                        <div class="image-filters">
                             {{#filters.separate}}
                             {{#values}}
-                            <div class="filter overlay small" data-filter=".{{lower}}">{{upper}}</div>
+                            <div class="image-filter filter small" filter-value=".{{lower}}">{{upper}}</div>
                             {{/values}}
                             {{/filters.separate}}
                         </div>
                     </div>
-                    <div class="image-caption small">
-                        <div class="filter" data-filter=".{{author}}">{{author}}</div>
-                        <div class="image-title" href="../app/show.html?data={{filename}}.frag">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</div>
+                    <div class="image-show-wrapper">
+                        <div class="image-show">
+                            <div class="image-show-eye small" href="../app/show.html?data={{filename}}.frag">&#128065;</div>
+                        </div>
+                    </div>
+                    <div class="image-caption">
+                        <div class="image-author filter small" filter-value=".{{author}}">{{author}}</div>
+                        <div class="image-title small" href="../app/show.html?data={{filename}}.frag">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</div>
                     </div>
                 </div>
             </div>
             {{/images}}
-            <div class="hidden body-grid-item grid-item--full about">
+            <div class="body-grid-item grid-item--full about hidden">
                 <p class="medium">About</p>
                 <div class="small-medium about-body">
                     <div class="about-text">

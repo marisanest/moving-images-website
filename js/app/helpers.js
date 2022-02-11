@@ -49,7 +49,6 @@ function prepareLowerUpperText(value) {
     }
 }
 
-
 function initIsotope(grid) {
     $('.' + grid).isotope({
         itemSelector: '.' + grid + '-item',
@@ -60,14 +59,18 @@ function initIsotope(grid) {
     });
 }
 
-
 function initFilters() {
     let filterValues = [];
 
     $('.filter').click(function() {
-        let filterValue = $(this).attr('data-filter');
+        let filter = $(this);
+        let filterValue = filter.attr('filter-value');
 
-        if ($(this).is('.is-checked')) {
+        if(filter.is(".disabled")){
+            return;
+        }
+
+        if (filter.is('.active')) {
             if (filterValue === '.about' || filterValue ==='.imprint') {
                 $(".body-grid-item" + filterValue).addClass('hidden');
                 filterValues = ['*'];
@@ -78,19 +81,19 @@ function initFilters() {
                 }
             }
 
-            $(".filter.is-checked[data-filter='" + filterValue + "']").removeClass('is-checked');
+            $(".filter.active[filter-value='" + filterValue + "']").removeClass('active');
         } else {
             if (filterValues.includes('*')) {
                 filterValues = [];
             }
 
             if (filterValues.includes('.about') || filterValues.includes('.imprint')) {
-                $("[data-filter='.about'],[data-filter='.imprint']").removeClass('is-checked');
+                $("[filter-value='.about'],[filter-value='.imprint']").removeClass('active');
                 filterValues = [];
             }
 
             if (filterValue === '.about' || filterValue ==='.imprint') {
-                $(".filter").removeClass('is-checked');
+                $(".filter").removeClass('active');
                 if($(".collapsible").hasClass('active')) {$(".collapsible").click()}
                 $(".body-grid-item" + filterValue).removeClass('hidden');
                 filterValues = [filterValue];
@@ -98,7 +101,7 @@ function initFilters() {
                 filterValues.push(filterValue);
             }
 
-            $("[data-filter='" + filterValue + "']").addClass('is-checked');
+            $("[filter-value='" + filterValue + "']").addClass('active');
         }
 
         $('.body-grid').isotope({filter: filterValues.join('')});
@@ -117,4 +120,37 @@ function initCollapsible() {
             filterList.css('maxHeight', filterList.prop('scrollHeight') + "px");
         }
     });
+}
+
+function initImages() {
+    if (window.matchMedia('(hover: hover)').matches) {
+        $(".image-title, .image").click(function() {
+            window.location = $(this).attr('href');
+        });
+    } else {
+        $(".image-filter").addClass("disabled");
+
+        $(".image-wrapper").click(function(event) {
+            let imageWrapper = $(this);
+            let eventTarget = $(event.target);
+
+            if (imageWrapper.is('.active')){
+                if(eventTarget.is(".image-show-eye")){
+                    window.location = eventTarget.attr('href');
+                }
+                else if(eventTarget.is(".image-title")){
+                    window.location = eventTarget.attr('href');
+                } else if (!eventTarget.is(".image-filter, .image-author")) {
+                    imageWrapper.removeClass("active");
+                    imageWrapper.find(".image-filter").addClass("disabled");
+                }
+            } else {
+                $(".image-wrapper.active .image-filter").addClass("disabled");
+                $(".image-wrapper.active").removeClass("active");
+
+                imageWrapper.addClass("active");
+                imageWrapper.find(".image-filter").removeClass("disabled");
+            }
+        });
+    }
 }

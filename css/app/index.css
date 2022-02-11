@@ -7,7 +7,6 @@
 @media only screen {
     :root {
         --grid-item--width: 20%;
-        --grid-item--width2: 40%;
     }
 
     .large {
@@ -54,7 +53,7 @@
         cursor: n-resize;
     }
 
-    .active:after {
+    .collapsible.active:after {
         content: "\2212";
     }
 
@@ -97,23 +96,17 @@
 
 @media only screen and (max-width: 1394px) {
     :root{
-        --grid-item--width: 20%;
-        --grid-item--width2: 40%;
+        --grid-item--width: 25%;
     }
 }
 
 @media only screen and (max-width: 965px) {
     :root {
-        --grid-item--width: 25%;
-        --grid-item--width2: 50%;
+        --grid-item--width: 33.3%;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    :root {
-        --grid-item--width: 33.3%;
-        --grid-item--width2: 66.6%;
-    }
+@media only screen and (max-width: 840px) {
     .large {
         font-size: 25px;
         line-height: 27px;
@@ -131,10 +124,9 @@
     }
 }
 
-@media only screen and (max-width: 596px) {
+@media only screen and (max-width: 675px) {
     :root {
         --grid-item--width: 50%;
-        --grid-item--width2: 100%;
     }
     .large {
         font-size: 23px;
@@ -152,18 +144,28 @@
     }
 }
 
+@media only screen and (max-width: 575px) {
+    :root {font-size: 16px;}
+
+
+    .small-medium {
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+    }
+
+    .small {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     :root {
         --grid-item--width: 49%;
-        --grid-item--width2: 100%;
     }
     .large {
         font-size: 23px;
         line-height: 25px;
-    }
-    .small-medium {
-        font-size: 14px;
-        line-height: 18px;
     }
     .container {
         padding: 1rem !important;
@@ -191,7 +193,7 @@ hr {
 
 .container {
     max-width: 100%;
-    padding: 2rem 2rem 0rem;
+    padding: 2rem 2rem 0;
     flex: 1 0 auto;
 }
 
@@ -215,17 +217,14 @@ hr {
     padding: 0.5rem;
 }
 
-.grid-item--width2 {
-    width: var(--grid-item--width2);
-}
-
 .grid-item--full {
     width: 100%;
 }
 
-.flex-overlay .filter,
 .filter-list .filter ,
-.image-caption .filter  {
+.image-filter,
+.image-author,
+.image-show-eye {
     border-radius: 2rem;
     background: white;
     padding: .4rem .8rem;
@@ -233,21 +232,50 @@ hr {
     pointer-events: all;
 }
 
-.filters.overlay {
-    opacity: 0;
+.image-wrapper {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-filters-wrapper {
     position: absolute;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    max-height: 75%;
     top: 0;
     left: 0;
     padding: 0.5rem;
-    pointer-events: none; 
+    overflow: hidden;
 }
 
-.flex-overlay {
+.image-filters {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+}
+
+.image-filter {
+    opacity: 0;
+}
+
+.image-show-wrapper {
+    position: absolute;
+    max-width: 20%;
+    max-height: 75%;
+    top:  0.5rem;
+    right: 0.5rem;
+    overflow: hidden;
+}
+
+.image-show {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.image-show-eye {
+    opacity: 0;
 }
 
 .image-caption {
@@ -270,14 +298,8 @@ hr {
     flex-direction: column;
 }
 
-.image-wrapper {
-    width: 100%;
-    padding-top: 100%;
-    position: relative;
-}
-
 @media (hover: hover) {
-    /*todo: following is not working*/
+    /* todo: following is not working */
     /*.title a:hover,*/
     /*.filter:hover,*/
     /*span > a:hover {*/
@@ -287,23 +309,39 @@ hr {
     .image-wrapper:hover .image {
         opacity: 0.3;
     }
-
     .image-wrapper:hover .image-caption,
-    .image-wrapper:hover .filters.overlay {
+    .image-wrapper:hover .image-filter,
+    .image-wrapper:hover .image-show-eye {
         opacity: 1;
     }
 }
+
+@media (hover: none) {
+    .image-wrapper.active .image {
+        opacity: 0.3;
+    }
+    .image-wrapper.active .image-caption,
+    .image-wrapper.active .image-filter,
+    .image-wrapper.active .image-show-eye {
+        opacity: 1;
+    }
+}
+
+
 .filter {
     cursor: pointer;
 }
 
-.filter.is-checked {
+.filter.active {
     color: #ea1f4c !important;
+}
+
+a {
+    color: black !important;
 }
 
 .title a {
     text-decoration: none;
-    color: black !important;
 }
 
 .image {
@@ -316,18 +354,8 @@ hr {
     max-height: 100%;
 }
 
-/*.image > img {*/
-/*    */
-/*    width: 100%;*/
-/*    max-height: 100%;*/
-/*}*/
-
 .hidden {
     display: none;
-}
-
-.about-body a {
-    text-decoration: underline;
 }
 
 .about-students {

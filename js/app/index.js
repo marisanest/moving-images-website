@@ -20,10 +20,7 @@ $(document).ready(function() {
             initIsotope("body-grid");
             initFilters();
             initCollapsible();
-
-            $(".title, .image").click(function() {
-                window.location = $(this).attr('href');
-            });
+            initImages();
         });
 });
 
