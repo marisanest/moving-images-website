@@ -124,6 +124,8 @@ function initCollapsible() {
 
 function initImages() {
     if (window.matchMedia('(hover: hover)').matches) {
+        $(".image-show-wrapper").remove();
+
         $(".image-title, .image").click(function() {
             window.location = $(this).attr('href');
         });
