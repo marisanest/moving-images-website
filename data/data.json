@@ -305,7 +305,7 @@
       "filters": {
         "color": ["yellow", "blue", "pink"],
         "shapes": ["rect", "circle"],
-        "category": ["sin", "cos", "mix"]
+        "category": ["sin", "cos", "fract","pattern"]
       },
       "format": "1:1"
     }
