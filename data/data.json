@@ -274,6 +274,17 @@
         "category": ["random", "transform", "mod", "sin", "cos", "distance"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "jiawen_bpm",
+      "title":  "bpm",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["yellow", "blue"],
+        "shapes": ["rect", "circle"],
+        "category": ["sin", "cos", "mix"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
@@ -304,6 +315,10 @@
     {
       "name": "Dain Park",
       "link": "https://github.com/DainPark-web"
+    },
+    {
+      "name": "Jiawen Wang",
+      "link": "https://wang-jiawen.com"
     }
   ]
 }
