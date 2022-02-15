@@ -298,6 +298,18 @@
       "format": "1:1"
     }
   ],
+  {
+      "filename": "Yun_GradientCurves",
+      "title":  "Gradient and Curves",
+      "author": "Yun",
+      "filters": {
+        "color": ["yellow", "blue", "pink"],
+        "shapes": ["rect", "circle"],
+        "category": ["sin", "cos", "mix"]
+      },
+      "format": "1:1"
+    }
+  ],
   "students" : [
     {
       "name": "Alex Hahn",
