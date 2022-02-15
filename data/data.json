@@ -307,6 +307,17 @@
         "category": ["sin", "cos", "fract","pattern"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "Yun_ciiiiircles",
+      "title":  "Ciiiiircles",
+      "author": "Yun",
+      "filters": {
+        "color": ["yellow", "blue", "pink", "oramge"],
+        "shapes": ["circle"],
+        "category": ["sin", "cos", "noise","pattern"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
