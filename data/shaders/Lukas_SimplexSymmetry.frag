@@ -3,29 +3,13 @@
     precision mediump float;
 #endif
 
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+uniform float u_time;
+
 float ball(vec2 uv, vec2 center, float radius)
 {
     return length(uv/center) - radius;
-}
-
-float fill(float dist,float size){
-    return smoothstep(dist,dist,size);
-}
-
-float sdParabola( in vec2 pos, in float wi, in float he )
-{
-    pos.x = abs(pos.x);
-    float ik = wi*wi/he;
-    float p = ik*(he-pos.y-0.5*ik)/3.0;
-    float q = pos.x*ik*ik*0.25;
-    float h = q*q - p*p*p;
-    float r = sqrt(abs(h));
-    float x = (h>0.0) ? 
-        pow(q+r,1.0/3.0) - pow(abs(q-r),1.0/3.0)*sign(r-q) :
-        2.0*cos(atan(r/q)/3.0)*sqrt(p);
-    x = min(x,wi);
-    return length(pos-vec2(x,he-x*x/ik)) * 
-           sign(ik*(pos.y-he)+pos.x*pos.x);
 }
 
 // Simplex 2D noise
@@ -60,13 +44,7 @@ float snoise(vec2 v){
 }
 
 float rand(float n){return fract(sin(n) * 43758.5453123);}
-
 float hash(vec2 p) { return fract(1e4 * sin(17.0 * p.x + p.y * 0.1) * (0.1 + abs(sin(p.y * 13.0 + p.x)))); }
-
-
-uniform vec2 u_resolution;
-uniform vec2 u_mouse;
-uniform float u_time;
 
 void main() {
     vec2 st = gl_FragCoord.xy / u_resolution * 2. -1.;
@@ -74,16 +52,8 @@ void main() {
 
     st *= 2.;
 
-    vec2 coord = st;
-
-    vec3 fg = vec3(0.3725, 0.5255, 0.4667);
-    vec3 bg = vec3(0.0, 0.0, 0.0);
-
     float s = sin(u_time);
     float c = cos(u_time);
-
-        
-
 
     float sx = 2. * snoise(vec2(u_time*0.005, sin(u_time)*0.05));
     float sy = 2. * snoise(vec2(u_time*0.003, cos(u_time)*0.03));
@@ -92,16 +62,11 @@ void main() {
     float circles = 1.;
     vec2 p = (2.0*gl_FragCoord.xy-u_resolution.xy)/u_resolution.y;
     circles = ball(st, vec2(0.), .2);
-    // circles *= ball(coord, vec2(sx, sy), .2);
 
     for(int i = 0; i < 15; i++) {
         vec2 sn = vec2(snoise(vec2(float(i),u_time*0.09)), snoise(vec2(u_time*0.07, float(i)))) * 2.;
-        circles *= ball(coord, vec2(sn), float(i)*0.07);
+        circles *= ball(st, vec2(sn), float(i)*0.07);
     }
-
-
-
-    // circles = fill(circles, .001);
 
     gl_FragColor = vec4(circles);
 }

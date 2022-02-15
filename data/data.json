@@ -56,6 +56,17 @@
       "format": "1:1"
     },
     {
+      "filename": "Lukas_Stretch",
+      "title":  "Stretch",
+      "author": "Lukas",
+      "filters": {
+        "color": ["green", "orange", "white"],
+        "shapes": ["line"],
+        "category": ["texture"]
+      },
+      "format": "1:1"
+    },
+    {
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
