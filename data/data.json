@@ -450,6 +450,17 @@
         "category": ["noise"]
       },
       "format": "1:1"
+    },
+     {
+      "filename": "Yun_GridComposition_2",
+      "title":  "Grid Composition 02",
+      "author": "Yun",
+      "filters": {
+        "color": ["orange","green"],
+        "shapes": ["line"],
+        "category": ["pattern", "sin"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
