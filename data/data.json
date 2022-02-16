@@ -221,8 +221,8 @@
       "format": "1:1"
     },
     {
-      "filename": "Yun_01",
-      "title":  "01",
+      "filename": "Yun_GridComposition",
+      "title":  "Grid and Composition",
       "author": "Yun",
       "filters": {
         "color": ["red", "black"],
