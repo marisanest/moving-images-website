@@ -222,7 +222,7 @@
     },
     {
       "filename": "Yun_GridComposition",
-      "title":  "Grid and Composition",
+      "title":  "Grid and Composition 01",
       "author": "Yun",
       "filters": {
         "color": ["red", "black"],
@@ -453,7 +453,7 @@
     },
      {
       "filename": "Yun_GridComposition_2",
-      "title":  "Grid Composition 02",
+      "title":  "Grid and Composition 02",
       "author": "Yun",
       "filters": {
         "color": ["orange","green"],
