@@ -297,6 +297,51 @@
       },
       "format": "1:1"
     },
+    ,
+    {
+      "filename": "jiawen_depth",
+      "title":  "depth",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["black", "blue","gray","white"],
+        "shapes": ["rect"],
+        "category": ["sin", "cos", "transform","pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_sims",
+      "title":  "sims",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["multiple"],
+        "shapes": ["circle"],
+        "category": ["sin","transform","texture","mod"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_light",
+      "title":  "light",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rhombus"],
+        "category": ["random"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_noise",
+      "title":  "noise",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rect"],
+        "category": ["random"]
+      },
+      "format": "1:1"
+    },
     {
       "filename": "Yun_GradientCurves",
       "title":  "Gradient and Curves",
