@@ -439,7 +439,7 @@
         "category": ["pattern","transform", "sin"]
       },
       "format": "1:1"
-    },
+    }
   ],
   "students" : [
     {
@@ -477,6 +477,6 @@
     {
       "name": "Tsingyun Zhang",
       "link": "https://www.instagram.com/tsingyun_zh/"
-    },
+    }
   ]
 }
