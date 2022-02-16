@@ -368,7 +368,7 @@
       "title":  "SIN|COS MOVEMENT",
       "author": "Felix",
       "filters": {
-        "color": ["green", "blue"],
+        "color": ["blue"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
       },
