@@ -373,7 +373,73 @@
         "category": ["sin", "cos"]
       },
       "format": "1:1"
-    }
+    },
+    {
+      "filename": "Tsingyun_FireHearts",
+      "title":  "Fire_Hearts",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["red", "black"],
+        "shapes": ["heart", "circle"],
+        "category": ["sin", "cos", "noise","pattern"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Tsingyun_Hearts",
+      "title":  "Hearts",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["pink"],
+        "shapes": ["heart", "circle"],
+        "category": ["sin", "cos", "noise","pattern"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Tsingyun_Ripples",
+      "title":  "Ripples",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["red","orange"],
+        "shapes": ["ripple", "circle"],
+        "category": ["noise","pattern","transform", "mod"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Tsingyun_Ripples02",
+      "title":  "Ripples02",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["blue","violet"],
+        "shapes": ["ripple", "circle"],
+        "category": ["noise","pattern","transform", "sin"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Tsingyun_StarryNight",
+      "title":  "Starry_Night",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["black","white","red","blue"],
+        "shapes": ["moon", "circle"],
+        "category": ["noise","pattern","transform", "sin"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Tsingyun_Wave",
+      "title":  "Wave",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["blue","violet","pink","yellow"],
+        "shapes": ["rect", "circle"],
+        "category": ["pattern","transform", "sin"]
+      },
+      "format": "1:1"
+    },
   ],
   "students" : [
     {
@@ -407,6 +473,10 @@
     {
       "name": "Jiawen Wang",
       "link": "https://wang-jiawen.com"
-    }
+    },
+    {
+      "name": "Tsingyun Zhang",
+      "link": "https://www.instagram.com/tsingyun_zh/"
+    },
   ]
 }
