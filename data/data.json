@@ -318,6 +318,61 @@
         "category": ["sin", "cos", "noise","pattern"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "Felix_01",
+      "title":  "Waves",
+      "author": "Felix",
+      "filters": {
+        "color": ["white", "blue"],
+        "shapes": ["circle"],
+        "category": ["noise"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_02",
+      "title":  "Ofset",
+      "author": "Felix",
+      "filters": {
+        "color": ["red", "green"],
+        "shapes": ["rect"],
+        "category": ["pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_03",
+      "title":  "Circular Move",
+      "author": "Felix",
+      "filters": {
+        "color": ["black", "blue"],
+        "shapes": ["circle"],
+        "category": ["sin", "cos"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_04",
+      "title":  "Transition",
+      "author": "Felix",
+      "filters": {
+        "color": ["white", "blue"],
+        "shapes": ["circle", "rect"],
+        "category": ["pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_05",
+      "title":  "SIN|COS MOVEMENT",
+      "author": "Felix",
+      "filters": {
+        "color": ["green", "blue"],
+        "shapes": ["circle"],
+        "category": ["sin", "cos"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
@@ -327,7 +382,7 @@
     },
     {
       "name": "Felix Müller",
-      "link": ""
+      "link": "https://muellerfelix.de/"
     },
     {
       "name": "Lukas Esser",
