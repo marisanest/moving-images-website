@@ -40,13 +40,13 @@ vec2 old_st = st;
 st.x += sin(st.y);
 st.y += sin(old_st.x);
 st.x = fract(old_st.x / 0.6);
-st.y = fract(abs(st.y * abs(sin(u_time/ 10.0))));
+st.y = fract(abs(st.y * abs(sin(u_time/ 3.0))));
 
-vec3 color = vec3(st.x, .7 , .8);
-vec3 boxColor = vec3(.4, st.x, .8);
+vec3 color = vec3(st.x, .8 , sin(st.y) + 0.2);
+vec3 boxColor = vec3(1., .9, st.x);
 
 vec2 boxPos = st - vec2(.5);
-boxPos = scale(vec2(sin(u_time/ 2.0) * 0.9)) * st;
+boxPos = scale(vec2(sin(u_time / 15.) * 0.9)) * st;
 float b1 = box(boxPos, vec2(0.2));
 b1 = fill(b1, .1);
 color = mix(boxColor, color, b1);
