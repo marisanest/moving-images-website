@@ -439,6 +439,17 @@
         "category": ["pattern","transform", "sin"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "Yun_NoiseInk",
+      "title":  "Noise Ink",
+      "author": "Yun",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rect"],
+        "category": ["noise"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
