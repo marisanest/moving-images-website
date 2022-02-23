@@ -28,7 +28,7 @@ Please submit your shader in the following format:
   },
   
   ```
-To use textures upload your image into the folder `data/textures/`. In your shader add the URL as a comment next to the texture uniform. See [template_texture.frag](https://github.com/marisanest/moving-images-website/blob/108672c1e7638b19cbbb1f1baf713abc56f5b82d/shaders/template_texture.frag#L8) for reference.
+To use textures upload your image into the folder `data/textures/`. In your shader add the URL as a comment next to the texture uniform. See [template_texture.frag](https://github.com/marisanest/moving-images-website/blob/12aaf0d8f17b78e29d18d446de664de9d336bffc/data/textures/template_texture.frag#L8) for reference.
 
 
 

@@ -56,6 +56,17 @@
       "format": "1:1"
     },
     {
+      "filename": "Lukas_Stretch",
+      "title":  "Stretch",
+      "author": "Lukas",
+      "filters": {
+        "color": ["green", "orange", "white"],
+        "shapes": ["line"],
+        "category": ["texture"]
+      },
+      "format": "1:1"
+    },
+    {
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
@@ -210,8 +221,8 @@
       "format": "1:1"
     },
     {
-      "filename": "Yun_01",
-      "title":  "01",
+      "filename": "Yun_GridComposition",
+      "title":  "Grid and Composition 01",
       "author": "Yun",
       "filters": {
         "color": ["red", "black"],
@@ -274,6 +285,226 @@
         "category": ["random", "transform", "mod", "sin", "cos", "distance"]
       },
       "format": "1:1"
+    },
+    {
+      "filename": "jiawen_bpm",
+      "title":  "bpm",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["yellow", "blue"],
+        "shapes": ["rect", "circle"],
+        "category": ["sin", "cos", "mix"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_depth",
+      "title":  "depth",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["black", "blue","gray","white"],
+        "shapes": ["rect"],
+        "category": ["sin", "cos", "transform","pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_sims",
+      "title":  "sims",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["multiple"],
+        "shapes": ["circle"],
+        "category": ["sin","transform","texture","mod"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_light",
+      "title":  "light",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rhombus"],
+        "category": ["random"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "jiawen_noise",
+      "title":  "noise",
+      "author": "Jiawen",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rect"],
+        "category": ["random"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Yun_GradientCurves",
+      "title":  "Gradient and Curves",
+      "author": "Yun",
+      "filters": {
+        "color": ["yellow", "blue", "pink"],
+        "shapes": ["rect", "circle"],
+        "category": ["sin", "cos", "fract","pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Yun_ciiiiircles",
+      "title":  "Ciiiiircles",
+      "author": "Yun",
+      "filters": {
+        "color": ["yellow", "blue", "pink", "oramge"],
+        "shapes": ["circle"],
+        "category": ["sin", "cos", "noise","pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_01",
+      "title":  "Waves",
+      "author": "Felix",
+      "filters": {
+        "color": ["white", "blue"],
+        "shapes": ["circle"],
+        "category": ["noise"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_02",
+      "title":  "Ofset",
+      "author": "Felix",
+      "filters": {
+        "color": ["red", "green"],
+        "shapes": ["rect"],
+        "category": ["pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_03",
+      "title":  "Circular Move",
+      "author": "Felix",
+      "filters": {
+        "color": ["black", "blue"],
+        "shapes": ["circle"],
+        "category": ["sin", "cos"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_04",
+      "title":  "Transition",
+      "author": "Felix",
+      "filters": {
+        "color": ["white", "blue"],
+        "shapes": ["circle", "rect"],
+        "category": ["pattern"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Felix_05",
+      "title":  "SIN|COS MOVEMENT",
+      "author": "Felix",
+      "filters": {
+        "color": ["blue"],
+        "shapes": ["circle"],
+        "category": ["sin", "cos"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Tsingyun_FireHearts",
+      "title":  "Fire_Hearts",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["red", "black"],
+        "shapes": ["heart", "circle"],
+        "category": ["sin", "cos", "noise","pattern"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Tsingyun_Hearts",
+      "title":  "Hearts",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["pink"],
+        "shapes": ["heart", "circle"],
+        "category": ["sin", "cos", "noise","pattern"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Tsingyun_Ripples",
+      "title":  "Ripples",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["red","orange"],
+        "shapes": ["ripple", "circle"],
+        "category": ["noise","pattern","transform", "mod"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Tsingyun_Ripples02",
+      "title":  "Ripples02",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["blue","violet"],
+        "shapes": ["ripple", "circle"],
+        "category": ["noise","pattern","transform", "sin"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Tsingyun_StarryNight",
+      "title":  "Starry_Night",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["black","white","red","blue"],
+        "shapes": ["moon", "circle"],
+        "category": ["noise","pattern","transform", "sin"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Tsingyun_Wave",
+      "title":  "Wave",
+      "author": "TsingYun",
+      "filters": {
+        "color": ["blue","violet","pink","yellow"],
+        "shapes": ["rect", "circle"],
+        "category": ["pattern","transform", "sin"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Yun_NoiseInk",
+      "title":  "Noise Ink",
+      "author": "Yun",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rect"],
+        "category": ["noise"]
+      },
+      "format": "1:1"
+    },
+     {
+      "filename": "Yun_GridComposition_2",
+      "title":  "Grid and Composition 02",
+      "author": "Yun",
+      "filters": {
+        "color": ["orange","green"],
+        "shapes": ["line"],
+        "category": ["pattern", "sin"]
+      },
+      "format": "1:1"
     }
   ],
   "students" : [
@@ -283,7 +514,7 @@
     },
     {
       "name": "Felix Müller",
-      "link": ""
+      "link": "https://muellerfelix.de/"
     },
     {
       "name": "Lukas Esser",
@@ -304,6 +535,14 @@
     {
       "name": "Dain Park",
       "link": "https://github.com/DainPark-web"
+    },
+    {
+      "name": "Jiawen Wang",
+      "link": "https://wang-jiawen.com"
+    },
+    {
+      "name": "Tsingyun Zhang",
+      "link": "https://www.instagram.com/tsingyun_zh/"
     }
   ]
 }
