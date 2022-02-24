@@ -17,7 +17,6 @@ $(document).ready(function() {
             entrys = prepareFilterfiltering(data);
         })
         .then(() => {
-            initIsotope("header-grid");
             initIsotope("body-grid");
             initFilters();
             filterFilters(entrys);

@@ -68,6 +68,7 @@ function initIsotope(grid) {
             percentPosition: true,
         }
     });
+    $('.body-grid').isotope('shuffle')
 }
 
 
