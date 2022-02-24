@@ -27,7 +27,7 @@
             <div class="menu">
                 <div class="filter small-medium" filter-value=".about">About</div>
                 <div class="filters">
-                    <div class="collapsible small-medium">Filters</div>
+                    <div class="filters-title collapsible small-medium"></div>
                 </div>
             </div>
         </div>
@@ -48,26 +48,26 @@
         <div class="body-grid">
             <div class="body-grid-sizer"></div>
             {{#images}}
-            <div class="body-grid-item {{author}} {{filters.joined}}">
-                <div class="image-wrapper">
-                    <img class="image" src="../data/images/{{filename}}.png" alt={{filename}} href="../app/show.html?data={{filename}}.frag">
-                    <div class="image-filters-wrapper">
-                        <div class="image-filters">
-                            {{#filters.separate}}
-                            {{#values}}
-                            <div class="image-filter filter small" filter-value=".{{lower}}">{{upper}}</div>
-                            {{/values}}
-                            {{/filters.separate}}
+            <div class="body-grid-item image {{author}} {{filters.joined}}" href="../app/edit.html?data={{filename}}.frag">
+                <img src="../data/images/{{filename}}.png" alt={{filename}}>
+                <div class="image-info">
+                    <div class="image-filters-edit">
+                        <div class="image-filters-wrapper">
+                            <div class="image-filters">
+                                {{#filters.separate}}
+                                {{#values}}
+                                <div class="image-filter filter small" filter-value=".{{lower}}">{{upper}}</div>
+                                {{/values}}
+                                {{/filters.separate}}
+                            </div>
                         </div>
-                    </div>
-                    <div class="image-show-wrapper">
-                        <div class="image-show">
-                            <div class="image-show-eye small" href="../app/show.html?data={{filename}}.frag">&#128065;</div>
+                        <div class="image-edit">
+                            <div class="image-edit-title small">Edit</div>
                         </div>
                     </div>
                     <div class="image-caption">
                         <div class="image-author filter small" filter-value=".{{author}}">{{author}}</div>
-                        <div class="image-title small" href="../app/show.html?data={{filename}}.frag">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</div>
+                        <div class="image-title small">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</div>
                     </div>
                 </div>
             </div>

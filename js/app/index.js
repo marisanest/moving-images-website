@@ -29,4 +29,8 @@ $(window).resize(function() {
         let categoryMenu = $('.category-menu');
         categoryMenu.css('max-height', categoryMenu.prop('scrollHeight') + "px");
     }
+
+    let images = $(".body-grid-item.image");
+    images.css({'height': images.width() + 'px'});
+    $('.body-grid').isotope();
 });

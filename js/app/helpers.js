@@ -66,7 +66,7 @@ function initFilters() {
         let filter = $(this);
         let filterValue = filter.attr('filter-value');
 
-        if(filter.is(".disabled")){
+        if(filter.is(".image-filter, .image-author") && !filter.closest(".body-grid-item").is(':hover, .active')){
             return;
         }
 
@@ -123,36 +123,37 @@ function initCollapsible() {
 }
 
 function initImages() {
+    let images = $(".body-grid-item.image");
+
     if (window.matchMedia('(hover: hover)').matches) {
-        $(".image-show-wrapper").remove();
+        $(".image-edit").remove();
 
-        $(".image-title, .image").click(function() {
-            window.location = $(this).attr('href');
-        });
-    } else {
-        $(".image-filter").addClass("disabled");
-
-        $(".image-wrapper").click(function(event) {
-            let imageWrapper = $(this);
+        images.click(function(event) {
+            let image = $(this);
             let eventTarget = $(event.target);
 
-            if (imageWrapper.is('.active')){
-                if(eventTarget.is(".image-show-eye")){
-                    window.location = eventTarget.attr('href');
-                }
-                else if(eventTarget.is(".image-title")){
-                    window.location = eventTarget.attr('href');
+            if(!eventTarget.is(".image-filter, .image-author")){
+                window.location = image.attr('href');
+            }
+        });
+    } else {
+        images.click(function(event) {
+            let image = $(this);
+            let eventTarget = $(event.target);
+
+            if (image.is('.active')){
+                if(eventTarget.is(".image-edit-title, .image-title")){
+                    window.location = image.attr('href');
                 } else if (!eventTarget.is(".image-filter, .image-author")) {
-                    imageWrapper.removeClass("active");
-                    imageWrapper.find(".image-filter").addClass("disabled");
+                    image.removeClass("active");
                 }
             } else {
-                $(".image-wrapper.active .image-filter").addClass("disabled");
-                $(".image-wrapper.active").removeClass("active");
-
-                imageWrapper.addClass("active");
-                imageWrapper.find(".image-filter").removeClass("disabled");
+                $(".body-grid-item.active").removeClass("active");
+                image.addClass("active");
             }
         });
     }
+
+    images.css({'height': images.width() + 'px'});
+    $('.body-grid').isotope();
 }
