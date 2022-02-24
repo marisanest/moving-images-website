@@ -61,7 +61,7 @@
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
-        "shapes": ["rect", "circle"],
+        "shapes": ["rectangle", "circle"],
         "category": ["pattern","transform", "random", "offest"]
       },
       "format": "1:1"
@@ -325,7 +325,7 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
-        "shapes": ["line", "rect"],
+        "shapes": ["line", "rectangle"],
         "category": ["random", "transform", "mod"]
       },
       "format": "1:1"
@@ -336,7 +336,7 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
-        "shapes": ["line", "rect", "circle"],
+        "shapes": ["line", "rectangle", "circle"],
         "category": ["random", "transform", "mod", "sin", "cos", "distance"]
       },
       "format": "1:1"
@@ -347,7 +347,7 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rect", "circle"],
+        "shapes": ["rectangle", "circle"],
         "category": ["sin", "cos", "mix"]
       },
       "format": "1:1"
@@ -358,7 +358,7 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rect"],
+        "shapes": ["rectangle"],
         "category": ["sin", "cos", "transform","pattern"]
       },
       "format": "1:1"
@@ -391,7 +391,7 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rect"],
+        "shapes": ["rectangle"],
         "category": ["random"]
       },
       "format": "1:1"
@@ -402,7 +402,7 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
-        "shapes": ["rect", "circle"],
+        "shapes": ["rectangle", "circle"],
         "category": ["sin", "cos", "fract","pattern"]
       },
       "format": "1:1"
@@ -435,7 +435,7 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
-        "shapes": ["rect"],
+        "shapes": ["rectangle"],
         "category": ["pattern"]
       },
       "format": "1:1"
@@ -457,7 +457,7 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
-        "shapes": ["circle", "rect"],
+        "shapes": ["circle", "rectangle"],
         "category": ["pattern"]
       },
       "format": "1:1"
@@ -534,7 +534,7 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
-        "shapes": ["rect", "circle"],
+        "shapes": ["rectangle", "circle"],
         "category": ["pattern","transform", "sin"]
       },
       "format": "1:1"
@@ -545,7 +545,7 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
-        "shapes": ["rect"],
+        "shapes": ["rectangle"],
         "category": ["noise"]
       },
       "format": "1:1"
