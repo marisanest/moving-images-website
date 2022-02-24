@@ -34,6 +34,61 @@
       "format": "1:1"
     },
     {
+      "filename": "Chunli_OffestPattern",
+      "title":  "OffestPattern",
+      "author": "ChunLi",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["square", "box"],
+        "category": ["pattern","transform", "sin", "scale", "offest"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Chunli_Boxscaling",
+      "title":  "Boxscaling",
+      "author": "ChunLi",
+      "filters": {
+        "color": ["red","white","orange"],
+        "shapes": ["square", "box"],
+        "category": ["pattern","transform", "sin", "scale", "offest"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "ChunLi_RandomRotate",
+      "title":  "RandomRotate",
+      "author": "ChunLi",
+      "filters": {
+        "color": ["black","white"],
+        "shapes": ["rect", "circle"],
+        "category": ["pattern","transform", "random", "offest"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Chunli_FluidEffect_01",
+      "title":  "FluidEffect",
+      "author": "ChunLi",
+      "filters": {
+        "color": ["black","white","rainbow"],
+        "shapes": ["circle"],
+        "category": ["transform", "random", "noise", "feedback"]
+      },
+      "format": "1:1"
+    },
+    {
+      "filename": "Chunli_FluidEffect_02",
+      "title":  "FluidEffect",
+      "author": "ChunLi",
+      "filters": {
+        "color": ["black","white","rainbow"],
+        "shapes": ["circle"],
+        "category": ["transform", "random", "noise", "feedback"]
+      },
+      "format": "1:1"
+    },
+    {
       "filename": "Lukas_SimplexCircle",
       "title":  "Simplex Circle",
       "author": "Lukas",
