@@ -74,6 +74,7 @@
     .filter-list {
         display: inline;
         max-width: 33.3%;
+        flex: 0 0 33.3%;
     }
 
     .filter-type {

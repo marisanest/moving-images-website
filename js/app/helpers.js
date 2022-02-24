@@ -50,6 +50,16 @@ function prepareLowerUpperText(value) {
 }
 
 
+function prepareFilterfiltering(data) {
+    let entrys = [];
+
+    data.images.forEach(image => {
+        entrys.push(Object.values(image.filters).flat());
+    });
+    return entrys;
+}
+
+
 function initIsotope(grid) {
     $('.' + grid).isotope({
         itemSelector: '.' + grid + '-item',
@@ -58,6 +68,41 @@ function initIsotope(grid) {
             percentPosition: true,
         }
     });
+}
+
+
+function filterFilters(entrys) {
+    $('.filter').click(function() {
+        let active = []
+        $('.filter-items > .is-checked').map(function() {
+            active.push($(this).attr('data-filter').substring(1));
+        });
+
+        let all = []
+        $('.filter-items > .filter').map(function() {
+            all.push($(this).attr('data-filter').substring(1));
+        });
+
+        let matching = [];
+
+        entrys.forEach(filters => {
+            if(active.every(val => filters.includes(val))) {
+                filters.forEach(val => {
+                    if(!matching.includes(val)) {
+                        matching.push(val);
+                    }
+                });
+            }
+        });
+
+        all.filter(x => !matching.includes(x)).forEach(filter => {
+            $('.filter-items > .' + filter).css('display', 'none');
+        });
+
+        matching.forEach(filter => {
+            $('.filter-items > .' + filter).css('display', 'block');
+        });
+    })
 }
 
 

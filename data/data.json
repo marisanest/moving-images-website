@@ -5,7 +5,7 @@
       "title":  "Bits and Bytes",
       "author": "Alex",
       "filters": {
-        "author": ["Alex"],
+        "author": ["alex"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
       },
@@ -16,7 +16,7 @@
       "title":  "Fire",
       "author": "Alex",
       "filters": {
-        "author": ["Alex"],
+        "author": ["alex"],
         "shapes": ["line", "rectangle"],
         "category": ["pattern", "noise"]
       },
@@ -27,7 +27,7 @@
       "title":  "Pulse Ah",
       "author": "Alex",
       "filters": {
-        "author": ["Alex"],
+        "author": ["alex"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
       },
@@ -38,7 +38,7 @@
       "title":  "Simplex Circle",
       "author": "Lukas",
       "filters": {
-        "author": ["Lukas"],
+        "author": ["lukas"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
       },
@@ -49,7 +49,7 @@
       "title":  "Simplex Symmetry",
       "author": "Lukas",
       "filters": {
-        "author": ["Lukas"],
+        "author": ["lukas"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
       },
@@ -60,7 +60,7 @@
       "title":  "Stretch",
       "author": "Lukas",
       "filters": {
-        "author": ["Lukas"],
+        "author": ["lukas"],
         "shapes": ["line"],
         "category": ["texture"]
       },
@@ -71,7 +71,7 @@
       "title":  "001",
       "author": "Marisa",
       "filters": {
-        "author": ["Marisa"],
+        "author": ["marisa"],
         "shapes": ["circle", "polygon"],
         "category": ["truchet", "noise"]
       },
@@ -82,7 +82,7 @@
       "title":  "002",
       "author": "Marisa",
       "filters": {
-        "author": ["Marisa"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
       },
@@ -93,7 +93,7 @@
       "title":  "003",
       "author": "Marisa",
       "filters": {
-        "author": ["Marisa"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "texture"]
       },
@@ -104,7 +104,7 @@
       "title":  "004",
       "author": "Marisa",
       "filters": {
-        "author": ["Marisa"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["transform", "noise"]
       },
@@ -115,7 +115,7 @@
       "title":  "005",
       "author": "Marisa",
       "filters": {
-        "author": ["Marisa"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["swizzle", "noise"]
       },
@@ -126,7 +126,7 @@
       "title":  "01",
       "author": "Nour",
       "filters": {
-        "author": ["Nour"],
+        "author": ["nour"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
       },
@@ -137,7 +137,7 @@
       "title":  "02",
       "author": "Nour",
       "filters": {
-        "author": ["Nour"],
+        "author": ["nour"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
       },
@@ -148,7 +148,7 @@
       "title":  "Distance Field",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "fract", "length"]
       },
@@ -159,7 +159,7 @@
       "title":  "Distance Pattern",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["rectangle"],
         "category": ["pattern", "modulo", "animated"]
       },
@@ -170,7 +170,7 @@
       "title":  "Christmas Pattern Parallax",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["circle", "star"],
         "category": ["pattern", "parallax", "mix", "animated"]
       },
@@ -181,7 +181,7 @@
       "title":  "Random Clouds",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["lines"],
         "category": ["pattern", "random", "modulo", "moire", "fract", "length", "animated"]
       },
@@ -192,7 +192,7 @@
       "title":  "Running Ink",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["lines", "curves"],
         "category": ["pattern", "noise", "fract", "length", "animated"]
       },
@@ -203,7 +203,7 @@
       "title":  "Star Kaleidoscope",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["star", "flower"],
         "category": ["pattern", "noise", "fract", "rotate", "animated"]
       },
@@ -214,7 +214,7 @@
       "title":  "Random Color and Distance",
       "author": "Ulrike",
       "filters": {
-        "author": ["Ulrike"],
+        "author": ["ulrike"],
         "shapes": ["circle", "lines"],
         "category": ["pattern", "random", "fract", "length", "animated"]
       },
@@ -225,7 +225,7 @@
       "title":  "Grid and Composition 01",
       "author": "Yun",
       "filters": {
-        "author": ["Yun"],
+        "author": ["yun"],
         "shapes": ["line"],
         "category": ["pattern"]
       },
@@ -236,7 +236,7 @@
       "title":  "Merge Circles",
       "author": "Dain",
       "filters": {
-        "author": ["Dain"],
+        "author": ["dain"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
       },
@@ -247,7 +247,7 @@
       "title":  "Merge Circles_02",
       "author": "Dain",
       "filters": {
-        "author": ["Dain"],
+        "author": ["dain"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
       },
@@ -258,7 +258,7 @@
       "title":  "Light",
       "author": "Dain",
       "filters": {
-        "author": ["Dain"],
+        "author": ["dain"],
         "shapes": ["line", "circle", "curves"],
         "category": ["random", "transform", "mix"]
       },
@@ -269,7 +269,7 @@
       "title":  "Mod",
       "author": "Dain",
       "filters": {
-        "author": ["Dain"],
+        "author": ["dain"],
         "shapes": ["line", "rect"],
         "category": ["random", "transform", "mod"]
       },
@@ -280,7 +280,7 @@
       "title":  "Mod2",
       "author": "Dain",
       "filters": {
-        "author": ["Dain"],
+        "author": ["dain"],
         "shapes": ["line", "rect", "circle"],
         "category": ["random", "transform", "mod", "sin", "cos", "distance"]
       },
@@ -291,7 +291,7 @@
       "title":  "bpm",
       "author": "Jiawen",
       "filters": {
-        "author": ["Jiawen"],
+        "author": ["jiawen"],
         "shapes": ["rect", "circle"],
         "category": ["sin", "cos", "mix"]
       },
@@ -302,7 +302,7 @@
       "title":  "depth",
       "author": "Jiawen",
       "filters": {
-        "author": ["Jiawen"],
+        "author": ["jiawen"],
         "shapes": ["rect"],
         "category": ["sin", "cos", "transform","pattern"]
       },
@@ -313,7 +313,7 @@
       "title":  "sims",
       "author": "Jiawen",
       "filters": {
-        "author": ["Jiawen"],
+        "author": ["jiawen"],
         "shapes": ["circle"],
         "category": ["sin","transform","texture","mod"]
       },
@@ -324,7 +324,7 @@
       "title":  "light",
       "author": "Jiawen",
       "filters": {
-        "author": ["Jiawen"],
+        "author": ["jiawen"],
         "shapes": ["rhombus"],
         "category": ["random"]
       },
@@ -335,7 +335,7 @@
       "title":  "noise",
       "author": "Jiawen",
       "filters": {
-        "author": ["Jiawen"],
+        "author": ["jiawen"],
         "shapes": ["rect"],
         "category": ["random"]
       },
@@ -346,7 +346,7 @@
       "title":  "Gradient and Curves",
       "author": "Yun",
       "filters": {
-        "author": ["Yun"],
+        "author": ["yun"],
         "shapes": ["rect", "circle"],
         "category": ["sin", "cos", "fract","pattern"]
       },
@@ -357,7 +357,7 @@
       "title":  "Ciiiiircles",
       "author": "Yun",
       "filters": {
-        "author": ["Yun"],
+        "author": ["yun"],
         "shapes": ["circle"],
         "category": ["sin", "cos", "noise","pattern"]
       },
@@ -368,7 +368,7 @@
       "title":  "Waves",
       "author": "Felix",
       "filters": {
-        "author": ["Felix"],
+        "author": ["felix"],
         "shapes": ["circle"],
         "category": ["noise"]
       },
@@ -379,7 +379,7 @@
       "title":  "Ofset",
       "author": "Felix",
       "filters": {
-        "author": ["Felix"],
+        "author": ["felix"],
         "shapes": ["rect"],
         "category": ["pattern"]
       },
@@ -390,7 +390,7 @@
       "title":  "Circular Move",
       "author": "Felix",
       "filters": {
-        "author": ["Felix"],
+        "author": ["felix"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
       },
@@ -401,7 +401,7 @@
       "title":  "Transition",
       "author": "Felix",
       "filters": {
-        "author": ["Felix"],
+        "author": ["felix"],
         "shapes": ["circle", "rect"],
         "category": ["pattern"]
       },
@@ -412,7 +412,7 @@
       "title":  "SIN|COS MOVEMENT",
       "author": "Felix",
       "filters": {
-        "author": ["Felix"],
+        "author": ["felix"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
       },
@@ -423,7 +423,7 @@
       "title":  "Fire_Hearts",
       "author": "TsingYun",
       "filters": {
-        "author": ["TsingYun"],
+        "author": ["tsingyun"],
         "shapes": ["heart", "circle"],
         "category": ["sin", "cos", "noise","pattern"]
       },
@@ -434,7 +434,7 @@
       "title":  "Hearts",
       "author": "TsingYun",
       "filters": {
-        "author": ["TsingYun"],
+        "author": ["tsingyun"],
         "shapes": ["heart", "circle"],
         "category": ["sin", "cos", "noise","pattern"]
       },
@@ -445,7 +445,7 @@
       "title":  "Ripples",
       "author": "TsingYun",
       "filters": {
-        "author": ["TsingYun"],
+        "author": ["tsingyun"],
         "shapes": ["ripple", "circle"],
         "category": ["noise","pattern","transform", "mod"]
       },
@@ -456,7 +456,7 @@
       "title":  "Ripples02",
       "author": "TsingYun",
       "filters": {
-        "author": ["TsingYun"],
+        "author": ["tsingyun"],
         "shapes": ["ripple", "circle"],
         "category": ["noise","pattern","transform", "sin"]
       },
@@ -467,7 +467,7 @@
       "title":  "Starry_Night",
       "author": "TsingYun",
       "filters": {
-        "author": ["TsingYun"],
+        "author": ["tsingyun"],
         "shapes": ["moon", "circle"],
         "category": ["noise","pattern","transform", "sin"]
       },
@@ -478,7 +478,7 @@
       "title":  "Wave",
       "author": "TsingYun",
       "filters": {
-        "author": ["TsingYun"],
+        "author": ["tsingyun"],
         "shapes": ["rect", "circle"],
         "category": ["pattern","transform", "sin"]
       },
@@ -489,7 +489,7 @@
       "title":  "Noise Ink",
       "author": "Yun",
       "filters": {
-        "author": ["Yun"],
+        "author": ["yun"],
         "shapes": ["rect"],
         "category": ["noise"]
       },
@@ -500,7 +500,7 @@
       "title":  "Grid and Composition 02",
       "author": "Yun",
       "filters": {
-        "author": ["Yun"],
+        "author": ["yun"],
         "shapes": ["line"],
         "category": ["pattern", "sin"]
       },
@@ -510,7 +510,7 @@
   "students" : [
     {
       "name": "Alex Hahn",
-      "link": ""
+      "link": "https://www.instagram.com/hahnderhahn/"
     },
     {
       "name": "Felix Müller",
