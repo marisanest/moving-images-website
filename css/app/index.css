@@ -339,6 +339,13 @@ hr {
     grid-area: thanks;
 }
 
+.filter {
+    transition: all 0.5s ease;
+}
+
+.filter.show {opacity: 100%; filter: none; font-variation-settings: "TRIP" 0, "slnt" 0;}
+.filter.hide {opacity: 50%; filter: blur(1px); font-variation-settings: "TRIP" 1, "slnt" -13;}
+
 footer {
     flex-shrink: 0;
     max-width: 100%;

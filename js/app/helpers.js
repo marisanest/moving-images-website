@@ -99,11 +99,11 @@ function filterFilters(entrys) {
         });
 
         all.filter(x => !matching.includes(x)).forEach(filter => {
-            $('.filter-items > .' + filter).css('display', 'none');
+            $('.filter-items > .' + filter).removeClass('show').addClass('hide');
         });
 
         matching.forEach(filter => {
-            $('.filter-items > .' + filter).css('display', 'block');
+            $('.filter-items > .' + filter).removeClass('hide').addClass('show');
         });
     })
 }
