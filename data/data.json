@@ -38,7 +38,7 @@
       "title":  "OffestPattern",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white"],
+        "author": ["chunLi"],
         "shapes": ["square", "box"],
         "category": ["pattern","transform", "sin", "scale", "offest"]
       },
@@ -49,7 +49,7 @@
       "title":  "Boxscaling",
       "author": "ChunLi",
       "filters": {
-        "color": ["red","white","orange"],
+        "author": ["chunLi"],
         "shapes": ["square", "box"],
         "category": ["pattern","transform", "sin", "scale", "offest"]
       },
@@ -60,7 +60,7 @@
       "title":  "RandomRotate",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white"],
+        "author": ["chunLi"],
         "shapes": ["rect", "circle"],
         "category": ["pattern","transform", "random", "offest"]
       },
@@ -71,7 +71,7 @@
       "title":  "FluidEffect",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white","rainbow"],
+        "author": ["chunLi"],
         "shapes": ["circle"],
         "category": ["transform", "random", "noise", "feedback"]
       },
@@ -82,7 +82,7 @@
       "title":  "FluidEffect",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white","rainbow"],
+        "author": ["chunLi"],
         "shapes": ["circle"],
         "category": ["transform", "random", "noise", "feedback"]
       },
