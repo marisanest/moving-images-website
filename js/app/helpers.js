@@ -93,7 +93,7 @@ function initFilters() {
             }
 
             if (filterValue === '.about' || filterValue ==='.imprint') {
-                $(".filter").removeClass('active');
+                $(".filter, .body-grid-item.active").removeClass('active');
                 if($(".collapsible").hasClass('active')) {$(".collapsible").click()}
                 $(".body-grid-item" + filterValue).removeClass('hidden');
                 filterValues = [filterValue];
