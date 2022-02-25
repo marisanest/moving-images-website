@@ -8,8 +8,7 @@
         "author": ["alex"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Alex_Fire",
@@ -19,8 +18,7 @@
         "author": ["alex"],
         "shapes": ["line", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Alex_PulseAh",
@@ -30,8 +28,7 @@
         "author": ["alex"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_OffestPattern",
@@ -41,8 +38,7 @@
         "author": ["chunLi"],
         "shapes": ["square", "box"],
         "category": ["pattern","transform", "sin", "scale", "offest"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_Boxscaling",
@@ -52,8 +48,7 @@
         "author": ["chunLi"],
         "shapes": ["square", "box"],
         "category": ["pattern","transform", "sin", "scale", "offest"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "ChunLi_RandomRotate",
@@ -63,8 +58,7 @@
         "author": ["chunLi"],
         "shapes": ["rectangle", "circle"],
         "category": ["pattern","transform", "random", "offest"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_FluidEffect_01",
@@ -74,8 +68,7 @@
         "author": ["chunLi"],
         "shapes": ["circle"],
         "category": ["transform", "random", "noise", "feedback"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_FluidEffect_02",
@@ -85,8 +78,7 @@
         "author": ["chunLi"],
         "shapes": ["circle"],
         "category": ["transform", "random", "noise", "feedback"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Lukas_SimplexCircle",
@@ -96,8 +88,7 @@
         "author": ["lukas"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Lukas_SimplexSymmetry",
@@ -107,8 +98,7 @@
         "author": ["lukas"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Lukas_Stretch",
@@ -118,8 +108,7 @@
         "author": ["lukas"],
         "shapes": ["line"],
         "category": ["texture"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_001",
@@ -129,8 +118,7 @@
         "author": ["marisa"],
         "shapes": ["circle", "polygon"],
         "category": ["truchet", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_002",
@@ -140,8 +128,7 @@
         "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_003",
@@ -151,8 +138,7 @@
         "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "texture"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_004",
@@ -162,8 +148,7 @@
         "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["transform", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_005",
@@ -173,8 +158,7 @@
         "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["swizzle", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Nour_01",
@@ -184,8 +168,7 @@
         "author": ["nour"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Nour_02",
@@ -195,8 +178,7 @@
         "author": ["nour"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_DistanceField",
@@ -206,8 +188,7 @@
         "author": ["ulrike"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "fract", "length"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_DistancePattern",
@@ -217,8 +198,7 @@
         "author": ["ulrike"],
         "shapes": ["rectangle"],
         "category": ["pattern", "modulo", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_ChristmasPatternParallax",
@@ -228,8 +208,7 @@
         "author": ["ulrike"],
         "shapes": ["circle", "star"],
         "category": ["pattern", "parallax", "mix", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_RandomClouds",
@@ -239,8 +218,7 @@
         "author": ["ulrike"],
         "shapes": ["lines"],
         "category": ["pattern", "random", "modulo", "moire", "fract", "length", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_RunningInk",
@@ -250,8 +228,7 @@
         "author": ["ulrike"],
         "shapes": ["lines", "curves"],
         "category": ["pattern", "noise", "fract", "length", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_StarKaleidoscope",
@@ -261,8 +238,7 @@
         "author": ["ulrike"],
         "shapes": ["star", "flower"],
         "category": ["pattern", "noise", "fract", "rotate", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_RandomColorDistance",
@@ -272,8 +248,7 @@
         "author": ["ulrike"],
         "shapes": ["circle", "lines"],
         "category": ["pattern", "random", "fract", "length", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_GridComposition",
@@ -283,8 +258,7 @@
         "author": ["yun"],
         "shapes": ["line"],
         "category": ["pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_01",
@@ -294,8 +268,7 @@
         "author": ["dain"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_02",
@@ -305,8 +278,7 @@
         "author": ["dain"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_03",
@@ -316,8 +288,7 @@
         "author": ["dain"],
         "shapes": ["line", "circle", "curves"],
         "category": ["random", "transform", "mix"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_04",
@@ -327,8 +298,7 @@
         "author": ["dain"],
         "shapes": ["line", "rectangle"],
         "category": ["random", "transform", "mod"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_05",
@@ -338,8 +308,7 @@
         "author": ["dain"],
         "shapes": ["line", "rectangle", "circle"],
         "category": ["random", "transform", "mod", "sin", "cos", "distance"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_bpm",
@@ -349,8 +318,7 @@
         "author": ["jiawen"],
         "shapes": ["rectangle", "circle"],
         "category": ["sin", "cos", "mix"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_depth",
@@ -360,8 +328,7 @@
         "author": ["jiawen"],
         "shapes": ["rectangle"],
         "category": ["sin", "cos", "transform","pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_sims",
@@ -371,8 +338,7 @@
         "author": ["jiawen"],
         "shapes": ["circle"],
         "category": ["sin","transform","texture","mod"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_light",
@@ -382,8 +348,7 @@
         "author": ["jiawen"],
         "shapes": ["rhombus"],
         "category": ["random"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_noise",
@@ -393,8 +358,7 @@
         "author": ["jiawen"],
         "shapes": ["rectangle"],
         "category": ["random"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_GradientCurves",
@@ -404,8 +368,7 @@
         "author": ["yun"],
         "shapes": ["rectangle", "circle"],
         "category": ["sin", "cos", "fract","pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_ciiiiircles",
@@ -415,8 +378,7 @@
         "author": ["yun"],
         "shapes": ["circle"],
         "category": ["sin", "cos", "noise","pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_01",
@@ -426,8 +388,7 @@
         "author": ["felix"],
         "shapes": ["circle"],
         "category": ["noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_02",
@@ -437,8 +398,7 @@
         "author": ["felix"],
         "shapes": ["rectangle"],
         "category": ["pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_03",
@@ -448,8 +408,7 @@
         "author": ["felix"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_04",
@@ -459,8 +418,7 @@
         "author": ["felix"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_05",
@@ -470,8 +428,7 @@
         "author": ["felix"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Tsingyun_FireHearts",
@@ -481,8 +438,7 @@
         "author": ["tsingyun"],
         "shapes": ["heart", "circle"],
         "category": ["sin", "cos", "noise","pattern"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Tsingyun_Hearts",
@@ -492,8 +448,7 @@
         "author": ["tsingyun"],
         "shapes": ["heart", "circle"],
         "category": ["sin", "cos", "noise","pattern"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Tsingyun_Ripples",
@@ -503,8 +458,7 @@
         "author": ["tsingyun"],
         "shapes": ["ripple", "circle"],
         "category": ["noise","pattern","transform", "mod"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Tsingyun_Ripples02",
@@ -514,8 +468,7 @@
         "author": ["tsingyun"],
         "shapes": ["ripple", "circle"],
         "category": ["noise","pattern","transform", "sin"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Tsingyun_StarryNight",
@@ -525,8 +478,7 @@
         "author": ["tsingyun"],
         "shapes": ["moon", "circle"],
         "category": ["noise","pattern","transform", "sin"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Tsingyun_Wave",
@@ -536,8 +488,7 @@
         "author": ["tsingyun"],
         "shapes": ["rectangle", "circle"],
         "category": ["pattern","transform", "sin"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_NoiseInk",
@@ -547,8 +498,7 @@
         "author": ["yun"],
         "shapes": ["rectangle"],
         "category": ["noise"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Yun_GridComposition_2",
@@ -558,8 +508,7 @@
         "author": ["yun"],
         "shapes": ["line"],
         "category": ["pattern", "sin"]
-      },
-      "format": "1:1"
+      }
     }
   ],
   "students" : [
