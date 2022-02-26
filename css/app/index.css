@@ -187,6 +187,7 @@ html, body {
 body {
     font-family: 'ABCOracle';
     font-weight: 300;
+    font-feature-settings: "ss09";
     background: #F5F5F5;
     display: flex;
     flex-direction: column;
