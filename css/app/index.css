@@ -24,7 +24,7 @@
         --line-height-large: 36px;
 
         --padding-container: 2rem 2rem 0 2rem;
-        --padding-footer: 0 2.5rem 2rem 2.5rem;
+        --padding-footer: 0.5 2.5rem 2rem 2.5rem;
 
         --padding-box: .4rem .8rem;
         --margin-box: .2rem;
@@ -237,6 +237,12 @@
     line-height: var(--line-height-large);
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
 }
@@ -244,7 +250,8 @@ html, body {
 body {
     font-family: 'ABCOracle';
     font-weight: 300;
-    background: #eaeceb;
+    font-feature-settings: "ss09";
+    background: #F5F5F5;
     display: flex;
     flex-direction: column;
 }
@@ -356,7 +363,11 @@ hr {
 
 .filter {
     cursor: pointer;
+    transition: all 0.5s ease;
 }
+
+.filter.show {opacity: 100%; filter: none; font-variation-settings: "TRIP" 0, "slnt" 0;}
+.filter.hide {opacity: 50%; filter: blur(1px); font-variation-settings: "TRIP" 1, "slnt" -13;}
 
 .filter.active {
     color: #ea1f4c !important;

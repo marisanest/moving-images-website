@@ -14,11 +14,12 @@ $(document).ready(function() {
                         prepareData(data)
                     )
                 );
+            entrys = prepareFilterfiltering(data);
         })
         .then(() => {
-            initIsotope("header-grid");
             initIsotope("body-grid");
             initFilters();
+            filterFilters(entrys);
             initCollapsible();
             initImages();
         });

@@ -4,6 +4,7 @@ function prepareData(data) {
 
     prepareImagesData(preparedData);
     prepareFiltersData(preparedData, data);
+    preparedData.students.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
 
     return preparedData;
 }
@@ -26,6 +27,7 @@ function prepareFiltersData(preparedData, data) {
                 values.forEach(value => {
                     if(!preparedData.filters[idx].values.map(value => value.lower).includes(value)) {
                         preparedData.filters[idx].values.push(prepareLowerUpperText(value));
+                        preparedData.filters[idx].values.sort((a,b) => (a.upper > b.upper) ? 1 : ((b.upper > a.upper) ? -1 : 0));
                     }
                 })
             } else {
@@ -49,6 +51,15 @@ function prepareLowerUpperText(value) {
     }
 }
 
+function prepareFilterfiltering(data) {
+    let entrys = [];
+
+    data.images.forEach(image => {
+        entrys.push(Object.values(image.filters).flat());
+    });
+    return entrys;
+}
+
 function initIsotope(grid) {
     $('.' + grid).isotope({
         itemSelector: '.' + grid + '-item',
@@ -57,6 +68,42 @@ function initIsotope(grid) {
             percentPosition: true,
         }
     });
+    $('.body-grid').isotope('shuffle')
+}
+
+
+function filterFilters(entrys) {
+    $('.filter').click(function() {
+        let active = []
+        $('.filter-items > .is-checked').map(function() {
+            active.push($(this).attr('data-filter').substring(1));
+        });
+
+        let all = []
+        $('.filter-items > .filter').map(function() {
+            all.push($(this).attr('data-filter').substring(1));
+        });
+
+        let matching = [];
+
+        entrys.forEach(filters => {
+            if(active.every(val => filters.includes(val))) {
+                filters.forEach(val => {
+                    if(!matching.includes(val)) {
+                        matching.push(val);
+                    }
+                });
+            }
+        });
+
+        all.filter(x => !matching.includes(x)).forEach(filter => {
+            $('.filter-items > .' + filter).removeClass('show').addClass('hide');
+        });
+
+        matching.forEach(filter => {
+            $('.filter-items > .' + filter).removeClass('hide').addClass('show');
+        });
+    })
 }
 
 function initFilters() {
@@ -116,8 +163,10 @@ function initCollapsible() {
 
         if (filterList.css('maxHeight') != '0px'){
             filterList.css('maxHeight', '0px');
+            $('.category-menu-wrapper').css('padding-bottom', "0rem");
         } else {
             filterList.css('maxHeight', filterList.prop('scrollHeight') + "px");
+            $('.category-menu-wrapper').css('padding-bottom', "0.5rem");
         }
     });
 }

@@ -21,3 +21,8 @@ $(document).ready(function() {
         glslEditor.open("../data/shaders/" + srcFile);
     }
 });
+
+$(window).resize(function() {
+    $('canvas').css('width', window.innerWidth * 0.5);
+    $('canvas').css('height', window.innerWidth * 0.5);
+});
