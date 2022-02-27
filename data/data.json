@@ -5,571 +5,516 @@
       "title":  "Bits and Bytes",
       "author": "Alex",
       "filters": {
-        "color": ["pink"],
+        "author": ["alex"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Alex_Fire",
       "title":  "Fire",
       "author": "Alex",
       "filters": {
-        "color": ["pink", "black"],
+        "author": ["alex"],
         "shapes": ["line", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Alex_PulseAh",
       "title":  "Pulse Ah",
       "author": "Alex",
       "filters": {
-        "color": ["pink", "black"],
+        "author": ["alex"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_OffestPattern",
       "title":  "OffestPattern",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white"],
+        "author": ["chunLi"],
         "shapes": ["square", "box"],
         "category": ["pattern","transform", "sin", "scale", "offest"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_Boxscaling",
       "title":  "Boxscaling",
       "author": "ChunLi",
       "filters": {
-        "color": ["red","white","orange"],
+        "author": ["chunLi"],
         "shapes": ["square", "box"],
         "category": ["pattern","transform", "sin", "scale", "offest"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "ChunLi_RandomRotate",
       "title":  "RandomRotate",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white"],
-        "shapes": ["rect", "circle"],
+        "author": ["chunLi"],
+        "shapes": ["rectangle", "circle"],
         "category": ["pattern","transform", "random", "offest"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_FluidEffect_01",
       "title":  "FluidEffect",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white","rainbow"],
+        "author": ["chunLi"],
         "shapes": ["circle"],
         "category": ["transform", "random", "noise", "feedback"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Chunli_FluidEffect_02",
       "title":  "FluidEffect",
       "author": "ChunLi",
       "filters": {
-        "color": ["black","white","rainbow"],
+        "author": ["chunLi"],
         "shapes": ["circle"],
         "category": ["transform", "random", "noise", "feedback"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Lukas_SimplexCircle",
       "title":  "Simplex Circle",
       "author": "Lukas",
       "filters": {
-        "color": ["white", "black"],
+        "author": ["lukas"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Lukas_SimplexSymmetry",
       "title":  "Simplex Symmetry",
       "author": "Lukas",
       "filters": {
-        "color": ["white", "black"],
+        "author": ["lukas"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Lukas_Stretch",
       "title":  "Stretch",
       "author": "Lukas",
       "filters": {
-        "color": ["green", "orange", "white"],
+        "author": ["lukas"],
         "shapes": ["line"],
         "category": ["texture"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_001",
       "title":  "001",
       "author": "Marisa",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["marisa"],
         "shapes": ["circle", "polygon"],
         "category": ["truchet", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_002",
       "title":  "002",
       "author": "Marisa",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_003",
       "title":  "003",
       "author": "Marisa",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "texture"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_004",
       "title":  "004",
       "author": "Marisa",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["transform", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Marisa_005",
       "title":  "005",
       "author": "Marisa",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["marisa"],
         "shapes": ["circle", "rectangle"],
         "category": ["swizzle", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Nour_01",
       "title":  "01",
       "author": "Nour",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["nour"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Nour_02",
       "title":  "02",
       "author": "Nour",
       "filters": {
-        "color": ["lila", "black"],
+        "author": ["nour"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_DistanceField",
       "title":  "Distance Field",
       "author": "Ulrike",
       "filters": {
-        "color": ["black", "lila"],
+        "author": ["ulrike"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern", "fract", "length"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_DistancePattern",
       "title":  "Distance Pattern",
       "author": "Ulrike",
       "filters": {
-        "color": ["turquoise", "black"],
+        "author": ["ulrike"],
         "shapes": ["rectangle"],
         "category": ["pattern", "modulo", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_ChristmasPatternParallax",
       "title":  "Christmas Pattern Parallax",
       "author": "Ulrike",
       "filters": {
-        "color": ["green", "red", "yellow"],
+        "author": ["ulrike"],
         "shapes": ["circle", "star"],
         "category": ["pattern", "parallax", "mix", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_RandomClouds",
       "title":  "Random Clouds",
       "author": "Ulrike",
       "filters": {
-        "color": ["blue", "black"],
+        "author": ["ulrike"],
         "shapes": ["lines"],
         "category": ["pattern", "random", "modulo", "moire", "fract", "length", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_RunningInk",
       "title":  "Running Ink",
       "author": "Ulrike",
       "filters": {
-        "color": ["pink", "green", "lila"],
+        "author": ["ulrike"],
         "shapes": ["lines", "curves"],
         "category": ["pattern", "noise", "fract", "length", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_StarKaleidoscope",
       "title":  "Star Kaleidoscope",
       "author": "Ulrike",
       "filters": {
-        "color": ["pink", "black"],
+        "author": ["ulrike"],
         "shapes": ["star", "flower"],
         "category": ["pattern", "noise", "fract", "rotate", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Ulrike_RandomColorDistance",
       "title":  "Random Color and Distance",
       "author": "Ulrike",
       "filters": {
-        "color": ["multiple", "pink", "green"],
+        "author": ["ulrike"],
         "shapes": ["circle", "lines"],
         "category": ["pattern", "random", "fract", "length", "animated"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_GridComposition",
       "title":  "Grid and Composition 01",
       "author": "Yun",
       "filters": {
-        "color": ["red", "black"],
+        "author": ["yun"],
         "shapes": ["line"],
         "category": ["pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_01",
       "title":  "Merge Circles",
       "author": "Dain",
       "filters": {
-        "color": ["blue", "black"],
+        "author": ["dain"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_02",
       "title":  "Merge Circles_02",
       "author": "Dain",
       "filters": {
-        "color": ["blue", "black"],
+        "author": ["dain"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_03",
       "title":  "Light",
       "author": "Dain",
       "filters": {
-        "color": ["red", "black"],
+        "author": ["dain"],
         "shapes": ["line", "circle", "curves"],
         "category": ["random", "transform", "mix"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_04",
       "title":  "Mod",
       "author": "Dain",
       "filters": {
-        "color": ["silver", "black"],
-        "shapes": ["line", "rect"],
+        "author": ["dain"],
+        "shapes": ["line", "rectangle"],
         "category": ["random", "transform", "mod"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Dain_05",
       "title":  "Mod2",
       "author": "Dain",
       "filters": {
-        "color": ["green", "black"],
-        "shapes": ["line", "rect", "circle"],
+        "author": ["dain"],
+        "shapes": ["line", "rectangle", "circle"],
         "category": ["random", "transform", "mod", "sin", "cos", "distance"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_bpm",
       "title":  "bpm",
       "author": "Jiawen",
       "filters": {
-        "color": ["yellow", "blue"],
-        "shapes": ["rect", "circle"],
+        "author": ["jiawen"],
+        "shapes": ["rectangle", "circle"],
         "category": ["sin", "cos", "mix"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_depth",
       "title":  "depth",
       "author": "Jiawen",
       "filters": {
-        "color": ["black", "blue","gray","white"],
-        "shapes": ["rect"],
+        "author": ["jiawen"],
+        "shapes": ["rectangle"],
         "category": ["sin", "cos", "transform","pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_sims",
       "title":  "sims",
       "author": "Jiawen",
       "filters": {
-        "color": ["multiple"],
+        "author": ["jiawen"],
         "shapes": ["circle"],
         "category": ["sin","transform","texture","mod"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_light",
       "title":  "light",
       "author": "Jiawen",
       "filters": {
-        "color": ["black","white"],
+        "author": ["jiawen"],
         "shapes": ["rhombus"],
         "category": ["random"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "jiawen_noise",
       "title":  "noise",
       "author": "Jiawen",
       "filters": {
-        "color": ["black","white"],
-        "shapes": ["rect"],
+        "author": ["jiawen"],
+        "shapes": ["rectangle"],
         "category": ["random"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_GradientCurves",
       "title":  "Gradient and Curves",
       "author": "Yun",
       "filters": {
-        "color": ["yellow", "blue", "pink"],
-        "shapes": ["rect", "circle"],
+        "author": ["yun"],
+        "shapes": ["rectangle", "circle"],
         "category": ["sin", "cos", "fract","pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_ciiiiircles",
       "title":  "Ciiiiircles",
       "author": "Yun",
       "filters": {
-        "color": ["yellow", "blue", "pink", "oramge"],
+        "author": ["yun"],
         "shapes": ["circle"],
         "category": ["sin", "cos", "noise","pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_01",
       "title":  "Waves",
       "author": "Felix",
       "filters": {
-        "color": ["white", "blue"],
+        "author": ["felix"],
         "shapes": ["circle"],
         "category": ["noise"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_02",
       "title":  "Ofset",
       "author": "Felix",
       "filters": {
-        "color": ["red", "green"],
-        "shapes": ["rect"],
+        "author": ["felix"],
+        "shapes": ["rectangle"],
         "category": ["pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_03",
       "title":  "Circular Move",
       "author": "Felix",
       "filters": {
-        "color": ["black", "blue"],
+        "author": ["felix"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_04",
       "title":  "Transition",
       "author": "Felix",
       "filters": {
-        "color": ["white", "blue"],
-        "shapes": ["circle", "rect"],
+        "author": ["felix"],
+        "shapes": ["circle", "rectangle"],
         "category": ["pattern"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Felix_05",
       "title":  "SIN|COS MOVEMENT",
       "author": "Felix",
       "filters": {
-        "color": ["blue"],
+        "author": ["felix"],
         "shapes": ["circle"],
         "category": ["sin", "cos"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Tsingyun_FireHearts",
       "title":  "Fire_Hearts",
       "author": "TsingYun",
       "filters": {
-        "color": ["red", "black"],
+        "author": ["tsingyun"],
         "shapes": ["heart", "circle"],
         "category": ["sin", "cos", "noise","pattern"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Tsingyun_Hearts",
       "title":  "Hearts",
       "author": "TsingYun",
       "filters": {
-        "color": ["pink"],
+        "author": ["tsingyun"],
         "shapes": ["heart", "circle"],
         "category": ["sin", "cos", "noise","pattern"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Tsingyun_Ripples",
       "title":  "Ripples",
       "author": "TsingYun",
       "filters": {
-        "color": ["red","orange"],
+        "author": ["tsingyun"],
         "shapes": ["ripple", "circle"],
         "category": ["noise","pattern","transform", "mod"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Tsingyun_Ripples02",
       "title":  "Ripples02",
       "author": "TsingYun",
       "filters": {
-        "color": ["blue","violet"],
+        "author": ["tsingyun"],
         "shapes": ["ripple", "circle"],
         "category": ["noise","pattern","transform", "sin"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Tsingyun_StarryNight",
       "title":  "Starry_Night",
       "author": "TsingYun",
       "filters": {
-        "color": ["black","white","red","blue"],
+        "author": ["tsingyun"],
         "shapes": ["moon", "circle"],
         "category": ["noise","pattern","transform", "sin"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Tsingyun_Wave",
       "title":  "Wave",
       "author": "TsingYun",
       "filters": {
-        "color": ["blue","violet","pink","yellow"],
-        "shapes": ["rect", "circle"],
+        "author": ["tsingyun"],
+        "shapes": ["rectangle", "circle"],
         "category": ["pattern","transform", "sin"]
-      },
-      "format": "1:1"
+      }
     },
     {
       "filename": "Yun_NoiseInk",
       "title":  "Noise Ink",
       "author": "Yun",
       "filters": {
-        "color": ["black","white"],
-        "shapes": ["rect"],
+        "author": ["yun"],
+        "shapes": ["rectangle"],
         "category": ["noise"]
-      },
-      "format": "1:1"
+      }
     },
      {
       "filename": "Yun_GridComposition_2",
       "title":  "Grid and Composition 02",
       "author": "Yun",
       "filters": {
-        "color": ["orange","green"],
+        "author": ["yun"],
         "shapes": ["line"],
         "category": ["pattern", "sin"]
-      },
-      "format": "1:1"
+      }
     }
   ],
   "students" : [
     {
       "name": "Alex Hahn",
       "link": "http://www.instagram.com/hahnderhahn/"
-    },
-    {
-      "name": "ChunLi Wang",
-      "link": "http://www.wang-chunli.com/"
     },
     {
       "name": "Felix Müller",
@@ -585,7 +530,7 @@
     },
     {
       "name": "Ulrike Rausch",
-      "link": ""
+      "link": "http://www.instagram.com/liebefonts/"
     },
     {
       "name": "Yun Kuo",
