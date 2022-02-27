@@ -146,6 +146,7 @@ function initFilterCallbacks(preparedData) {
     $('.filter').click(function() {
         activeFilterValues = filterImages(this, activeFilterValues);
         filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues);
+        updateWithFragmentIdentifier(activeFilterValues[0]);
     });
 }
 
@@ -208,6 +209,10 @@ function filterWithFragmentIdentifier() {
             $(".filter-items > .filter[filter-value='." + filterValue + "'], .about-menu-title.filter[filter-value='." + filterValue + "']").click();
         }
     }
+}
+
+function updateWithFragmentIdentifier(filterValue) {
+    window.location.hash = filterValue.substring(1);
 }
 
 function initHtml(preparedData) {
