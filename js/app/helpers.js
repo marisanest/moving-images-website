@@ -105,7 +105,7 @@ function initFilters() {
         let filter = $(this);
         let filterValue = filter.attr('filter-value');
 
-        if(filter.is(".image-filter, .image-author") && !filter.closest(".body-grid-item").is(':hover, .active')){
+        if(filter.is(".image-filter") && !filter.closest(".body-grid-item").is(':hover, .active')){
             return;
         }
 
@@ -173,7 +173,7 @@ function initImages() {
             let image = $(this);
             let eventTarget = $(event.target);
 
-            if(!eventTarget.is(".image-filter, .image-author")){
+            if(!eventTarget.is(".image-filter")){
                 window.location = image.attr('href');
             }
         });
@@ -183,9 +183,9 @@ function initImages() {
             let eventTarget = $(event.target);
 
             if (image.is('.active')){
-                if(eventTarget.is(".image-edit-title, .image-title")){
+                if(eventTarget.is(".image-edit-title")){
                     window.location = image.attr('href');
-                } else if (!eventTarget.is(".image-filter, .image-author")) {
+                } else if (!eventTarget.is(".image-filter")) {
                     image.removeClass("active");
                 }
             } else {
