@@ -25,9 +25,9 @@
                 <a class="large" href="/app/index.html">Moving Images:<br/>Design with Code</a>
             </div>
             <div class="menu">
-                <div class="filter small-medium" filter-value=".about">About</div>
+                <div class="about-menu-title filter small-medium" filter-value=".about">About</div>
                 <div class="filters">
-                    <div class="filters-title collapsible small-medium"></div>
+                    <div class="filters-menu-title collapsible small-medium"></div>
                 </div>
             </div>
         </div>
@@ -36,9 +36,9 @@
             {{#filters}}
             <div class="filter-list">
                 <span class="filter-type small">{{type.upper}}:</span>
-                <div class="filter-items {{type.lower}}">
+                <div class="filter-items">
                     {{#values}}
-                    <div class="filter small show {{lower}}" filter-value=".{{lower}}">{{upper}}</div>
+                    <div class="filter small show" filter-value=".{{lower}}">{{upper}}</div>
                     {{/values}}
                 </div>
             </div>
