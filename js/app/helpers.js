@@ -51,16 +51,9 @@ function prepareLowerUpperText(value) {
     }
 }
 
-
-function prepareFilterfiltering(data) {
-    let entrys = [];
-
-    data.images.forEach(image => {
-        entrys.push(Object.values(image.filters).flat());
-    });
-    return entrys;
+function prepareFiltersFiltering(data) {
+    return data.images.map(image => Object.values(image.filters).flat());
 }
-
 
 function initIsotope(grid) {
     $('.' + grid).isotope({
@@ -74,21 +67,18 @@ function initIsotope(grid) {
 }
 
 
-function filterFilters(entrys) {
+function filterFilters(entries) {
     $('.filter').click(function() {
-        let active = []
-        $('.filter-items > .is-checked').map(function() {
-            active.push($(this).attr('data-filter').substring(1));
-        });
+        let active = $('.filter-items > .active').map(function() {
+            return $(this).attr('filter-value').substring(1);
+        }).get();
 
-        let all = []
-        $('.filter-items > .filter').map(function() {
-            all.push($(this).attr('data-filter').substring(1));
-        });
+        let all = $('.filter-items > .filter').map(function() {
+            return $(this).attr('filter-value').substring(1);
+        }).get();
 
         let matching = [];
-
-        entrys.forEach(filters => {
+        entries.forEach(filters => {
             if(active.every(val => filters.includes(val))) {
                 filters.forEach(val => {
                     if(!matching.includes(val)) {
@@ -98,7 +88,7 @@ function filterFilters(entrys) {
             }
         });
 
-        all.filter(x => !matching.includes(x)).forEach(filter => {
+        all.filter(filter => !matching.includes(filter)).forEach(filter => {
             $('.filter-items > .' + filter).removeClass('show').addClass('hide');
         });
 
@@ -108,14 +98,18 @@ function filterFilters(entrys) {
     })
 }
 
-
 function initFilters() {
     let filterValues = [];
 
     $('.filter').click(function() {
-        let filterValue = $(this).attr('data-filter');
+        let filter = $(this);
+        let filterValue = filter.attr('filter-value');
 
-        if ($(this).is('.is-checked')) {
+        if(filter.is(".image-filter, .image-author") && !filter.closest(".body-grid-item").is(':hover, .active')){
+            return;
+        }
+
+        if (filter.is('.active')) {
             if (filterValue === '.about' || filterValue ==='.imprint') {
                 $(".body-grid-item" + filterValue).addClass('hidden');
                 filterValues = ['*'];
@@ -126,19 +120,19 @@ function initFilters() {
                 }
             }
 
-            $(".filter.is-checked[data-filter='" + filterValue + "']").removeClass('is-checked');
+            $(".filter.active[filter-value='" + filterValue + "']").removeClass('active');
         } else {
             if (filterValues.includes('*')) {
                 filterValues = [];
             }
 
             if (filterValues.includes('.about') || filterValues.includes('.imprint')) {
-                $("[data-filter='.about'],[data-filter='.imprint']").removeClass('is-checked');
+                $("[filter-value='.about'],[filter-value='.imprint']").removeClass('active');
                 filterValues = [];
             }
 
             if (filterValue === '.about' || filterValue ==='.imprint') {
-                $(".filter").removeClass('is-checked');
+                $(".filter, .body-grid-item.active").removeClass('active');
                 if($(".collapsible").hasClass('active')) {$(".collapsible").click()}
                 $(".body-grid-item" + filterValue).removeClass('hidden');
                 filterValues = [filterValue];
@@ -146,7 +140,7 @@ function initFilters() {
                 filterValues.push(filterValue);
             }
 
-            $("[data-filter='" + filterValue + "']").addClass('is-checked');
+            $("[filter-value='" + filterValue + "']").addClass('active');
         }
 
         $('.body-grid').isotope({filter: filterValues.join('')});
@@ -167,4 +161,40 @@ function initCollapsible() {
             $('.category-menu-wrapper').css('padding-bottom', "0.5rem");
         }
     });
+}
+
+function initImages() {
+    let images = $(".body-grid-item.image");
+
+    if (window.matchMedia('(hover: hover)').matches) {
+        $(".image-edit").remove();
+
+        images.click(function(event) {
+            let image = $(this);
+            let eventTarget = $(event.target);
+
+            if(!eventTarget.is(".image-filter, .image-author")){
+                window.location = image.attr('href');
+            }
+        });
+    } else {
+        images.click(function(event) {
+            let image = $(this);
+            let eventTarget = $(event.target);
+
+            if (image.is('.active')){
+                if(eventTarget.is(".image-edit-title, .image-title")){
+                    window.location = image.attr('href');
+                } else if (!eventTarget.is(".image-filter, .image-author")) {
+                    image.removeClass("active");
+                }
+            } else {
+                $(".body-grid-item.active").removeClass("active");
+                image.addClass("active");
+            }
+        });
+    }
+
+    images.css({'height': images.width() + 'px'});
+    $('.body-grid').isotope();
 }

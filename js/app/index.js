@@ -1,3 +1,4 @@
+let entries;
 $(document).ready(function() {
     fetch("../data/data.json", {
         headers: {
@@ -14,13 +15,14 @@ $(document).ready(function() {
                         prepareData(data)
                     )
                 );
-            entrys = prepareFilterfiltering(data);
+            entries = prepareFiltersFiltering(data);
         })
         .then(() => {
             initIsotope("body-grid");
             initFilters();
-            filterFilters(entrys);
+            filterFilters(entries);
             initCollapsible();
+            initImages();
         });
 });
 
@@ -29,4 +31,8 @@ $(window).resize(function() {
         let categoryMenu = $('.category-menu');
         categoryMenu.css('max-height', categoryMenu.prop('scrollHeight') + "px");
     }
+
+    let images = $(".body-grid-item.image");
+    images.css({'height': images.width() + 'px'});
+    $('.body-grid').isotope();
 });

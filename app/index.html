@@ -22,12 +22,12 @@
     <div class="container">
         <div class="header">
             <div class="title">
-                <a class="large" href="/app/index.html">Moving Images: <br/>Design with Code</a>
+                <a class="large" href="/app/index.html">Moving Images:<br/>Design with Code</a>
             </div>
             <div class="menu">
-                <a class="filter small-medium" href="#" data-filter=".about">About</a>
+                <div class="filter small-medium" filter-value=".about">About</div>
                 <div class="filters">
-                    <div class="collapsible small-medium">Filters</div>
+                    <div class="filters-title collapsible small-medium"></div>
                 </div>
             </div>
         </div>
@@ -38,7 +38,7 @@
                 <span class="filter-type small">{{type.upper}}:</span>
                 <div class="filter-items {{type.lower}}">
                     {{#values}}
-                    <a href="#" class="filter small show {{lower}}" data-filter=".{{lower}}">{{upper}}</a>
+                    <div class="filter small show {{lower}}" filter-value=".{{lower}}">{{upper}}</div>
                     {{/values}}
                 </div>
             </div>
@@ -48,28 +48,31 @@
         <div class="body-grid">
             <div class="body-grid-sizer"></div>
             {{#images}}
-            <div class="body-grid-item {{author}} {{filters.joined}}">
-                <div class="image-caption-wrapper">
-                    <a class="image-link" href="../app/show.html?data={{filename}}.frag">
-                        <img class="image" src="../data/images/{{filename}}.png">
-                    </a>
-                    <div class="filters overlay small">
-                        <div class="flex-overlay">
-                            {{#filters.separate}}
-                            {{#values}}
-                            <a href="#" class="filter overlay" data-filter=".{{lower}}">{{upper}}</a>
-                            {{/values}}
-                            {{/filters.separate}}
+            <div class="body-grid-item image {{author}} {{filters.joined}}" href="../app/edit.html?data={{filename}}.frag">
+                <img src="../data/images/{{filename}}.png" alt={{filename}}>
+                <div class="image-info">
+                    <div class="image-filters-edit">
+                        <div class="image-filters-wrapper">
+                            <div class="image-filters">
+                                {{#filters.separate}}
+                                {{#values}}
+                                <div class="image-filter filter small" filter-value=".{{lower}}">{{upper}}</div>
+                                {{/values}}
+                                {{/filters.separate}}
+                            </div>
+                        </div>
+                        <div class="image-edit">
+                            <div class="image-edit-title small">Edit</div>
                         </div>
                     </div>
-                    <div class="caption small">
-                        <a class="filter" data-filter=".{{author}}" href="#">{{author}}</a>
-                        <a href="../app/show.html?data={{filename}}.frag">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</a>
+                    <div class="image-caption">
+                        <div class="image-author filter small" filter-value=".{{author}}">{{author}}</div>
+                        <div class="image-title small">&nbsp;&nbsp;-&nbsp;&nbsp;{{title}}</div>
                     </div>
                 </div>
             </div>
             {{/images}}
-            <div class="hidden body-grid-item grid-item--full about">
+            <div class="body-grid-item grid-item--full about hidden">
                 <p class="medium">About</p>
                 <div class="small-medium about-body">
                     <div class="about-text">
@@ -97,7 +100,7 @@
         <hr>
         <span>
             <a href="https://www.udk-berlin.de/schnellzugriff/impressum/">LEGAL</a>
-            | TYPEFACE BY 
+            | TYPEFACE BY
             <a href="https://abcdinamo.com/">DINAMO</a>
         </span>
     </footer>
