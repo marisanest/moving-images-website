@@ -1,3 +1,4 @@
+let entries;
 $(document).ready(function() {
     fetch("../data/data.json", {
         headers: {
@@ -14,12 +15,12 @@ $(document).ready(function() {
                         prepareData(data)
                     )
                 );
-            entrys = prepareFilterfiltering(data);
+            entries = prepareFiltersFiltering(data);
         })
         .then(() => {
             initIsotope("body-grid");
             initFilters();
-            filterFilters(entrys);
+            filterFilters(entries);
             initCollapsible();
             initImages();
         });

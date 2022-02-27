@@ -51,13 +51,8 @@ function prepareLowerUpperText(value) {
     }
 }
 
-function prepareFilterfiltering(data) {
-    let entrys = [];
-
-    data.images.forEach(image => {
-        entrys.push(Object.values(image.filters).flat());
-    });
-    return entrys;
+function prepareFiltersFiltering(data) {
+    return data.images.map(image => Object.values(image.filters).flat());
 }
 
 function initIsotope(grid) {
@@ -72,21 +67,18 @@ function initIsotope(grid) {
 }
 
 
-function filterFilters(entrys) {
+function filterFilters(entries) {
     $('.filter').click(function() {
-        let active = []
-        $('.filter-items > .is-checked').map(function() {
-            active.push($(this).attr('data-filter').substring(1));
-        });
+        let active = $('.filter-items > .active').map(function() {
+            return $(this).attr('filter-value').substring(1);
+        }).get();
 
-        let all = []
-        $('.filter-items > .filter').map(function() {
-            all.push($(this).attr('data-filter').substring(1));
-        });
+        let all = $('.filter-items > .filter').map(function() {
+            return $(this).attr('filter-value').substring(1);
+        }).get();
 
         let matching = [];
-
-        entrys.forEach(filters => {
+        entries.forEach(filters => {
             if(active.every(val => filters.includes(val))) {
                 filters.forEach(val => {
                     if(!matching.includes(val)) {
@@ -96,7 +88,7 @@ function filterFilters(entrys) {
             }
         });
 
-        all.filter(x => !matching.includes(x)).forEach(filter => {
+        all.filter(filter => !matching.includes(filter)).forEach(filter => {
             $('.filter-items > .' + filter).removeClass('show').addClass('hide');
         });
 

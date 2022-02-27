@@ -320,7 +320,7 @@ hr {
 
 .category-menu-wrapper {
     overflow: hidden;
-    padding: 0 0.5rem 1.0rem 0.5rem;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 .category-menu {
@@ -366,8 +366,17 @@ hr {
     transition: all 0.5s ease;
 }
 
-.filter.show {opacity: 100%; filter: none; font-variation-settings: "TRIP" 0, "slnt" 0;}
-.filter.hide {opacity: 50%; filter: blur(1px); font-variation-settings: "TRIP" 1, "slnt" -13;}
+.filter.show {
+    opacity: 100%;
+    filter: none;
+    font-variation-settings: "TRIP" 0, "slnt" 0;
+}
+
+.filter.hide {
+    opacity: 50%;
+    filter: blur(1px);
+    font-variation-settings: "TRIP" 1, "slnt" -13;
+}
 
 .filter.active {
     color: #ea1f4c !important;
