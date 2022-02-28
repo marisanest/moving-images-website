@@ -366,13 +366,13 @@ hr {
 .filter.show {
     opacity: 100%;
     filter: none;
-    font-variation-settings: "TRIP" 0, "slnt" 0;
+    font-variation-settings: "slnt" 0;
 }
 
 .filter.hide {
     opacity: 50%;
     filter: blur(1px);
-    font-variation-settings: "TRIP" 1, "slnt" -13;
+    font-variation-settings: "slnt" -13;
 }
 
 .filter.active {
@@ -487,8 +487,8 @@ hr {
 }
 
 
-.about .triple {
-    font-variation-settings: "TRIP" 1, "slnt" -13;
+.slant {
+    font-variation-settings: "slnt" -13;
 }
 
 .about .dinamo:after {
