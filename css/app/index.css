@@ -527,7 +527,7 @@ footer {
     flex-shrink: 0;
     max-width: 100%;
     padding: var(--padding-footer);
-    opacity: 0.3;
+    opacity: 0.35;
 }
 
 footer > span {
