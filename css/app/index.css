@@ -285,7 +285,8 @@ hr {
     transition: height .2s ease-out;
 }
 
-.title a {
+.title a,
+a.student {
     text-decoration: none;
 }
 
@@ -431,12 +432,23 @@ hr {
 .filter-list .filter,
 .image-filter,
 .image-author,
-.image-edit-title {
+.image-edit-title,
+.about-students-title,
+.student {
     border-radius: 2rem;
     background: white;
     padding: var(--padding-box);
     margin: var(--margin-box);
     pointer-events: all;
+}
+
+.about-students-title {
+    background: none;
+    margin: 0;
+}
+
+.student {
+    margin: 0;
 }
 
 .image-filters {
@@ -467,7 +479,9 @@ hr {
 .about-students {
     grid-area: students;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 0.4rem;
 }
 
 .about-text {
