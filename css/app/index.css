@@ -469,10 +469,14 @@ a.student {
     cursor: initial;
 }
 
+.about-title {
+    padding-bottom: 1.5rem;
+}
+
 .about-body {
     display: grid;
     grid-template-columns: var(--grid-template-columns-about-body);
-    gap: 25px;
+    gap: 1.5rem;
     grid-template-areas: var(--grid-template-areas-about-body);
 }
 
