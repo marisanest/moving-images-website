@@ -151,14 +151,17 @@ function initCollapsible() {
     $('.collapsible').click(function() {
         let collapsible = $(this);
         collapsible.toggleClass("active");
-        let filterList = $('.category-menu');
+        let categoryMenuWrapper = $('.category-menu-wrapper');
+        let categoryMenu = $('.category-menu');
 
-        if (filterList.css('maxHeight') != '0px'){
-            filterList.css('maxHeight', '0px');
-            $('.category-menu-wrapper').css('padding-bottom', "0rem");
+        if (categoryMenu.css('maxHeight') !== '0px'){
+            categoryMenu.css('maxHeight', '0px');
+            categoryMenuWrapper.css('padding-top', "0rem");
+            categoryMenuWrapper.css('padding-bottom', "0rem");
         } else {
-            filterList.css('maxHeight', filterList.prop('scrollHeight') + "px");
-            $('.category-menu-wrapper').css('padding-bottom', "0.5rem");
+            categoryMenu.css('maxHeight', categoryMenu.prop('scrollHeight') + "px");
+            categoryMenuWrapper.css('padding-top', "0.5rem");
+            categoryMenuWrapper.css('padding-bottom', "1.0rem");
         }
     });
 }

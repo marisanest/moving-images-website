@@ -319,8 +319,8 @@ hr {
 }
 
 .category-menu-wrapper {
-    overflow: hidden;
     padding: 0 0.5rem 0 0.5rem;
+    transition: padding-top .2s ease-out, padding-bottom .2s ease-out;
 }
 
 .category-menu {
