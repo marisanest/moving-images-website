@@ -35,8 +35,8 @@
             <div class="category-menu">
             {{#filters}}
             <div class="filter-list">
-                <span class="filter-type small">{{type.upper}}:</span>
                 <div class="filter-items {{type.lower}}">
+                    <div class="filter-type small slant">{{type.upper}}:</div>
                     {{#values}}
                     <div class="filter small show {{lower}}" filter-value=".{{lower}}">{{upper}}</div>
                     {{/values}}

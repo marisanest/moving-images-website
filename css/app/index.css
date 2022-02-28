@@ -337,14 +337,11 @@ hr {
     max-width: var(--max-width-filter-list);
 }
 
-.filter-type {
-    padding: 5px 10px;
-}
-
 .filter-items {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 33.3%;
+    gap: 0.4rem;
 }
 
 .body-grid-sizer {
@@ -428,7 +425,8 @@ hr {
     margin-right: 0;
 }
 
-.filter-list .filter,
+.filter-type,
+.filter-items > .filter,
 .image-filter,
 .image-author,
 .image-edit-title {
@@ -437,6 +435,15 @@ hr {
     padding: var(--padding-box);
     margin: var(--margin-box);
     pointer-events: all;
+}
+
+.filter-type,
+.filter-list .filter {
+    margin: 0;
+}
+
+.filter-type {
+    background: none;
 }
 
 .image-filters {
