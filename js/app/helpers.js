@@ -89,11 +89,11 @@ function filterFilters(entries) {
         });
 
         all.filter(filter => !matching.includes(filter)).forEach(filter => {
-            $('.filter-items > .' + filter).removeClass('show').addClass('hide');
+            $('.filter-items > .' + filter).removeClass('show').addClass('no-select').addClass('hide');
         });
 
         matching.forEach(filter => {
-            $('.filter-items > .' + filter).removeClass('hide').addClass('show');
+            $('.filter-items > .' + filter).removeClass('no-select').removeClass('hide').addClass('show');
         });
     })
 }
@@ -105,7 +105,7 @@ function initFilters() {
         let filter = $(this);
         let filterValue = filter.attr('filter-value');
 
-        if(filter.is(".image-filter, .image-author") && !filter.closest(".body-grid-item").is(':hover, .active')){
+        if(filter.is(".image-filter, .image-author, .filter.hide") && !filter.closest(".body-grid-item").is(':hover, .active')){
             return;
         }
 
