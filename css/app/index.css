@@ -24,7 +24,7 @@
         --line-height-large: 36px;
 
         --padding-container: 2rem 2rem 0 2rem;
-        --padding-footer: 0.5 2.5rem 2rem 2.5rem;
+        --padding-footer: 0.5rem 2.5rem 2rem 2.5rem;
 
         --padding-box: .4rem .8rem;
         --margin-box: .2rem;
@@ -527,7 +527,7 @@ footer {
     flex-shrink: 0;
     max-width: 100%;
     padding: var(--padding-footer);
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
 footer > span {
