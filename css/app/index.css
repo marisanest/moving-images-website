@@ -493,9 +493,8 @@ a.student {
     grid-area: thanks;
 }
 
-
-.about .triple {
-    font-variation-settings: "TRIP" 1, "slnt" -13;
+.about .slant {
+    font-variation-settings: "slnt" -13;
 }
 
 .about .dinamo:after {
