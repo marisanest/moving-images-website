@@ -127,6 +127,7 @@ function initFilters() {
             }
 
             if (filterValues.includes('.about') || filterValues.includes('.imprint')) {
+                $(".about").addClass('hidden');
                 $("[filter-value='.about'],[filter-value='.imprint']").removeClass('active');
                 filterValues = [];
             }
