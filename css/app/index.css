@@ -350,6 +350,9 @@ hr {
 .filter-type {
     /*font-weight: 350;*/
     /*color: #ea1f4c;*/
+    /*width: 100%;*/
+    /*padding-left: 0 !important;*/
+    /*padding-bottom: 0 !important;*/
 }
 
 .filter-items {
