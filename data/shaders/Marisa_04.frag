@@ -7,7 +7,10 @@ uniform float u_time;
 
 #define BLACK vec4(0.0, 0.0, 0.0, 1.0)
 #define WHITE vec4(1.0, 1.0, 1.0, 1.0)
+#define GREEN vec4(0.2353, 1.0, 0.0, 1.0)
 #define ORANGE vec4(1.0, 0.5333, 0.0, 1.0)
+#define RED vec4(0.9843, 0.2824, 0.2824, 1.0)
+#define LILAC vec4(0.7137, 0.4196, 0.9137, 1.0)
 #define LILA vec4(0.5176, 0.0, 1.0, 1.0)
 
 #define PI 3.14159265359
@@ -42,7 +45,7 @@ float dot2(vec2 x) {
 }
 
 float merge(float d1, float d2){
-	return min(d1, d2);
+    return min(d1, d2);
 }
 
 vec2 normalizeCoord(vec2 coord, vec2 monitorResolution) {
@@ -129,7 +132,7 @@ float sdBezier(in vec2 pos, in vec2 A, in vec2 B, in vec2 C) {
         float n = sin(v)*1.732050808;
         vec3  t = clamp(vec3(m+m,-n-m,n-m)*z-kx,0.0,1.0);
         res = min( dot2(d+(c+b*t.x)*t.x),
-                   dot2(d+(c+b*t.y)*t.y) );
+        dot2(d+(c+b*t.y)*t.y) );
     }
     return sqrt( res );
 }
@@ -194,12 +197,12 @@ vec4 circleLine(vec2 st, vec4 innerCircleColor, vec4 outerCircleColor, vec4 curr
 
 vec2 updateSmileyEyeCoord(vec2 coord, float translateValueX, float cosMaxValue) {
     vec2 updatedCoord = translateCoord(
-        coord,
-        vec2(translateValueX, adjustedCos(u_time, 1.0, -.4, cosMaxValue))
+    coord,
+    vec2(translateValueX, adjustedCos(u_time + 1.2 * PI, 1.0, -.4, cosMaxValue))
     );
     updatedCoord = scaleCoord(
-        updatedCoord,
-        vec2(0.8, 0.8)
+    updatedCoord,
+    vec2(0.8, 0.8)
     );
 
     return updatedCoord;
@@ -207,26 +210,26 @@ vec2 updateSmileyEyeCoord(vec2 coord, float translateValueX, float cosMaxValue) 
 
 float smileyEye(vec2 coord) {
     return sdBezier(
-        coord,
-        vec2(.0, .0),
-        vec2(.0, .0),
-        vec2(.0, adjustedSin(u_time, 1.0, 0.0, 0.1))
+    coord,
+    vec2(.0, .0),
+    vec2(.0, .0),
+    vec2(.0, adjustedSin(u_time + 1.2 * PI, 1.0, 0.0, 0.1))
     );
 }
 
 vec2 updateSmileyMouthCoord(vec2 coord) {
     return translateCoord(
-        coord,
-        vec2(0.0, adjustedSin(u_time, 1.0, 0.2, 0.5))
+    coord,
+    vec2(0.0, adjustedSin(u_time + 1.2 * PI, 1.0, 0.2, 0.5))
     );
 }
 
 float smileyMouth(vec2 coord) {
     return sdBezier(
-        coord,
-        vec2(-.4, .0),
-        vec2(.0, adjustedCos(u_time, 1.0, -0.5, 0.3)),
-        vec2(0.4, .0)
+    coord,
+    vec2(-.4, .0),
+    vec2(.0, adjustedCos(u_time + 1.2 * PI, 1.0, -0.5, 0.3)),
+    vec2(0.4, .0)
     );
 }
 
