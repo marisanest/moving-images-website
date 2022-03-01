@@ -6,6 +6,9 @@
 
 @media only screen {
     :root {
+        --alternative-font-color: #ea1f4c;
+        /*--alternative-font-color: #ff3131;*/
+
         --grid-item--width: 20%;
 
         --font-size-extra-small: 12px;
@@ -187,7 +190,7 @@
     .filters-title:hover,
     .image-title:hover,
     .image-edit-title:hover {
-        color: #ea1f4c !important;
+        color: var(--alternative-font-color) !important;
     }
 
     .body-grid-item:hover img {
@@ -198,6 +201,55 @@
     .body-grid-item:hover .image-edit,
     .body-grid-item:hover .image-caption {
         opacity: 1;
+    }
+
+    .student {
+        letter-spacing: 0;
+        font-variation-settings: "slnt" 0, "TRIP" 0, "wght" 300;
+        filter: none;
+        transition: all 0.5s ease;
+    }
+
+    .student:nth-child(2):hover {
+        letter-spacing: 2px;
+        font-variation-settings: "TRIP" 1;
+    }
+
+    .student:nth-child(3):hover {
+        font-variation-settings: "slnt" -13, "wght" 400;
+    }
+
+    .student:nth-child(4):hover {
+        padding-top: 0.2rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .student:nth-child(5):hover {
+        font-variation-settings: "slnt" -13, "TRIP" 1;
+    }
+
+    .student:nth-child(6):hover {
+        font-variation-settings: "wght" 400;
+        filter: blur(1px);
+    }
+
+    .student:nth-child(7):hover {
+        letter-spacing: 3px;
+    }
+
+    .student:nth-child(8):hover {
+        font-variation-settings: "slnt" -13;
+    }
+
+    .student:nth-child(9):hover {
+        padding-top: 0.2rem;
+        padding-bottom: 0.6rem;
+        font-variation-settings: "TRIP" 1;
+    }
+
+    .student:nth-child(10):hover {
+        letter-spacing: 3px;
+        font-variation-settings: "slnt" -13, "wght" 500;
     }
 }
 
@@ -381,7 +433,7 @@ a.student {
 }
 
 .filter.active {
-    color: #ea1f4c !important;
+    color: var(--alternative-font-color) !important;
 }
 
 .image > img {
@@ -450,6 +502,7 @@ a.student {
 
 .student {
     margin: 0;
+    /*filter: drop-shadow(12px 16px 18px var(--alternative-font-color));*/
 }
 
 .image-filters {
