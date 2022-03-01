@@ -23,8 +23,10 @@
         --font-size-larg: 36px;
         --line-height-large: 36px;
 
-        --padding-container: 2rem 2rem 0 2rem;
-        --padding-footer: 0.5rem 2.5rem 2rem 2.5rem;
+        --no-gapping: 0;
+        --large-gapping: 2.0rem;
+        --medium-gapping: 1.5rem;
+        --small-gapping: 0.5rem;
 
         --padding-box: .4rem .8rem;
         --margin-box: .2rem;
@@ -156,11 +158,10 @@
     }
 }
 
-
 @media only screen and (max-width: 430px) {
     :root {
-        --padding-container: 1.5rem 1.4rem 0 1.5rem;
-        --padding-footer: 0 2rem 1.5rem 2rem;
+        --large-gapping: 1.5rem;
+        --medium-gapping: 1.0rem;
     }
 }
 
@@ -270,7 +271,7 @@ hr {
 
 .container {
     max-width: 100%;
-    padding: var(--padding-container);
+    padding: var(--large-gapping) var(--large-gapping) var(--medium-gapping) var(--large-gapping);
     flex: 1 0 auto;
 }
 
@@ -278,7 +279,7 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0.5rem 1.0rem 0.5rem;
+    padding: var(--small-gapping) var(--small-gapping) calc(var(--medium-gapping) - var(--small-gapping)) var(--small-gapping);
 }
 
 .header-grid {
@@ -321,7 +322,7 @@ a.student {
 
 .category-menu-wrapper {
     overflow: hidden;
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 var(--small-gapping) 0 var(--small-gapping);
 }
 
 .category-menu {
@@ -354,7 +355,7 @@ a.student {
 
 .body-grid-item {
     width: var(--grid-item--width);
-    padding: 0.5rem;
+    padding: var(--small-gapping);
     cursor: pointer;
 }
 
@@ -470,13 +471,13 @@ a.student {
 }
 
 .about-title {
-    padding-bottom: 1.5rem;
+    padding-bottom: var(--medium-gapping);
 }
 
 .about-body {
     display: grid;
     grid-template-columns: var(--grid-template-columns-about-body);
-    gap: 1.5rem;
+    gap: var(--medium-gapping);
     grid-template-areas: var(--grid-template-areas-about-body);
 }
 
@@ -526,7 +527,7 @@ a.student {
 footer {
     flex-shrink: 0;
     max-width: 100%;
-    padding: var(--padding-footer);
+    padding: var(--no-gapping) calc(var(--large-gapping) + var(--small-gapping)) var(--large-gapping) calc(var(--large-gapping) + var(--small-gapping));;
     opacity: 0.35;
 }
 
