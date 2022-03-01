@@ -155,10 +155,10 @@ function initCollapsible() {
 
         if (filterList.css('maxHeight') != '0px'){
             filterList.css('maxHeight', '0px');
-            $('.category-menu-wrapper').css('padding-bottom', "0rem");
+            $('.category-menu-wrapper').css('padding-bottom', "var(--no-gapping)");
         } else {
             filterList.css('maxHeight', filterList.prop('scrollHeight') + "px");
-            $('.category-menu-wrapper').css('padding-bottom', "0.5rem");
+            $('.category-menu-wrapper').css('padding-bottom', "var(--small-gapping)");
         }
     });
 }
