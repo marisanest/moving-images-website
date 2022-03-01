@@ -105,7 +105,7 @@ function initFilters() {
         let filter = $(this);
         let filterValue = filter.attr('filter-value');
 
-        if(filter.is(".image-filter, .image-author") && !filter.closest(".body-grid-item").is(':hover, .active')){
+        if(filter.is(".image-filter, .image-author") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active'))){
             return;
         }
 
