@@ -31,8 +31,8 @@
       }
     },
     {
-      "filename": "Chunli_OffestPattern",
-      "title":  "OffestPattern",
+      "filename": "Chunli_OffsetPattern",
+      "title":  "Offset Pattern",
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
@@ -41,8 +41,8 @@
       }
     },
     {
-      "filename": "Chunli_Boxscaling",
-      "title":  "Boxscaling",
+      "filename": "Chunli_BoxScaling",
+      "title":  "Box Scaling",
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
@@ -52,7 +52,7 @@
     },
     {
       "filename": "Chunli_RandomRotate",
-      "title":  "RandomRotate",
+      "title":  "Random Rotate",
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
@@ -61,8 +61,8 @@
       }
     },
     {
-      "filename": "Chunli_FluidEffect_01",
-      "title":  "FluidEffect",
+      "filename": "Chunli_FluidEffect01",
+      "title":  "Fluid Effect 01",
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
@@ -71,8 +71,8 @@
       }
     },
     {
-      "filename": "Chunli_FluidEffect_02",
-      "title":  "FluidEffect",
+      "filename": "Chunli_FluidEffect02",
+      "title":  "Fluid Effect 02",
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
@@ -111,8 +111,8 @@
       }
     },
     {
-      "filename": "Marisa_001",
-      "title":  "001",
+      "filename": "Marisa_01",
+      "title":  "01",
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
@@ -121,8 +121,8 @@
       }
     },
     {
-      "filename": "Marisa_002",
-      "title":  "002",
+      "filename": "Marisa_02",
+      "title":  "02",
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
@@ -131,8 +131,8 @@
       }
     },
     {
-      "filename": "Marisa_003",
-      "title":  "003",
+      "filename": "Marisa_03",
+      "title":  "03",
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
@@ -141,8 +141,8 @@
       }
     },
     {
-      "filename": "Marisa_004",
-      "title":  "004",
+      "filename": "Marisa_04",
+      "title":  "04",
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
@@ -151,8 +151,8 @@
       }
     },
     {
-      "filename": "Marisa_005",
-      "title":  "005",
+      "filename": "Marisa_05",
+      "title":  "05",
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
@@ -241,7 +241,7 @@
       }
     },
     {
-      "filename": "Ulrike_RandomColorDistance",
+      "filename": "Ulrike_RandomColorAndDistance",
       "title":  "Random Color and Distance",
       "author": "Ulrike",
       "filters": {
@@ -251,7 +251,7 @@
       }
     },
     {
-      "filename": "Yun_GridComposition",
+      "filename": "Yun_GridAndComposition01",
       "title":  "Grid and Composition 01",
       "author": "Yun",
       "filters": {
@@ -261,8 +261,8 @@
       }
     },
     {
-      "filename": "Dain_01",
-      "title":  "Merge Circles",
+      "filename": "Dain_MergeCircles01",
+      "title":  "Merge Circles 01",
       "author": "Dain",
       "filters": {
         "author": ["dain"],
@@ -271,8 +271,8 @@
       }
     },
     {
-      "filename": "Dain_02",
-      "title":  "Merge Circles_02",
+      "filename": "Dain_MergeCircles02",
+      "title":  "Merge Circles 02",
       "author": "Dain",
       "filters": {
         "author": ["dain"],
@@ -281,7 +281,7 @@
       }
     },
     {
-      "filename": "Dain_03",
+      "filename": "Dain_Light",
       "title":  "Light",
       "author": "Dain",
       "filters": {
@@ -291,8 +291,8 @@
       }
     },
     {
-      "filename": "Dain_04",
-      "title":  "Mod",
+      "filename": "Dain_Mod01",
+      "title":  "Mod 01",
       "author": "Dain",
       "filters": {
         "author": ["dain"],
@@ -301,8 +301,8 @@
       }
     },
     {
-      "filename": "Dain_05",
-      "title":  "Mod2",
+      "filename": "Dain_Mod02",
+      "title":  "Mod 02",
       "author": "Dain",
       "filters": {
         "author": ["dain"],
@@ -311,8 +311,8 @@
       }
     },
     {
-      "filename": "jiawen_bpm",
-      "title":  "bpm",
+      "filename": "Jiawen_BPM",
+      "title":  "BPM",
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
@@ -321,8 +321,8 @@
       }
     },
     {
-      "filename": "jiawen_depth",
-      "title":  "depth",
+      "filename": "Jiawen_Depth",
+      "title":  "Depth",
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
@@ -331,8 +331,8 @@
       }
     },
     {
-      "filename": "jiawen_sims",
-      "title":  "sims",
+      "filename": "Jiawen_Sims",
+      "title":  "Sims",
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
@@ -341,8 +341,8 @@
       }
     },
     {
-      "filename": "jiawen_light",
-      "title":  "light",
+      "filename": "Jiawen_Light",
+      "title":  "Light",
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
@@ -351,8 +351,8 @@
       }
     },
     {
-      "filename": "jiawen_noise",
-      "title":  "noise",
+      "filename": "Jiawen_Noise",
+      "title":  "Noise",
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
@@ -361,7 +361,7 @@
       }
     },
     {
-      "filename": "Yun_GradientCurves",
+      "filename": "Yun_GradientAndCurves",
       "title":  "Gradient and Curves",
       "author": "Yun",
       "filters": {
@@ -371,7 +371,7 @@
       }
     },
     {
-      "filename": "Yun_ciiiiircles",
+      "filename": "Yun_Ciiiiircles",
       "title":  "Ciiiiircles",
       "author": "Yun",
       "filters": {
@@ -381,7 +381,7 @@
       }
     },
     {
-      "filename": "Felix_01",
+      "filename": "Felix_Waves",
       "title":  "Waves",
       "author": "Felix",
       "filters": {
@@ -391,8 +391,8 @@
       }
     },
     {
-      "filename": "Felix_02",
-      "title":  "Ofset",
+      "filename": "Felix_Offset",
+      "title":  "Offset",
       "author": "Felix",
       "filters": {
         "author": ["felix"],
@@ -401,7 +401,7 @@
       }
     },
     {
-      "filename": "Felix_03",
+      "filename": "Felix_CircularMove",
       "title":  "Circular Move",
       "author": "Felix",
       "filters": {
@@ -411,7 +411,7 @@
       }
     },
     {
-      "filename": "Felix_04",
+      "filename": "Felix_Transition",
       "title":  "Transition",
       "author": "Felix",
       "filters": {
@@ -421,8 +421,8 @@
       }
     },
     {
-      "filename": "Felix_05",
-      "title":  "SIN|COS MOVEMENT",
+      "filename": "Felix_Sin|CosMovement",
+      "title":  "Sin|Cos Movement",
       "author": "Felix",
       "filters": {
         "author": ["felix"],
@@ -432,7 +432,7 @@
     },
     {
       "filename": "Tsingyun_FireHearts",
-      "title":  "Fire_Hearts",
+      "title":  "Fire Hearts",
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
@@ -451,8 +451,8 @@
       }
     },
      {
-      "filename": "Tsingyun_Ripples",
-      "title":  "Ripples",
+      "filename": "Tsingyun_Ripples01",
+      "title":  "Ripples 01",
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
@@ -462,7 +462,7 @@
     },
      {
       "filename": "Tsingyun_Ripples02",
-      "title":  "Ripples02",
+      "title":  "Ripples 02",
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
@@ -472,7 +472,7 @@
     },
     {
       "filename": "Tsingyun_StarryNight",
-      "title":  "Starry_Night",
+      "title":  "Starry Night",
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
@@ -501,7 +501,7 @@
       }
     },
      {
-      "filename": "Yun_GridComposition_2",
+      "filename": "Yun_GridAndComposition02",
       "title":  "Grid and Composition 02",
       "author": "Yun",
       "filters": {
@@ -526,7 +526,7 @@
     },
     {
       "name": "Marisa Nest",
-      "link": ""
+      "link": "https://www.instagram.com/marisa.frizzzi/"
     },
     {
       "name": "Ulrike Rausch",
