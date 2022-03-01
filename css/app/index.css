@@ -198,6 +198,12 @@
     .body-grid-item:hover .image-caption {
         opacity: 1;
     }
+
+    .filter-items > .filter:hover,
+    .image-filter:hover {
+        /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
+        letter-spacing: 2px;
+    }
 }
 
 @media (hover: none) {
@@ -285,12 +291,28 @@ hr {
     transition: height .2s ease-out;
 }
 
+.title {
+    margin-right: 1rem;
+}
+
 .title a {
     text-decoration: none;
 }
 
-.title {
-    margin-right: 1rem;
+.first-title {
+    animation-name: weight-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+.second-title {
+    animation-name: slant-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
 }
 
 .menu {
@@ -363,7 +385,7 @@ hr {
 
 .filter {
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease, filter 0.5s ease, font-variation-settings 0.5s ease, letter-spacing 0.5s ease;
 }
 
 .filter.show {
@@ -376,6 +398,12 @@ hr {
     opacity: 50%;
     filter: blur(1px);
     font-variation-settings: "TRIP" 1, "slnt" -13;
+}
+
+.filter-items > .filter.active,
+.image-filter.active {
+    /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
+    letter-spacing: 2px;
 }
 
 .filter.active {
@@ -479,7 +507,6 @@ hr {
     grid-area: thanks;
 }
 
-
 .about .triple {
     font-variation-settings: "TRIP" 1, "slnt" -13;
 }
@@ -489,15 +516,36 @@ hr {
     font-size: 40px;
     vertical-align: middle;
 
-    transition: font-variation-settings 0.3s ease;
-    animation-name: glyph-animation;
+    animation-name: trip-animation;
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes glyph-animation {
+@keyframes weight-animation {
+    from {
+        letter-spacing: 0px;
+        font-variation-settings: "wght" 300;
+    }
+    to {
+        letter-spacing: 3px;
+        font-variation-settings: "wght" 700;
+    }
+}
+
+@keyframes slant-animation {
+    from {
+        letter-spacing: 0px;
+        font-variation-settings: "slnt" 0;
+    }
+    to {
+        letter-spacing: 3px;
+        font-variation-settings: "slnt" -13;
+    }
+}
+
+@keyframes trip-animation {
     from {
         font-variation-settings: "TRIP" 0;
     }
