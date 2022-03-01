@@ -34,7 +34,7 @@
         --flex-flow-category-menu: row wrap;
         --max-width-filter-list: 33.3%;
 
-        --grid-template-columns-about-body: 2fr 1fr;
+        --grid-template-columns-about-body: 1.5fr 1fr;
         --grid-template-areas-about-body:
                 "text   students"
                 "thanks students";
