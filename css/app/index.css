@@ -113,7 +113,7 @@
         --padding-box: .4rem .8rem;
         --margin-box: .2rem;
 
-        --grid-template-columns-about-body: 1fr;
+        --grid-template-columns-about-body: reset;
         --grid-template-areas-about-body:
                 "text"
                 "students"
