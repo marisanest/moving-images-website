@@ -67,9 +67,9 @@ function filterImages(filter, activeFilterValues) {
     filter = $(filter);
     let filterValue = filter.attr('filter-value');
 
-    if(filter.is(".image-filter") && !filter.closest(".body-grid-item").is(':hover, .active')){
-        return;
-    }
+        if(filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active'))){
+            return;
+        }
 
     if (filter.is('.active')) {
         if (filterValue === '.about') {
@@ -89,6 +89,7 @@ function filterImages(filter, activeFilterValues) {
         }
 
         if (activeFilterValues.includes('.about')) {
+            $(".about").addClass('hidden');
             $("[filter-value='.about']").removeClass('active');
             activeFilterValues = [];
         }
@@ -176,7 +177,7 @@ function initImageCallbacks() {
             let image = $(this);
             let eventTarget = $(event.target);
 
-            if(!eventTarget.is(".image-filter, .image-author")){
+            if(!eventTarget.is(".image-filter")){
                 window.location = image.attr('href');
             }
         });
@@ -186,9 +187,9 @@ function initImageCallbacks() {
             let eventTarget = $(event.target);
 
             if (image.is('.active')){
-                if(eventTarget.is(".image-edit-title, .image-title")){
+                if(eventTarget.is(".image-edit-title")){
                     window.location = image.attr('href');
-                } else if (!eventTarget.is(".image-filter, .image-author")) {
+                } else if (!eventTarget.is(".image-filter")) {
                     image.removeClass("active");
                 }
             } else {
