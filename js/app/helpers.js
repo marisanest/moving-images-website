@@ -105,7 +105,7 @@ function initFilters() {
         let filter = $(this);
         let filterValue = filter.attr('filter-value');
 
-        if(filter.is(".image-filter") && !filter.closest(".body-grid-item").is(':hover, .active')){
+        if(filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active'))){
             return;
         }
 
@@ -127,6 +127,7 @@ function initFilters() {
             }
 
             if (filterValues.includes('.about') || filterValues.includes('.imprint')) {
+                $(".about").addClass('hidden');
                 $("[filter-value='.about'],[filter-value='.imprint']").removeClass('active');
                 filterValues = [];
             }
