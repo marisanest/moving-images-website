@@ -1,7 +1,7 @@
 @font-face {
     font-family: "ABCOracle";
     src: url("ABCOraclePlusVariable.woff") format("woff-variations");
-    font-weight: 300 700;
+    font-weight: 200 700;
 }
 
 @media only screen {
@@ -17,7 +17,7 @@
         --font-size-small: 14px;
         --line-height-small: 24px;
 
-        --font-size-small-medium: 17px;
+        --font-size-small-medium: 16px;
         --line-height-small-medium: 26px;
 
         --font-size-medium: 20px;
@@ -288,6 +288,7 @@
 .large {
     font-size: var(--font-size-larg);
     line-height: var(--line-height-large);
+    font-weight: 300;
 }
 
 *,
@@ -496,8 +497,9 @@ a.student {
 }
 
 .about-students-title {
-    background: none;
-    margin: 0;
+/*    background: none;
+    margin: 0;*/
+    filter: invert(100%);
 }
 
 .student {
@@ -524,7 +526,7 @@ a.student {
 }
 
 .about-title {
-    padding-bottom: var(--medium-gapping);
+    padding-bottom: var(--small-gapping);
 }
 
 .about-body {
@@ -545,10 +547,12 @@ a.student {
 .about-text {
     grid-area: text;
     text-align: justify;
+    font-weight: 250;
 }
 
 .about-thanks {
     grid-area: thanks;
+    font-weight: 250;
 }
 
 .about .slant {
