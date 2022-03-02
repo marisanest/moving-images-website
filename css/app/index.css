@@ -183,7 +183,7 @@
 @media (hover: hover) {
     a:hover,
     .filter:hover,
-    .filters-title:hover,
+    .filters-menu-title:hover,
     .image-edit-title:hover {
         color: #ea1f4c !important;
     }
@@ -417,6 +417,10 @@ hr {
 
 .image-edit {
     opacity: 0;
+}
+
+.about-menu-title {
+    cursor: pointer;
 }
 
 .about {
