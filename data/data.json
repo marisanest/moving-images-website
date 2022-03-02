@@ -6,8 +6,9 @@
       "author": "Alex",
       "filters": {
         "author": ["alex"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["black", "white"],
+        "shapes": ["line"],
+        "category": ["pattern", "random"]
       }
     },
     {
@@ -16,8 +17,9 @@
       "author": "Alex",
       "filters": {
         "author": ["alex"],
-        "shapes": ["line", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["red", "orange", "black"],
+        "shapes": ["curve"],
+        "category": ["transform"]
       }
     },
     {
@@ -26,8 +28,9 @@
       "author": "Alex",
       "filters": {
         "author": ["alex"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["pink", "black"],
+        "shapes": ["circle", "line"],
+        "category": ["pattern", "transform"]
       }
     },
     {
@@ -36,8 +39,9 @@
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
-        "shapes": ["square", "box"],
-        "category": ["pattern","transform", "sin", "scale", "offest"]
+        "color": ["black", "white"],
+        "shapes": ["rectangle"],
+        "category": ["pattern","transform", "moiré"]
       }
     },
     {
@@ -46,8 +50,9 @@
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
-        "shapes": ["square", "box"],
-        "category": ["pattern","transform", "sin", "scale", "offest"]
+        "color": ["black", "white", "red"],
+        "shapes": ["rectangle"],
+        "category": ["pattern","transform"]
       }
     },
     {
@@ -56,8 +61,9 @@
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
-        "shapes": ["rectangle", "circle"],
-        "category": ["pattern","transform", "random", "offest"]
+        "color": ["black", "white"],
+        "shapes": ["rectangle"],
+        "category": ["pattern","transform", "random"]
       }
     },
     {
@@ -66,8 +72,9 @@
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
+        "color": ["black", "white", "green", "turquoise"],
         "shapes": ["circle"],
-        "category": ["transform", "random", "noise", "feedback"]
+        "category": ["feedback"]
       }
     },
     {
@@ -76,8 +83,9 @@
       "author": "ChunLi",
       "filters": {
         "author": ["chunLi"],
+        "color": ["blue", "red", "yellow"],
         "shapes": ["circle"],
-        "category": ["transform", "random", "noise", "feedback"]
+        "category": ["feedback", "transform"]
       }
     },
     {
@@ -86,6 +94,7 @@
       "author": "Lukas",
       "filters": {
         "author": ["lukas"],
+        "color": ["white", "black"],
         "shapes": ["circle"],
         "category": ["SDF", "noise"]
       }
@@ -96,8 +105,9 @@
       "author": "Lukas",
       "filters": {
         "author": ["lukas"],
+        "color": ["white", "black"],
         "shapes": ["circle"],
-        "category": ["SDF", "noise"]
+        "category": ["SDF", "noise", "pattern"]
       }
     },
     {
@@ -106,6 +116,7 @@
       "author": "Lukas",
       "filters": {
         "author": ["lukas"],
+        "color": ["green", "blue", "red"],
         "shapes": ["line"],
         "category": ["texture"]
       }
@@ -116,8 +127,9 @@
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
-        "shapes": ["circle", "polygon"],
-        "category": ["truchet", "noise"]
+        "color": ["purple", "white", "orange", "black"],
+        "shapes": ["line", "circle"],
+        "category": ["pattern"]
       }
     },
     {
@@ -126,8 +138,9 @@
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["black", "white"],
+        "shapes": ["circle"],
+        "category": ["transform", "SDF"]
       }
     },
     {
@@ -136,8 +149,9 @@
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "texture"]
+        "color": ["pink", "green", "orange"],
+        "shapes": ["circle", "line"],
+        "category": ["pattern"]
       }
     },
     {
@@ -146,8 +160,9 @@
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["transform", "noise"]
+        "color": ["black", "purple", "orange", "white"],
+        "shapes": ["circle", "line"],
+        "category": ["transform", "pattern"]
       }
     },
     {
@@ -156,8 +171,9 @@
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
+        "color": ["black", "white"],
         "shapes": ["circle", "rectangle"],
-        "category": ["swizzle", "noise"]
+        "category": ["pattern", "truchet"]
       }
     },
     {
@@ -166,8 +182,9 @@
       "author": "Nour",
       "filters": {
         "author": ["nour"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["yellow", "pink", "blue", "white"],
+        "shapes": ["rectangle"],
+        "category": ["parallax"]
       }
     },
     {
@@ -176,8 +193,9 @@
       "author": "Nour",
       "filters": {
         "author": ["nour"],
-        "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "noise"]
+        "color": ["pink", "blue", "red"],
+        "shapes": ["curve"],
+        "category": ["pattern", "transform"]
       }
     },
     {
@@ -186,8 +204,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
+        "color": ["black", "blue"],
         "shapes": ["circle", "rectangle"],
-        "category": ["pattern", "fract", "length"]
+        "category": ["pattern"]
       }
     },
     {
@@ -196,8 +215,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
-        "shapes": ["rectangle"],
-        "category": ["pattern", "modulo", "animated"]
+        "color": ["turquoise", "black"],
+        "shapes": ["rectangle", "line"],
+        "category": ["pattern"]
       }
     },
     {
@@ -206,8 +226,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
-        "shapes": ["circle", "star"],
-        "category": ["pattern", "parallax", "mix", "animated"]
+        "color": ["red", "yellow", "green", "white"],
+        "shapes": ["circle", "polygon"],
+        "category": ["pattern", "parallax"]
       }
     },
     {
@@ -216,8 +237,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
-        "shapes": ["lines"],
-        "category": ["pattern", "random", "modulo", "moire", "fract", "length", "animated"]
+        "color": ["blue", "black"],
+        "shapes": ["curve"],
+        "category": ["pattern", "random", "moiré"]
       }
     },
     {
@@ -226,8 +248,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
-        "shapes": ["lines", "curves"],
-        "category": ["pattern", "noise", "fract", "length", "animated"]
+        "color": ["pink", "black", "green"],
+        "shapes": ["curve"],
+        "category": ["pattern", "noise"]
       }
     },
     {
@@ -236,8 +259,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
-        "shapes": ["star", "flower"],
-        "category": ["pattern", "noise", "fract", "rotate", "animated"]
+        "color": ["pink", "green", "black"],
+        "shapes": ["polygon", "line"],
+        "category": ["pattern", "noise"]
       }
     },
     {
@@ -246,8 +270,9 @@
       "author": "Ulrike",
       "filters": {
         "author": ["ulrike"],
-        "shapes": ["circle", "lines"],
-        "category": ["pattern", "random", "fract", "length", "animated"]
+        "color": ["pink", "green"],
+        "shapes": ["circle", "line"],
+        "category": ["pattern", "random"]
       }
     },
     {
@@ -256,7 +281,8 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
-        "shapes": ["line"],
+        "color": ["red", "black"],
+        "shapes": ["curve", "line"],
         "category": ["pattern"]
       }
     },
@@ -266,6 +292,7 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
+        "color": ["red", "turquoise", "black", "white"],
         "shapes": ["circle"],
         "category": ["random", "transform"]
       }
@@ -276,8 +303,9 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
-        "shapes": ["circle"],
-        "category": ["random", "transform"]
+        "color": ["black", "turquoise", "red", "white"],
+        "shapes": ["circle", "curve"],
+        "category": ["random", "transform", "SDF"]
       }
     },
     {
@@ -286,8 +314,9 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
-        "shapes": ["line", "circle", "curves"],
-        "category": ["random", "transform", "mix"]
+        "color": ["red", "white", "black"],
+        "shapes": ["line", "circle"],
+        "category": ["transform"]
       }
     },
     {
@@ -296,8 +325,9 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
+        "color": ["black", "white"],
         "shapes": ["line", "rectangle"],
-        "category": ["random", "transform", "mod"]
+        "category": ["random", "transform"]
       }
     },
     {
@@ -306,8 +336,9 @@
       "author": "Dain",
       "filters": {
         "author": ["dain"],
-        "shapes": ["line", "rectangle", "circle"],
-        "category": ["random", "transform", "mod", "sin", "cos", "distance"]
+        "color": ["black", "turquoise"],
+        "shapes": ["rectangle", "circle"],
+        "category": ["random", "transform"]
       }
     },
     {
@@ -316,8 +347,9 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rectangle", "circle"],
-        "category": ["sin", "cos", "mix"]
+        "color": ["blue", "green", "yellow", "orange"],
+        "shapes": ["circle"],
+        "category": ["transform"]
       }
     },
     {
@@ -326,8 +358,9 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rectangle"],
-        "category": ["sin", "cos", "transform","pattern"]
+        "color": ["white", "black"],
+        "shapes": ["rectangle", "curve"],
+        "category": ["pattern"]
       }
     },
     {
@@ -336,8 +369,9 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["circle"],
-        "category": ["sin","transform","texture","mod"]
+        "color": ["black", "white"],
+        "shapes": ["line"],
+        "category": ["random"]
       }
     },
     {
@@ -346,8 +380,9 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rhombus"],
-        "category": ["random"]
+        "color": ["yellow", "blue", "green", "pink"],
+        "shapes": ["circle", "line"],
+        "category": ["texture"]
       }
     },
     {
@@ -356,7 +391,8 @@
       "author": "Jiawen",
       "filters": {
         "author": ["jiawen"],
-        "shapes": ["rectangle"],
+        "color": ["black", "white"],
+        "shapes": ["line"],
         "category": ["random"]
       }
     },
@@ -366,8 +402,9 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
-        "shapes": ["rectangle", "circle"],
-        "category": ["sin", "cos", "fract","pattern"]
+        "color": ["yellow", "blue", "green"],
+        "shapes": ["rectangle", "curve"],
+        "category": ["pattern"]
       }
     },
     {
@@ -376,8 +413,9 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
+        "color": ["pink", "turquoise"],
         "shapes": ["circle"],
-        "category": ["sin", "cos", "noise","pattern"]
+        "category": ["pattern", "noise", "moiré"]
       }
     },
     {
@@ -386,8 +424,9 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
-        "shapes": ["circle"],
-        "category": ["noise"]
+        "color": ["blue", "black"],
+        "shapes": ["curve"],
+        "category": ["noise", "pattern"]
       }
     },
     {
@@ -396,6 +435,7 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
+        "color": ["red", "turquoise", "green"],
         "shapes": ["rectangle"],
         "category": ["pattern"]
       }
@@ -406,8 +446,9 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
+        "color": ["black", "blue", "pink", "green"],
         "shapes": ["circle"],
-        "category": ["sin", "cos"]
+        "category": ["transform"]
       }
     },
     {
@@ -416,6 +457,7 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
+        "color": ["purple", "white"],
         "shapes": ["circle", "rectangle"],
         "category": ["pattern"]
       }
@@ -426,8 +468,9 @@
       "author": "Felix",
       "filters": {
         "author": ["felix"],
+        "color": ["turquoise", "blue"],
         "shapes": ["circle"],
-        "category": ["sin", "cos"]
+        "category": ["transform"]
       }
     },
     {
@@ -436,8 +479,9 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
-        "shapes": ["heart", "circle"],
-        "category": ["sin", "cos", "noise","pattern"]
+        "color": ["pink"],
+        "shapes": ["polygon", "circle"],
+        "category": ["noise", "pattern"]
       }
     },
      {
@@ -446,8 +490,9 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
-        "shapes": ["heart", "circle"],
-        "category": ["sin", "cos", "noise","pattern"]
+        "color": ["pink", "black"],
+        "shapes": ["polygon", "circle"],
+        "category": ["noise","pattern"]
       }
     },
      {
@@ -456,8 +501,9 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
-        "shapes": ["ripple", "circle"],
-        "category": ["noise","pattern","transform", "mod"]
+        "color": ["orange", "white"],
+        "shapes": ["line", "circle"],
+        "category": ["noise","pattern","transform"]
       }
     },
      {
@@ -466,8 +512,9 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
-        "shapes": ["ripple", "circle"],
-        "category": ["noise","pattern","transform", "sin"]
+        "color": ["pink"],
+        "shapes": [ "circle"],
+        "category": ["noise","pattern"]
       }
     },
     {
@@ -476,8 +523,9 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
-        "shapes": ["moon", "circle"],
-        "category": ["noise","pattern","transform", "sin"]
+        "color": ["black", "white", "orange"],
+        "shapes": ["curve", "circle"],
+        "category": ["noise","pattern"]
       }
     },
     {
@@ -486,8 +534,9 @@
       "author": "TsingYun",
       "filters": {
         "author": ["tsingyun"],
+        "color": ["purple", "yellow", "turquoise", "red"],
         "shapes": ["rectangle", "circle"],
-        "category": ["pattern","transform", "sin"]
+        "category": ["pattern","transform"]
       }
     },
     {
@@ -496,8 +545,9 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
-        "shapes": ["rectangle"],
-        "category": ["noise"]
+        "color": ["black", "white"],
+        "shapes": ["line", "rectangle"],
+        "category": ["noise", "pattern"]
       }
     },
      {
@@ -506,8 +556,9 @@
       "author": "Yun",
       "filters": {
         "author": ["yun"],
-        "shapes": ["line"],
-        "category": ["pattern", "sin"]
+        "color": ["orange", "green"],
+        "shapes": ["line", "curve"],
+        "category": ["pattern", "transform"]
       }
     }
   ],
