@@ -116,7 +116,7 @@ function filterImages(filter, activeFilterValues) {
 }
 
 function filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues) {
-    if (activeFilterValues.includes('*')) {
+    if (activeFilterValues.includes('*') || activeFilterValues.includes('.about') ) {
         activeFilterValues = [];
     }
 
