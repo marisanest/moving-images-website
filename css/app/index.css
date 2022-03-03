@@ -204,7 +204,7 @@
 
     .student {
         letter-spacing: 0;
-        font-variation-settings: "slnt" 0, "TRIP" 0, "wght" 300;
+        font-variation-settings: "slnt" 0, "TRIP" 0, "wght" 275;
         filter: none;
         transition: all 0.5s ease;
     }
@@ -286,6 +286,7 @@
 .large {
     font-size: var(--font-size-larg);
     line-height: var(--line-height-large);
+    font-weight: 300;
 }
 
 *,
@@ -300,7 +301,7 @@ html, body {
 
 body {
     font-family: 'ABCOracle';
-    font-weight: 300;
+    font-weight: 275;
     font-feature-settings: "ss09";
     background: #F5F5F5;
     display: flex;
@@ -544,12 +545,10 @@ a.student {
 .about-text {
     grid-area: text;
     text-align: justify;
-    font-weight: 250;
 }
 
 .about-thanks {
     grid-area: thanks;
-    font-weight: 250;
 }
 
 
