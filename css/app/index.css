@@ -481,7 +481,6 @@ a.student {
 .filter-items > .filter,
 .image-filter,
 .image-edit-title,
-.about-students-title,
 .student {
     border-radius: 2rem;
     background: white;
@@ -490,10 +489,12 @@ a.student {
     pointer-events: all;
 }
 
-.about-students-title {
-    /*    background: none;
-        margin: 0;*/
-    filter: invert(100%);
+.students-title {
+    padding: 0 0 0.3rem 0.2rem;
+}
+
+.students {
+    padding-left: 0.3rem;
 }
 
 .student {
@@ -532,7 +533,7 @@ a.student {
     grid-template-areas: var(--grid-template-areas-about-body);
 }
 
-.about-students {
+.students {
     grid-area: students;
     display: flex;
     flex-flow: row wrap;
