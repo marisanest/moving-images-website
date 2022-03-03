@@ -439,12 +439,6 @@ hr {
     margin: 0;
 }
 
-.image-filters {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-}
-
 .image-filter {
     opacity: 0;
 }
