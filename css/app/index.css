@@ -40,6 +40,9 @@
         --grid-template-areas-about-body:
                 "text   students"
                 "thanks students";
+
+        --weight-animation-font-spacing-to: 3px;
+        --slant-animation-font-spacing-to: 3px;
     }
 }
 
@@ -167,7 +170,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 350px) {
     :root {
         --font-size-small: 13px;
         --line-height-small: 22px;
@@ -180,6 +183,8 @@
 
         --padding-box: .35rem .75rem;
         --margin-box: .1rem;
+
+        --slant-animation-font-spacing-to: 0;
     }
 }
 
@@ -200,6 +205,12 @@
     .body-grid-item:hover .image-filter,
     .body-grid-item:hover .image-edit {
         opacity: 1;
+    }
+
+    .filter-items > .filter:hover,
+    .image-filter:hover {
+        /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
+        letter-spacing: 2px;
     }
 
     .student {
@@ -355,6 +366,22 @@ a.student {
     margin-right: 1rem;
 }
 
+.first-title {
+    animation-name: weight-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
+.second-title {
+    animation-name: slant-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+}
+
 .menu {
     display: flex;
     justify-content: flex-end;
@@ -438,7 +465,9 @@ a.student {
 }
 
 .filter {
-    transition: all 0.5s ease;
+    cursor: pointer;
+    letter-spacing: 0px;
+    transition: opacity 0.5s ease, filter 0.5s ease, font-variation-settings 0.5s ease, letter-spacing 0.5s ease;
 }
 
 .filter.show {
@@ -451,6 +480,12 @@ a.student {
     opacity: 50%;
     filter: blur(1px);
     font-variation-settings: "slnt" -13;
+}
+
+.filter-items > .filter.active,
+.image-filter.active {
+    /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
+    letter-spacing: 2px;
 }
 
 .filter.active {
@@ -561,15 +596,36 @@ a.student {
     font-size: 40px;
     vertical-align: middle;
 
-    transition: font-variation-settings 0.3s ease;
-    animation-name: glyph-animation;
+    animation-name: trip-animation;
     animation-duration: 1s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes glyph-animation {
+@keyframes weight-animation {
+    from {
+        letter-spacing: 0;
+        font-variation-settings: "wght" 300;
+    }
+    to {
+        letter-spacing: var(--weight-animation-font-spacing-to);
+        font-variation-settings: "wght" 700;
+    }
+}
+
+@keyframes slant-animation {
+    from {
+        letter-spacing: 0;
+        font-variation-settings: "slnt" 0;
+    }
+    to {
+        letter-spacing: var(--slant-animation-font-spacing-to);
+        font-variation-settings: "slnt" -13;
+    }
+}
+
+@keyframes trip-animation {
     from {
         font-variation-settings: "TRIP" 0;
     }
