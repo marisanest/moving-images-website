@@ -565,7 +565,7 @@
   "students" : [
     {
       "name": "Alex Hahn",
-      "link": "http://www.instagram.com/hahnderhahn/"
+      "link": "https://www.instagram.com/hahnderhahn/"
     },
     {
       "name": "Felix Müller",
@@ -581,7 +581,7 @@
     },
     {
       "name": "Ulrike Rausch",
-      "link": "http://www.instagram.com/liebefonts/"
+      "link": "https://www.instagram.com/liebefonts/"
     },
     {
       "name": "Yun Kuo",
@@ -598,6 +598,14 @@
     {
       "name": "Tsingyun Zhang",
       "link": "https://www.instagram.com/tsingyun_zh/"
+    },
+    {
+      "name": "ChunLi Wang",
+      "link": "https://www.wang-chunli.com"
+    },
+    {
+      "name": "Nour Safadi",
+      "link": ""
     }
   ]
 }
