@@ -147,7 +147,7 @@ function initFilterCallbacks(preparedData) {
     $('.filter').click(function() {
         activeFilterValues = filterImages(this, activeFilterValues);
         filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues);
-        updateWithFragmentIdentifier(activeFilterValues[0]);
+        updateFragmentIdentifier(activeFilterValues[0]);
     });
 }
 
@@ -215,8 +215,16 @@ function filterWithFragmentIdentifier() {
     }
 }
 
-function updateWithFragmentIdentifier(filterValue) {
-    window.location.hash = filterValue.substring(1);
+function updateFragmentIdentifier(filterValue) {
+    if (filterValue === "*") {
+        window.location.replace("#");
+        if (typeof window.history.replaceState == 'function') {
+            history.replaceState({}, '', window.location.href.slice(0, -1));
+        }
+    } else {
+        window.location.hash = filterValue.substring(1);
+    }
+    window.scrollTo(0, 0);
 }
 
 function initHtml(preparedData) {
