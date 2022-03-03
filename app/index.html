@@ -65,7 +65,7 @@
             </div>
             {{/images}}
             <div class="body-grid-item grid-item--full about hidden">
-                <div class="small-medium about-body">
+                <div class="about-body small-medium">
                     <div class="about-text">
                         In the course Moving Images we have been learning shader programming from the ground up. We have
                         been inspired by the early experimental analog video artists from the 50s and 60s, using the
@@ -76,14 +76,12 @@
                         pixels? What are the new possibilities that arise on top of those limits?
                     </div>
                     <div>
-                        <div>
-                            Students:
+                        <div class="students-title small-medium slant">Students:</div>
+                        <div class="students small-medium">
+                            {{#students}}
+                            <a class="student" href="{{link}}" target="_blank">{{name}}</a>
+                            {{/students}}
                         </div>
-                    <div class="about-students small">
-                        {{#students}}
-                        <a class="student" href="{{link}}" target="_blank">{{name}}</a>
-                        {{/students}}
-                    </div>
                     </div>
                     <div class="about-thanks">
                         <span>Source code for the website can be found <a href="https://github.com/marisanest/moving-images-website">here</a>.
