@@ -88,7 +88,7 @@
     }
 }
 
-@media only screen and (max-width: 1270px) {
+@media only screen and (max-width: 1280px) {
     :root{
         font-size: 14px;
 
@@ -106,7 +106,7 @@
     }
 }
 
-@media only screen and (max-width: 1180px) {
+@media only screen and (max-width: 1200px) {
     :root {
         --grid-item--width: 33.3%;
 
@@ -133,7 +133,7 @@
     }
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 920px) {
     :root{
         --font-size-image-filters: 15px;
         --line-height-image-filters: 20px;
@@ -142,7 +142,7 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 890px) {
     :root {
         font-size: 13px;
 
@@ -157,14 +157,20 @@
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 855px) {
     :root {
         --font-size-image-filters: 14px;
         --line-height-image-filters: 18px;
     }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 855px) {
+    :root {
+        --image-filter-padding: 0.6rem 1.05rem;
+    }
+}
+
+@media only screen and (max-width: 805px) {
     :root {
         --grid-item--width: 49.9%;
 
@@ -182,6 +188,7 @@
         --font-size-image-filters: 16px;
         --line-height-image-filters: 21px;
 
+        --image-filter-padding: 0.6rem 1.15rem;
         --image-filter-gap: 0.3rem;
 
         --grid-template-columns-about-body: reset;
@@ -195,7 +202,7 @@
     }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 645px) {
     :root{
         font-size: 13px;
 
@@ -213,15 +220,22 @@
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
     :root{
         --font-size-image-filters: 14px;
         --line-height-image-filters: 18px;
 
+        --image-filter-padding: 0.6rem 1.05rem;
         --image-filter-gap: 0.2rem;
     }
 }
 
+@media only screen and (max-width: 565px) {
+    :root {
+        --font-size-image-filters: 13px;
+        --line-height-image-filters: 17px;
+    }
+}
 
 @media only screen and (max-width: 550px) {
     :root {
@@ -241,6 +255,7 @@
         --font-size-image-filters: 17px;
         --line-height-image-filters: 25px;
 
+        --image-filter-padding: 0.6rem 1.15rem;
         --image-filter-gap: 0.3rem;
 
         --large-gapping: 2.0rem;
@@ -277,6 +292,14 @@
         --slant-animation-font-spacing-to: 0;
     }
 }
+
+@media only screen and (max-width: 325px) {
+    :root{
+        --font-size-image-filters: 15px;
+        --line-height-image-filters: 20px;
+    }
+}
+
 
 @media (hover: hover) {
     a:hover,
