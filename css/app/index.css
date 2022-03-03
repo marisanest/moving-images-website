@@ -34,7 +34,7 @@
         --margin-box: .2rem;
 
         --flex-flow-category-menu: row wrap;
-        --max-width-filter-list: 25%;
+        --max-width-filter-list: 24.625%;
 
         --grid-template-columns-about-body: 1.5fr 1fr;
         --grid-template-areas-about-body:
@@ -418,7 +418,8 @@ a.student {
     overflow: hidden;
     display: flex;
     flex-flow: var(--flex-flow-category-menu);
-    justify-content: space-between;
+    row-gap: calc(2 * var(--small-gapping));
+    column-gap: 0.5%;
 }
 
 .filter-type {
