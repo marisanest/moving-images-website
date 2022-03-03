@@ -576,8 +576,11 @@ a.student {
     grid-template-areas: var(--grid-template-areas-about-body);
 }
 
-.students {
+.about-students {
     grid-area: students;
+}
+
+.students {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
