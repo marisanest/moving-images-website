@@ -476,7 +476,7 @@
     {
       "filename": "Tsingyun_FireHearts",
       "title":  "Fire Hearts",
-      "author": "TsingYun",
+      "author": "Tsingyun",
       "filters": {
         "author": ["tsingyun"],
         "color": ["pink"],
@@ -487,7 +487,7 @@
      {
       "filename": "Tsingyun_Hearts",
       "title":  "Hearts",
-      "author": "TsingYun",
+      "author": "Tsingyun",
       "filters": {
         "author": ["tsingyun"],
         "color": ["pink", "black"],
@@ -498,7 +498,7 @@
      {
       "filename": "Tsingyun_Ripples01",
       "title":  "Ripples 01",
-      "author": "TsingYun",
+      "author": "Tsingyun",
       "filters": {
         "author": ["tsingyun"],
         "color": ["orange", "white"],
@@ -509,7 +509,7 @@
      {
       "filename": "Tsingyun_Ripples02",
       "title":  "Ripples 02",
-      "author": "TsingYun",
+      "author": "Tsingyun",
       "filters": {
         "author": ["tsingyun"],
         "color": ["pink"],
@@ -520,7 +520,7 @@
     {
       "filename": "Tsingyun_StarryNight",
       "title":  "Starry Night",
-      "author": "TsingYun",
+      "author": "Tsingyun",
       "filters": {
         "author": ["tsingyun"],
         "color": ["black", "white", "orange"],
@@ -531,7 +531,7 @@
     {
       "filename": "Tsingyun_Wave",
       "title":  "Wave",
-      "author": "TsingYun",
+      "author": "Tsingyun",
       "filters": {
         "author": ["tsingyun"],
         "color": ["purple", "yellow", "turquoise", "red"],
