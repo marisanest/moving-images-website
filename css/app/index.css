@@ -8,7 +8,7 @@
     :root {
         --alternative-font-color: #ea1f4c;
 
-        --grid-item--width: 20%;
+        --grid-item--width: 19.9%;
 
         --font-size-extra-small: 12px;
         --line-height-extra-small: 18px;
@@ -304,6 +304,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html, body {
