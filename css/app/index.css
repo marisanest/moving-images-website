@@ -209,44 +209,44 @@
         transition: all 0.5s ease;
     }
 
-    .student:nth-child(2):hover {
+    .student:nth-child(1):hover {
         letter-spacing: 2px;
         font-variation-settings: "TRIP" 1;
     }
 
-    .student:nth-child(3):hover {
+    .student:nth-child(2):hover {
         font-variation-settings: "slnt" -13, "wght" 400;
     }
 
-    .student:nth-child(4):hover {
+    .student:nth-child(3):hover {
         padding-top: 0.2rem;
         padding-bottom: 0.6rem;
     }
 
-    .student:nth-child(5):hover {
+    .student:nth-child(4):hover {
         font-variation-settings: "slnt" -13, "TRIP" 1;
     }
 
-    .student:nth-child(6):hover {
+    .student:nth-child(5):hover {
         font-variation-settings: "wght" 400;
         filter: blur(1px);
     }
 
-    .student:nth-child(7):hover {
+    .student:nth-child(6):hover {
         letter-spacing: 3px;
     }
 
-    .student:nth-child(8):hover {
+    .student:nth-child(7):hover {
         font-variation-settings: "slnt" -13;
     }
 
-    .student:nth-child(9):hover {
+    .student:nth-child(8):hover {
         padding-top: 0.2rem;
         padding-bottom: 0.6rem;
         font-variation-settings: "TRIP" 1;
     }
 
-    .student:nth-child(10):hover {
+    .student:nth-child(9):hover {
         letter-spacing: 3px;
         font-variation-settings: "slnt" -13, "wght" 500;
     }
