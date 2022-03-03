@@ -1,7 +1,7 @@
 @font-face {
     font-family: "ABCOracle";
     src: url("ABCOraclePlusVariable.woff") format("woff-variations");
-    font-weight: 200 700;
+    font-weight: 300 700;
 }
 
 @media only screen {
@@ -342,19 +342,17 @@ hr {
     justify-content: space-between;
 }
 
+.filter-type {
+    padding: 0 0 0.3rem 0.2rem;
+}
+
+.filter-items {
+    padding-left: 0.3rem;
+}
+
 .filter-list {
     display: inline;
     max-width: var(--max-width-filter-list);
-    /*font-weight: 275;*/
-}
-
-.filter-type {
-    /*font-weight: 325;*/
-    /*color: #ea1f4c;*/
-    /*letter-spacing: 2px;*/
-    /*width: 100%;*/
-    /*padding-left: 0 !important;*/
-    /*padding-bottom: 0 !important;*/
 }
 
 .filter-items {
@@ -378,7 +376,8 @@ hr {
     width: 100%;
 }
 
-.filter-items > .filter.show {
+.filter-items > .filter.show,
+.about-title {
     cursor: pointer;
 }
 
@@ -448,11 +447,11 @@ hr {
     margin: 0.2rem 0.2rem 0.2rem 0;
     pointer-events: all;
 }
+
 .image-author {
     margin-right: 0;
 }
 
-.filter-type,
 .filter-items > .filter,
 .image-filter,
 .image-author,
@@ -464,13 +463,8 @@ hr {
     pointer-events: all;
 }
 
-.filter-type,
 .filter-list .filter {
     margin: 0;
-}
-
-.filter-type {
-    background: none;
 }
 
 .image-filters {
