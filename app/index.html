@@ -7,12 +7,14 @@
     <title>Moving Images: Design with Code</title>
     <link rel="icon" type="image/x-icon" href="/data/favicon.ico">
 
+    <link rel="stylesheet" href="../css/libs/splitting.css">
     <link rel="stylesheet" href="../css/app/index.css">
 
     <script src="../js/libs/masonry.pkgd.min.js"></script>
     <script src="../js/libs/jquery-3.6.0.slim.min.js"></script>
     <script src="../js/libs/isotope.pkgd.min.js"></script>
     <script src="../js/libs/mustache.min.js"></script>
+    <script src="../js/libs/splitting.min.js"></script>
     <script src="../js/app/helpers.js"></script>
     <script src="../js/app/index.js"></script>
 </head>
@@ -22,7 +24,7 @@
     <div class="container">
         <div class="header">
             <div class="title large">
-                <a href="/app/index.html"><span class="first-title">Moving Images:</span><br/><span class="second-title">Design with Code</span></a>
+                <a href="/app/index.html"><span data-splitting class="first-title">Moving Images:</span><br/><span data-splitting class="second-title">Design with Code</span></a>
             </div>
             <div class="menu">
                 <div class="about-menu-title filter small-medium" filter-value=".about">About</div>
@@ -34,7 +36,7 @@
         <div class="category-menu-wrapper">
             <div class="category-menu">
             {{#filters}}
-            <div class="filter-list">
+            <div class="filter-list {{type.lower}}">
                 <div class="filter-type small-medium slant">{{type.upper}}:</div>
                 <div class="filter-items">
                     {{#values}}
