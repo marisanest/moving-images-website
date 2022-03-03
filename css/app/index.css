@@ -30,7 +30,7 @@
         --margin-box: .2rem;
 
         --flex-flow-category-menu: row wrap;
-        --max-width-filter-list: 33.3%;
+        --max-width-filter-list: 25%;
 
         --grid-template-columns-about-body: 2fr 1fr;
         --grid-template-areas-about-body:
@@ -182,9 +182,11 @@
 
 @media (hover: hover) {
     a:hover,
-    .filter:hover,
+    .about-menu-title:hover,
     .filters-menu-title:hover,
-    .image-edit-title:hover {
+    .filter-items > .filter.show:hover,
+    .image-edit-title:hover,
+    .image-filter:hover {
         color: #ea1f4c !important;
     }
 
@@ -265,6 +267,15 @@ hr {
     display: none;
 }
 
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .container {
     max-width: 100%;
     padding: var(--padding-container);
@@ -316,8 +327,8 @@ hr {
 }
 
 .category-menu-wrapper {
-    overflow: hidden;
     padding: 0 0.5rem 0 0.5rem;
+    transition: padding-top .2s ease-out, padding-bottom .2s ease-out;
 }
 
 .category-menu {
@@ -329,19 +340,24 @@ hr {
     justify-content: space-between;
 }
 
+.filter-type {
+    padding: 0 0 0.3rem 0.2rem;
+}
+
+.filter-items {
+    padding-left: 0.3rem;
+}
+
 .filter-list {
     display: inline;
     max-width: var(--max-width-filter-list);
-}
-
-.filter-type {
-    padding: 5px 10px;
 }
 
 .filter-items {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 33.3%;
+    gap: 0.35rem;
 }
 
 .body-grid-sizer {
@@ -358,21 +374,29 @@ hr {
     width: 100%;
 }
 
-.filter {
+.filter-items > .filter.show,
+.about-title {
     cursor: pointer;
+}
+
+.filter-items > .filter.hide {
+    cursor: default;
+}
+
+.filter {
     transition: all 0.5s ease;
 }
 
 .filter.show {
     opacity: 100%;
     filter: none;
-    font-variation-settings: "TRIP" 0, "slnt" 0;
+    font-variation-settings: "slnt" 0;
 }
 
 .filter.hide {
     opacity: 50%;
     filter: blur(1px);
-    font-variation-settings: "TRIP" 1, "slnt" -13;
+    font-variation-settings: "slnt" -13;
 }
 
 .filter.active {
@@ -401,7 +425,7 @@ hr {
     align-content: flex-start;
 }
 
-.filter-list .filter,
+.filter-items > .filter,
 .image-filter,
 .image-edit-title {
     border-radius: 2rem;
@@ -409,6 +433,10 @@ hr {
     padding: var(--padding-box);
     margin: var(--margin-box);
     pointer-events: all;
+}
+
+.filter-list .filter {
+    margin: 0;
 }
 
 .image-filter {
@@ -450,8 +478,8 @@ hr {
 }
 
 
-.about .triple {
-    font-variation-settings: "TRIP" 1, "slnt" -13;
+.slant {
+    font-variation-settings: "slnt" -13;
 }
 
 .about .dinamo:after {

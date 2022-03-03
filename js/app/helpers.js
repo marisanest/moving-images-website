@@ -67,7 +67,7 @@ function filterImages(filter, activeFilterValues) {
     filter = $(filter);
     let filterValue = filter.attr('filter-value');
 
-        if(filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active'))){
+        if(filter.is('.hide') || (filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active')))){
             return;
         }
 
@@ -133,10 +133,10 @@ function filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterVal
 
     allFilterValues
         .filter(filterValue => !possibleFilterValues.includes(filterValue))
-        .forEach(filterValue => $(".filter-items > .filter[filter-value='."+ filterValue + "']").removeClass('show').addClass('hide'));
+        .forEach(filterValue => $(".filter-items > .filter[filter-value='."+ filterValue + "']").removeClass('show').addClass('hide').addClass('no-select'));
 
     possibleFilterValues
-        .forEach(filterValue => $(".filter-items > .filter[filter-value='."+ filterValue + "']").removeClass('hide').addClass('show'));
+        .forEach(filterValue => $(".filter-items > .filter[filter-value='."+ filterValue + "']").addClass('show').removeClass('hide').removeClass('no-select'));
 }
 
 function initFilterCallbacks(preparedData) {
@@ -155,14 +155,17 @@ function initCollapsibleCallbacks() {
     $('.collapsible').click(function() {
         let collapsible = $(this);
         collapsible.toggleClass("active");
-        let filterList = $('.category-menu');
+        let categoryMenuWrapper = $('.category-menu-wrapper');
+        let categoryMenu = $('.category-menu');
 
-        if (filterList.css('maxHeight') != '0px'){
-            filterList.css('maxHeight', '0px');
-            $('.category-menu-wrapper').css('padding-bottom', "0rem");
+        if (categoryMenu.css('maxHeight') !== '0px'){
+            categoryMenu.css('maxHeight', '0px');
+            categoryMenuWrapper.css('padding-top', "0rem");
+            categoryMenuWrapper.css('padding-bottom', "0rem");
         } else {
-            filterList.css('maxHeight', filterList.prop('scrollHeight') + "px");
-            $('.category-menu-wrapper').css('padding-bottom', "0.5rem");
+            categoryMenu.css('maxHeight', categoryMenu.prop('scrollHeight') + "px");
+            categoryMenuWrapper.css('padding-top', "0.5rem");
+            categoryMenuWrapper.css('padding-bottom', "1.0rem");
         }
     });
 }
