@@ -35,10 +35,10 @@
             <div class="category-menu">
             {{#filters}}
             <div class="filter-list">
-                <div class="filter-type small slant">{{type.upper}}:</div>
+                <div class="filter-type small-medium slant">{{type.upper}}:</div>
                 <div class="filter-items">
                     {{#values}}
-                    <div class="filter small show" filter-value=".{{lower}}">{{upper}}</div>
+                    <div class="filter small-medium show" filter-value=".{{lower}}">{{upper}}</div>
                     {{/values}}
                 </div>
             </div>
@@ -54,34 +54,41 @@
                     <div class="image-filters">
                         {{#filters.separate}}
                         {{#values}}
-                        <div class="image-filter filter small" filter-value=".{{lower}}">{{upper}}</div>
+                        <div class="image-filter filter small-medium" filter-value=".{{lower}}">{{upper}}</div>
                         {{/values}}
                         {{/filters.separate}}
                     </div>
                     <div class="image-edit">
-                        <div class="image-edit-title small">Edit</div>
+                        <div class="image-edit-title small-medium">Edit</div>
                     </div>
                 </div>
             </div>
             {{/images}}
             <div class="body-grid-item grid-item--full about hidden">
-                <p class="medium">About</p>
-                <div class="small-medium about-body">
+                <div class="about-body small-medium">
                     <div class="about-text">
-                        <p>In the course Moving Images we have been learning shader programming from the ground up. We have been inspired by the early experimental analog video artists from the 50s and 60s, using the screen as a canvas,  painting on it pixel by pixel. Rigid if conditions, custom crafted random number generators, fussy mixings, gentle smoothing functions, unpredictable animations using <span class="mono">sin(u_time*magic)*uncertainty</span>, untamable feedback buffer loops and whispering variables with a weird accent. What are the limits of the screen as a carpet of pixels? What are the new possibilities that arise on top of those limits?</p>
+                        In the course Moving Images we have been learning shader programming from the ground up. We have
+                        been inspired by the early experimental analog video artists from the 50s and 60s, using the
+                        screen as a canvas,  painting on it pixel by pixel. Rigid if conditions, custom crafted random
+                        number generators, fussy mixings, gentle smoothing functions, unpredictable animations using
+                        <span class="mono">sin(u_time*magic)*uncertainty</span>, untamable feedback buffer loops and
+                        whispering variables with a weird accent. What are the limits of the screen as a carpet of
+                        pixels? What are the new possibilities that arise on top of those limits?
                     </div>
-                    <div class="about-students">
-                        STUDENTS:
-                        {{#students}}
-                        <a href="{{link}}" target="_blank">{{name}}</a>
-                        {{/students}}
+                    <div>
+                        <div class="students-title small-medium slant">Students:</div>
+                        <div class="students small-medium">
+                            {{#students}}
+                            <a class="student" href="{{link}}" target="_blank">{{name}}</a>
+                            {{/students}}
+                        </div>
                     </div>
                     <div class="about-thanks">
-                        <span>Source code for the website can be found <a href="https://github.com/marisanest/moving-images-website">here</a>
+                        <span>Source code for the website can be found <a href="https://github.com/marisanest/moving-images-website">here</a>.
                         <br>
-                        All code for the lessons of the course can be found <a href="https://github.com/edap/udk-shaders">here</a></span>
+                        All code for the lessons of the course can be found <a href="https://github.com/edap/udk-shaders">here</a></span>.
                         <br><br>
-                        <span class="dinamo">Typeface <span class="triple">Oracle</span> kindly supplied by <a href="https://abcdinamo.com/">Dinamo</a>&nbsp&nbsp&nbsp</span>
+                        <span class="dinamo">Typeface <span class="slant">Oracle</span> kindly supplied by <a href="https://abcdinamo.com/">Dinamo</a>&nbsp&nbsp&nbsp</span>
                     </div>
                 </div>
             </div>

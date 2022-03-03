@@ -1,11 +1,13 @@
 @font-face {
     font-family: "ABCOracle";
     src: url("ABCOraclePlusVariable.woff") format("woff-variations");
-    font-weight: 300 700;
+    font-weight: 200 700;
 }
 
 @media only screen {
     :root {
+        --alternative-font-color: #ea1f4c;
+
         --grid-item--width: 20%;
 
         --font-size-extra-small: 12px;
@@ -17,14 +19,16 @@
         --font-size-small-medium: 17px;
         --line-height-small-medium: 26px;
 
-        --font-size-medium: 22px;
-        --line-height-medium: 30px;
+        --font-size-medium: 20px;
+        --line-height-medium: 28px;
 
         --font-size-larg: 36px;
         --line-height-large: 36px;
 
-        --padding-container: 2rem 2rem 0 2rem;
-        --padding-footer: 0.5 2.5rem 2rem 2.5rem;
+        --no-gapping: 0;
+        --large-gapping: 2.0rem;
+        --medium-gapping: 1.5rem;
+        --small-gapping: 0.5rem;
 
         --padding-box: .4rem .8rem;
         --margin-box: .2rem;
@@ -32,7 +36,7 @@
         --flex-flow-category-menu: row wrap;
         --max-width-filter-list: 25%;
 
-        --grid-template-columns-about-body: 2fr 1fr;
+        --grid-template-columns-about-body: 1.5fr 1fr;
         --grid-template-areas-about-body:
                 "text   students"
                 "thanks students";
@@ -111,7 +115,7 @@
         --padding-box: .4rem .8rem;
         --margin-box: .2rem;
 
-        --grid-template-columns-about-body: 1fr;
+        --grid-template-columns-about-body: reset;
         --grid-template-areas-about-body:
                 "text"
                 "students"
@@ -156,11 +160,10 @@
     }
 }
 
-
 @media only screen and (max-width: 430px) {
     :root {
-        --padding-container: 1.5rem 1.4rem 0 1.5rem;
-        --padding-footer: 0 2rem 1.5rem 2rem;
+        --large-gapping: 1.5rem;
+        --medium-gapping: 1.0rem;
     }
 }
 
@@ -187,7 +190,7 @@
     .filter-items > .filter.show:hover,
     .image-edit-title:hover,
     .image-filter:hover {
-        color: #ea1f4c !important;
+        color: var(--alternative-font-color) !important;
     }
 
     .body-grid-item:hover img {
@@ -197,6 +200,55 @@
     .body-grid-item:hover .image-filter,
     .body-grid-item:hover .image-edit {
         opacity: 1;
+    }
+
+    .student {
+        letter-spacing: 0;
+        font-variation-settings: "slnt" 0, "TRIP" 0, "wght" 275;
+        filter: none;
+        transition: all 0.5s ease;
+    }
+
+    .student:nth-child(1):hover {
+        letter-spacing: 2px;
+        font-variation-settings: "TRIP" 1;
+    }
+
+    .student:nth-child(2):hover {
+        font-variation-settings: "slnt" -13, "wght" 400;
+    }
+
+    .student:nth-child(3):hover {
+        padding-top: 0.2rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .student:nth-child(4):hover {
+        font-variation-settings: "slnt" -13, "TRIP" 1;
+    }
+
+    .student:nth-child(5):hover {
+        font-variation-settings: "wght" 400;
+        filter: blur(1px);
+    }
+
+    .student:nth-child(6):hover {
+        letter-spacing: 3px;
+    }
+
+    .student:nth-child(7):hover {
+        font-variation-settings: "slnt" -13;
+    }
+
+    .student:nth-child(8):hover {
+        padding-top: 0.2rem;
+        padding-bottom: 0.6rem;
+        font-variation-settings: "TRIP" 1;
+    }
+
+    .student:nth-child(9):hover {
+        letter-spacing: 3px;
+        font-variation-settings: "slnt" -13, "wght" 500;
     }
 }
 
@@ -234,6 +286,7 @@
 .large {
     font-size: var(--font-size-larg);
     line-height: var(--line-height-large);
+    font-weight: 300;
 }
 
 *,
@@ -248,7 +301,7 @@ html, body {
 
 body {
     font-family: 'ABCOracle';
-    font-weight: 300;
+    font-weight: 275;
     font-feature-settings: "ss09";
     background: #F5F5F5;
     display: flex;
@@ -278,7 +331,7 @@ hr {
 
 .container {
     max-width: 100%;
-    padding: var(--padding-container);
+    padding: var(--large-gapping) var(--large-gapping) var(--medium-gapping) var(--large-gapping);
     flex: 1 0 auto;
 }
 
@@ -286,14 +339,15 @@ hr {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0.5rem 1.0rem 0.5rem;
+    padding: var(--small-gapping) var(--small-gapping) calc(var(--medium-gapping) - var(--small-gapping)) var(--small-gapping);
 }
 
 .header-grid {
     transition: height .2s ease-out;
 }
 
-.title a {
+.title a,
+a.student {
     text-decoration: none;
 }
 
@@ -327,7 +381,7 @@ hr {
 }
 
 .category-menu-wrapper {
-    padding: 0 0.5rem 0 0.5rem;
+    padding: 0 var(--small-gapping) 0 var(--small-gapping);
     transition: padding-top .2s ease-out, padding-bottom .2s ease-out;
 }
 
@@ -366,7 +420,7 @@ hr {
 
 .body-grid-item {
     width: var(--grid-item--width);
-    padding: 0.5rem;
+    padding: var(--small-gapping);
     cursor: pointer;
 }
 
@@ -400,7 +454,7 @@ hr {
 }
 
 .filter.active {
-    color: #ea1f4c !important;
+    color: var(--alternative-font-color) !important;
 }
 
 .image > img {
@@ -427,12 +481,26 @@ hr {
 
 .filter-items > .filter,
 .image-filter,
-.image-edit-title {
+.image-edit-title,
+.student {
     border-radius: 2rem;
     background: white;
     padding: var(--padding-box);
     margin: var(--margin-box);
     pointer-events: all;
+}
+
+.students-title {
+    padding: 0 0 0.3rem 0.2rem;
+}
+
+.students {
+    padding-left: 0.3rem;
+}
+
+.student {
+    margin: 0;
+    /*filter: drop-shadow(12px 16px 18px var(--alternative-font-color));*/
 }
 
 .filter-list .filter {
@@ -455,17 +523,23 @@ hr {
     cursor: initial;
 }
 
+.about-title {
+    padding-bottom: var(--small-gapping);
+}
+
 .about-body {
     display: grid;
     grid-template-columns: var(--grid-template-columns-about-body);
-    gap: 25px;
+    gap: var(--medium-gapping);
     grid-template-areas: var(--grid-template-areas-about-body);
 }
 
-.about-students {
+.students {
     grid-area: students;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 0.4rem;
 }
 
 .about-text {
@@ -507,8 +581,8 @@ hr {
 footer {
     flex-shrink: 0;
     max-width: 100%;
-    padding: var(--padding-footer);
-    opacity: 0.7;
+    padding: var(--no-gapping) calc(var(--large-gapping) + var(--small-gapping)) var(--large-gapping) calc(var(--large-gapping) + var(--small-gapping));;
+    opacity: 0.35;
 }
 
 footer > span {

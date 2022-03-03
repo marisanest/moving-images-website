@@ -116,7 +116,7 @@ function filterImages(filter, activeFilterValues) {
 }
 
 function filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues) {
-    if (activeFilterValues.includes('*')) {
+    if (activeFilterValues.includes('*') || activeFilterValues.includes('.about') ) {
         activeFilterValues = [];
     }
 
@@ -160,12 +160,12 @@ function initCollapsibleCallbacks() {
 
         if (categoryMenu.css('maxHeight') !== '0px'){
             categoryMenu.css('maxHeight', '0px');
-            categoryMenuWrapper.css('padding-top', "0rem");
-            categoryMenuWrapper.css('padding-bottom', "0rem");
+            categoryMenuWrapper.css('padding-top', "var(--no-gapping)");
+            categoryMenuWrapper.css('padding-bottom', "var(--no-gapping)");
         } else {
             categoryMenu.css('maxHeight', categoryMenu.prop('scrollHeight') + "px");
-            categoryMenuWrapper.css('padding-top', "0.5rem");
-            categoryMenuWrapper.css('padding-bottom', "1.0rem");
+            categoryMenuWrapper.css('padding-top', "var(--small-gapping)");
+            categoryMenuWrapper.css('padding-bottom', "calc(var(--medium-gapping) - var(--small-gapping))");
         }
     });
 }
