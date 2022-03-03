@@ -30,7 +30,7 @@
         --margin-box: .2rem;
 
         --flex-flow-category-menu: row wrap;
-        --max-width-filter-list: 33.3%;
+        --max-width-filter-list: 25%;
 
         --grid-template-columns-about-body: 2fr 1fr;
         --grid-template-areas-about-body:
