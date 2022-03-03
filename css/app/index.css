@@ -193,7 +193,7 @@
     .about-menu-title:hover,
     .filters-menu-title:hover,
     .filter-items > .filter.show:hover,
-    .image-edit-title:hover,
+    .image-edit:hover,
     .image-filter:hover {
         color: var(--alternative-font-color) !important;
     }
@@ -325,10 +325,6 @@ body {
 
 a {
     color: black !important;
-}
-
-hr {
-    margin: 0;
 }
 
 .hidden {
@@ -471,8 +467,18 @@ a.student {
 
 .filter {
     cursor: pointer;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     transition: opacity 0.5s ease, filter 0.5s ease, font-variation-settings 0.5s ease, letter-spacing 0.5s ease;
+}
+
+.body-grid-item img {
+    opacity: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.image-edit {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .filter.show {
@@ -522,7 +528,7 @@ a.student {
 
 .filter-items > .filter,
 .image-filter,
-.image-edit-title,
+.image-edit,
 .student {
     border-radius: 2rem;
     background: white;
@@ -539,10 +545,6 @@ a.student {
 }
 
 .image-filter {
-    opacity: 0;
-}
-
-.image-edit {
     opacity: 0;
 }
 
