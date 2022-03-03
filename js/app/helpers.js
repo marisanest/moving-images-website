@@ -51,103 +51,107 @@ function prepareLowerUpperText(value) {
     }
 }
 
-function prepareFiltersFiltering(data) {
-    return data.images.map(image => Object.values(image.filters).flat());
-}
-
-function initIsotope(grid) {
-    $('.' + grid).isotope({
-        itemSelector: '.' + grid + '-item',
+function initIsotope() {
+    let bodyGrid = $('.body-grid');
+    bodyGrid.isotope({
+        itemSelector: '.body-grid-item',
         masonry: {
-            columnWidth: '.' + grid + '-sizer',
+            columnWidth: '.body-grid-sizer',
             percentPosition: true,
         }
     });
-    $('.body-grid').isotope('shuffle')
+    bodyGrid.isotope('shuffle')
 }
 
+function filterImages(filter, activeFilterValues) {
+    filter = $(filter);
+    let filterValue = filter.attr('filter-value');
 
-function filterFilters(entries) {
-    $('.filter').click(function() {
-        let active = $('.filter-items > .active').map(function() {
-            return $(this).attr('filter-value').substring(1);
-        }).get();
-
-        let all = $('.filter-items > .filter').map(function() {
-            return $(this).attr('filter-value').substring(1);
-        }).get();
-
-        let matching = [];
-        entries.forEach(filters => {
-            if(active.every(val => filters.includes(val))) {
-                filters.forEach(val => {
-                    if(!matching.includes(val)) {
-                        matching.push(val);
-                    }
-                });
-            }
-        });
-
-        all.filter(filter => !matching.includes(filter)).forEach(filter => {
-            $('.filter-items > .' + filter).removeClass('show').addClass('no-select').addClass('hide');
-        });
-
-        matching.forEach(filter => {
-            $('.filter-items > .' + filter).removeClass('no-select').removeClass('hide').addClass('show');
-        });
-    })
-}
-
-function initFilters() {
-    let filterValues = [];
-
-    $('.filter').click(function() {
-        let filter = $(this);
-        let filterValue = filter.attr('filter-value');
-
-        if(filter.is(".image-filter, .image-author, .filter.hide") && !filter.closest(".body-grid-item").is(':hover, .active')){
+        if(filter.is('.hide') || (filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active')))){
             return;
         }
 
-        if (filter.is('.active')) {
-            if (filterValue === '.about' || filterValue ==='.imprint') {
-                $(".body-grid-item" + filterValue).addClass('hidden');
-                filterValues = ['*'];
-            } else {
-                filterValues = filterValues.filter(value => value !== filterValue);
-                if (!filterValues.length){
-                    filterValues = ['*'];
-                }
-            }
-
-            $(".filter.active[filter-value='" + filterValue + "']").removeClass('active');
+    if (filter.is('.active')) {
+        if (filterValue === '.about') {
+            $(".body-grid-item" + filterValue).addClass('hidden');
+            activeFilterValues = ['*'];
         } else {
-            if (filterValues.includes('*')) {
-                filterValues = [];
+            activeFilterValues = activeFilterValues.filter(value => value !== filterValue);
+            if (!activeFilterValues.length){
+                activeFilterValues = ['*'];
             }
-
-            if (filterValues.includes('.about') || filterValues.includes('.imprint')) {
-                $("[filter-value='.about'],[filter-value='.imprint']").removeClass('active');
-                filterValues = [];
-            }
-
-            if (filterValue === '.about' || filterValue ==='.imprint') {
-                $(".filter, .body-grid-item.active").removeClass('active');
-                if($(".collapsible").hasClass('active')) {$(".collapsible").click()}
-                $(".body-grid-item" + filterValue).removeClass('hidden');
-                filterValues = [filterValue];
-            } else {
-                filterValues.push(filterValue);
-            }
-
-            $("[filter-value='" + filterValue + "']").addClass('active');
         }
 
-        $('.body-grid').isotope({filter: filterValues.join('')});
+        $(".filter.active[filter-value='" + filterValue + "']").removeClass('active');
+    } else {
+        if (activeFilterValues.includes('*')) {
+            activeFilterValues = [];
+        }
+
+        if (activeFilterValues.includes('.about')) {
+            $(".about").addClass('hidden');
+            $("[filter-value='.about']").removeClass('active');
+            activeFilterValues = [];
+        }
+
+        if (filterValue === '.about') {
+            $(".filter, .body-grid-item.active").removeClass('active');
+
+            if($(".collapsible").hasClass('active')) {
+                $(".collapsible").click()
+            }
+
+            $(".body-grid-item" + filterValue).removeClass('hidden');
+            activeFilterValues = [filterValue];
+        } else {
+            activeFilterValues.push(filterValue);
+        }
+
+        $("[filter-value='" + filterValue + "']").addClass('active');
+    }
+
+    $('.body-grid').isotope({filter: activeFilterValues.join('')});
+
+    return activeFilterValues;
+}
+
+function filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues) {
+    if (activeFilterValues.includes('*')) {
+        activeFilterValues = [];
+    }
+
+    let possibleFilterValues = [];
+    allFilterValuesPerImage.forEach(filterValuesPerImage => {
+        if(activeFilterValues.every(filterValue => filterValuesPerImage.includes(filterValue.substring(1)))) {
+            filterValuesPerImage.forEach(filterValue => {
+                if(!possibleFilterValues.includes(filterValue)) {
+                    possibleFilterValues.push(filterValue);
+                }
+            });
+        }
+    });
+
+    allFilterValues
+        .filter(filterValue => !possibleFilterValues.includes(filterValue))
+        .forEach(filterValue => $(".filter-items > .filter[filter-value='."+ filterValue + "']").removeClass('show').addClass('hide').addClass('no-select'));
+
+    possibleFilterValues
+        .forEach(filterValue => $(".filter-items > .filter[filter-value='."+ filterValue + "']").addClass('show').removeClass('hide').removeClass('no-select'));
+}
+
+function initFilterCallbacks(preparedData) {
+    let allFilterValues = preparedData.filters.map(filterType => filterType.values.map(value => value.lower)).flat();
+    let allFilterValuesPerImage = preparedData.images.map(image => image.filters.separate.map(f => f.values.map(x => x.lower)).flat());
+    let activeFilterValues = [];
+
+    $('.filter').click(function() {
+        activeFilterValues = filterImages(this, activeFilterValues);
+        filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues);
+        updateWithFragmentIdentifier(activeFilterValues[0]);
     });
 }
 
-function initCollapsible() {
+function initCollapsibleCallbacks() {
     $('.collapsible').click(function() {
         let collapsible = $(this);
         collapsible.toggleClass("active");
@@ -166,7 +170,7 @@ function initCollapsible() {
     });
 }
 
-function initImages() {
+function initImageCallbacks() {
     let images = $(".body-grid-item.image");
 
     if (window.matchMedia('(hover: hover)').matches) {
@@ -176,7 +180,7 @@ function initImages() {
             let image = $(this);
             let eventTarget = $(event.target);
 
-            if(!eventTarget.is(".image-filter, .image-author")){
+            if(!eventTarget.is(".image-filter")){
                 window.location = image.attr('href');
             }
         });
@@ -186,9 +190,9 @@ function initImages() {
             let eventTarget = $(event.target);
 
             if (image.is('.active')){
-                if(eventTarget.is(".image-edit-title, .image-title")){
+                if(eventTarget.is(".image-edit-title")){
                     window.location = image.attr('href');
-                } else if (!eventTarget.is(".image-filter, .image-author")) {
+                } else if (!eventTarget.is(".image-filter")) {
                     image.removeClass("active");
                 }
             } else {
@@ -200,4 +204,47 @@ function initImages() {
 
     images.css({'height': images.width() + 'px'});
     $('.body-grid').isotope();
+}
+
+function filterWithFragmentIdentifier() {
+    if (window.location.hash.includes("#")) {
+        let filterValue = window.location.hash.split('?')[0].substring(1);
+        if (filterValue !== ""){
+            $(".filter-items > .filter[filter-value='." + filterValue + "'], .about-menu-title.filter[filter-value='." + filterValue + "']").click();
+        }
+    }
+}
+
+function updateWithFragmentIdentifier(filterValue) {
+    window.location.hash = filterValue.substring(1);
+}
+
+function initHtml(preparedData) {
+    $("body")
+        .html(
+            Mustache.to_html(
+                $("#template").html(),
+                preparedData
+            )
+        );
+}
+
+function initWindowCallbacks() {
+    $(window).resize(function() {
+        if ($('.collapsible').hasClass('active')) {
+            let categoryMenu = $('.category-menu');
+            categoryMenu.css('max-height', categoryMenu.prop('scrollHeight') + "px");
+        }
+
+        let images = $(".body-grid-item.image");
+        images.css({'height': images.width() + 'px'});
+        $('.body-grid').isotope();
+    });
+}
+
+function initCallbacks(preparedData) {
+    initFilterCallbacks(preparedData);
+    initCollapsibleCallbacks();
+    initImageCallbacks();
+    initWindowCallbacks();
 }
