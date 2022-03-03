@@ -30,8 +30,8 @@
         --medium-gapping: 1.5rem;
         --small-gapping: 0.5rem;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --box-padding: .4rem .8rem;
+        --box-gap: 0.35rem;
 
         --flex-flow-category-menu: row wrap;
         --max-width-filter-list: 24.625%;
@@ -63,8 +63,8 @@
         --font-size-larg: 34px;
         --line-height-large: 34px;
 
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --box-padding: .35rem .75rem;
+        --box-gap: .2rem;
     }
 }
 
@@ -81,8 +81,8 @@
         --font-size-larg: 36px;
         --line-height-large: 36px;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --box-padding: .4rem .8rem;
+        --box-gap: 0.35rem;
     }
 }
 
@@ -97,8 +97,8 @@
         --font-size-larg: 34px;
         --line-height-large: 34px;
 
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --box-padding: .35rem .75rem;
+        --box-gap: .2rem;
     }
 }
 
@@ -115,8 +115,8 @@
         --font-size-larg: 36px;
         --line-height-large: 36px;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --box-padding: .4rem .8rem;
+        --box-gap: 0.35rem;
 
         --grid-template-columns-about-body: reset;
         --grid-template-areas-about-body:
@@ -137,8 +137,8 @@
         --font-size-larg: 34px;
         --line-height-large: 34px;
 
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --box-padding: .35rem .75rem;
+        --box-gap: 0.2rem;
     }
 }
 
@@ -155,8 +155,8 @@
         --font-size-larg: 36px;
         --line-height-large: 36px;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --box-padding: .4rem .8rem;
+        --box-gap: 0.35rem;
 
         --flex-flow-category-menu: column;
         --max-width-filter-list: 100%;
@@ -181,8 +181,8 @@
         --font-size-larg: 34px;
         --line-height-large: 34px;
 
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --box-padding: .35rem .75rem;
+        --box-gap: 0.2rem;
 
         --slant-animation-font-spacing-to: 0;
     }
@@ -443,7 +443,7 @@ a.student {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 33.3%;
-    gap: 0.35rem;
+    gap: var(--box-gap);
 }
 
 .body-grid-sizer {
@@ -517,6 +517,7 @@ a.student {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
+    gap: var(--box-gap);
 }
 
 .filter-items > .filter,
@@ -525,8 +526,7 @@ a.student {
 .student {
     border-radius: 2rem;
     background: white;
-    padding: var(--padding-box);
-    margin: var(--margin-box);
+    padding: var(--box-padding);
     pointer-events: all;
 }
 
@@ -536,15 +536,6 @@ a.student {
 
 .students {
     padding-left: 0.3rem;
-}
-
-.student {
-    margin: 0;
-    /*filter: drop-shadow(12px 16px 18px var(--alternative-font-color));*/
-}
-
-.filter-list .filter {
-    margin: 0;
 }
 
 .image-filter {
@@ -579,7 +570,7 @@ a.student {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
-    gap: 0.4rem;
+    gap: var(--box-gap);
 }
 
 .about-text {
