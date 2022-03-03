@@ -40,6 +40,9 @@
         --grid-template-areas-about-body:
                 "text   students"
                 "thanks students";
+
+        --weight-animation-font-spacing-to: 3px;
+        --slant-animation-font-spacing-to: 3px;
     }
 }
 
@@ -167,7 +170,7 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 350px) {
     :root {
         --font-size-small: 13px;
         --line-height-small: 22px;
@@ -180,6 +183,8 @@
 
         --padding-box: .35rem .75rem;
         --margin-box: .1rem;
+
+        --slant-animation-font-spacing-to: 0;
     }
 }
 
@@ -600,22 +605,22 @@ a.student {
 
 @keyframes weight-animation {
     from {
-        letter-spacing: 0px;
+        letter-spacing: 0;
         font-variation-settings: "wght" 300;
     }
     to {
-        letter-spacing: 3px;
+        letter-spacing: var(--weight-animation-font-spacing-to);
         font-variation-settings: "wght" 700;
     }
 }
 
 @keyframes slant-animation {
     from {
-        letter-spacing: 0px;
+        letter-spacing: 0;
         font-variation-settings: "slnt" 0;
     }
     to {
-        letter-spacing: 3px;
+        letter-spacing: var(--slant-animation-font-spacing-to);
         font-variation-settings: "slnt" -13;
     }
 }
