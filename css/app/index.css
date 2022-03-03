@@ -1,7 +1,7 @@
 @font-face {
     font-family: "ABCOracle";
     src: url("ABCOraclePlusVariable.woff") format("woff-variations");
-    font-weight: 300 700;
+    font-weight: 200 700;
 }
 
 @media only screen {
@@ -345,11 +345,13 @@ hr {
 .filter-list {
     display: inline;
     max-width: var(--max-width-filter-list);
+    /*font-weight: 275;*/
 }
 
 .filter-type {
-    /*font-weight: 350;*/
+    /*font-weight: 325;*/
     /*color: #ea1f4c;*/
+    /*letter-spacing: 2px;*/
     /*width: 100%;*/
     /*padding-left: 0 !important;*/
     /*padding-bottom: 0 !important;*/
