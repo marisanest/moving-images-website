@@ -190,7 +190,7 @@ function initImageCallbacks() {
             let eventTarget = $(event.target);
 
             if (image.is('.active')){
-                if(eventTarget.is(".image-edit-title")){
+                if(eventTarget.is(".image-edit")){
                     window.location = image.attr('href');
                 } else if (!eventTarget.is(".image-filter")) {
                     image.removeClass("active");
