@@ -1,6 +1,6 @@
 @font-face {
     font-family: "ABCOracle";
-    src: url("ABCOraclePlusVariable.woff") format("woff-variations");
+    src: url("/fonts/ABCOraclePlusVariable.woff") format("woff-variations");
     font-weight: 200 700;
 }
 

@@ -332,7 +332,7 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
-// Open simple dialogs on top of an editor. Relies on dialog.css.
+// Open simple dialogs on top of an editor. Relies on dialog.stylesheets.
 
         (function(mod) {
             if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -1399,7 +1399,7 @@
 
             function getCoffeeScriptToken(editor, cur) {
                 // This getToken, it is for coffeescript, imitates the behavior of
-                // getTokenAt method in javascript.js, that is, returning "property"
+                // getTokenAt method in javascript.javascripts, that is, returning "property"
                 // type and treat "." as indepenent token.
                 var token = editor.getTokenAt(cur);
                 if (cur.ch == token.start + 1 && token.string.charAt(0) == '.') {
@@ -1924,7 +1924,7 @@
 // CodeMirror, copyright (c) by Marijn Haverbeke and others
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
-// Define search commands. Depends on dialog.js or another
+// Define search commands. Depends on dialog.javascripts or another
 // implementation of the openDialog method.
 
 // Replace works a little oddly -- it will do the replace on the next
@@ -2490,7 +2490,7 @@
 // Distributed under an MIT license: http://codemirror.net/LICENSE
 
 // A rough approximation of Sublime Text's keybindings
-// Depends on addon/search/searchcursor.js and optionally addon/dialog/dialogs.js
+// Depends on addon/search/searchcursor.javascripts and optionally addon/dialog/dialogs.javascripts
 
         (function(mod) {
             if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -8504,7 +8504,7 @@
             var modes = CodeMirror.modes = {}, mimeModes = CodeMirror.mimeModes = {};
 
             // Extra arguments are stored as the mode's dependencies, which is
-            // used by (legacy) mechanisms like loadmode.js to automatically
+            // used by (legacy) mechanisms like loadmode.javascripts to automatically
             // load a mode. (Preferred mechanism is the require/define calls.)
             CodeMirror.defineMode = function(name, mode) {
                 if (!CodeMirror.defaults.mode && name != "null") CodeMirror.defaults.mode = name;
@@ -13301,7 +13301,7 @@
             if(parent)parent.enter();
         };
 
-// Node.js
+// Node.javascripts
         if(isNode){
             notify = function(){
                 process.nextTick(flush);
@@ -13520,7 +13520,7 @@
         var listner = function(event){
             run.call(event.data);
         };
-// Node.js 0.9+ & IE10+ has setImmediate, otherwise:
+// Node.javascripts 0.9+ & IE10+ has setImmediate, otherwise:
         if(!setTask || !clearTask){
             setTask = function setImmediate(fn){
                 var args = [], i = 1;
@@ -13534,7 +13534,7 @@
             clearTask = function clearImmediate(id){
                 delete queue[id];
             };
-            // Node.js 0.8-
+            // Node.javascripts 0.8-
             if(_dereq_('./$.cof')(process) == 'process'){
                 defer = function(id){
                     process.nextTick(ctx(run, id, 1));
@@ -17713,7 +17713,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                     var head = document.getElementsByTagName('head')[0];
                     var link = document.createElement('link');
                     link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
-                    link.type = 'text/css';
+                    link.type = 'text/stylesheets';
                     link.rel = 'stylesheet';
                     link.media = 'screen,print';
                     head.appendChild(link);
