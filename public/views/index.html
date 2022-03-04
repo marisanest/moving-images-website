@@ -7,12 +7,14 @@
     <title>Moving Images: Design with Code</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
+    <link rel="stylesheet" href="/css/libs/splitting.css">
     <link rel="stylesheet" href="/stylesheets/app/index.css">
 
     <script src="/javascripts/libs/masonry.pkgd.min.js"></script>
     <script src="/javascripts/libs/jquery-3.6.0.slim.min.js"></script>
     <script src="/javascripts/libs/isotope.pkgd.min.js"></script>
     <script src="/javascripts/libs/mustache.min.js"></script>
+    <script src="/javascripts/libs/splitting.min.js"></script>
     <script src="/javascripts/app/helpers.js"></script>
     <script src="/javascripts/app/index.js"></script>
 </head>
@@ -22,7 +24,7 @@
     <div class="container">
         <div class="header">
             <div class="title large">
-                <a href="/"><span class="first-title">Moving Images:</span><br/><span class="second-title">Design with Code</span></a>
+                <a href="/"><span data-splitting class="first-title">Moving Images:</span><br/><span data-splitting class="second-title">Design with Code</span></a>
             </div>
             <div class="menu">
                 <div class="about-menu-title filter medium" filter-value=".about">About</div>
@@ -34,8 +36,8 @@
         <div class="category-menu-wrapper">
             <div class="category-menu">
             {{#filters}}
-            <div class="filter-list">
-                <div class="filter-type small slant">{{type.upper}}:</div>
+            <div class="filter-list {{type.lower}}">
+                <div class="filter-type small">{{type.upper}}:</div>
                 <div class="filter-items">
                     {{#values}}
                     <div class="filter small show" filter-value=".{{lower}}">{{upper}}</div>
@@ -76,10 +78,10 @@
                         pixels? What are the new possibilities that arise on top of those limits?
                     </div>
                     <div class="about-students">
-                        <div class="students-title small slant">Students:</div>
+                        <div class="students-title small">Students:</div>
                         <div class="students small">
                             {{#students}}
-                            <a class="student" href="{{link}}" target="_blank">{{name}}</a>
+                            <a data-splitting class="student" href="{{link}}" target="_blank">{{name}}</a>
                             {{/students}}
                         </div>
                     </div>
