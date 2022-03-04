@@ -12,5 +12,6 @@ $(document).ready(function() {
             initIsotope();
             initCallbacks(preparedData);
             filterWithFragmentIdentifier();
+            Splitting()
         })
 });

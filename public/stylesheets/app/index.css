@@ -236,7 +236,6 @@
 
     .filter-items > .filter:hover,
     .image-filter:hover {
-        /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
         letter-spacing: 2px;
     }
 
@@ -379,8 +378,7 @@ a {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .container {
@@ -407,22 +405,6 @@ a.student {
 
 .title {
     margin-right: 1rem;
-}
-
-.first-title {
-    animation-name: weight-animation;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
-}
-
-.second-title {
-    animation-name: slant-animation;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
 }
 
 .menu {
@@ -539,7 +521,6 @@ a.student {
 
 .filter-items > .filter.active,
 .image-filter.active {
-    /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
     letter-spacing: 2px;
 }
 
@@ -708,6 +689,34 @@ a.student {
     }
     to {
         font-variation-settings: "TRIP" 1;
+    }
+}
+
+.first-title .char {
+    --delay: calc(var(--char-index) * 100ms);
+    --font-wght: calc(var(--char-index) * 17 + 200);
+    animation: title 2s normal ease-in-out;
+    animation-delay: var(--delay);
+    animation-fill-mode: forwards;
+}
+
+.second-title .char {
+    --delay: calc((var(--char-total) - var(--char-index)) * 100ms);
+    --font-wght: calc((var(--char-total) - var(--char-index)) * 17 + 200);
+    animation: title 2s normal ease-in-out;
+    animation-delay: var(--delay);
+    animation-fill-mode: forwards;
+}
+
+@keyframes title {
+    0% {
+        font-variation-settings: 'wght' 275, 'slnt' 0;
+    }
+    60% {
+        font-variation-settings: 'wght' 600, 'slnt' -10;
+    }
+    100% {
+        font-variation-settings: "wght" var(--font-wght), 'slnt' 0;
     }
 }
 
