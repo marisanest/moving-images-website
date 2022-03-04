@@ -322,7 +322,6 @@
 
     .filter-items > .filter:hover,
     .image-filter:hover {
-        /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
         letter-spacing: 2px;
     }
 
@@ -465,8 +464,7 @@ a {
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 .container {
@@ -494,22 +492,6 @@ a.student {
 .title {
     margin-right: 1rem;
 }
-
-/*.first-title {
-    animation-name: weight-animation;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
-}
-
-.second-title {
-    animation-name: slant-animation;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in-out;
-}*/
 
 .menu {
     padding-right: var(--small-gapping);
@@ -625,7 +607,6 @@ a.student {
 
 .filter-items > .filter.active,
 .image-filter.active {
-    /*font-variation-settings: "wght" 300, "slnt" -12 !important;*/
     letter-spacing: 2px;
 }
 
