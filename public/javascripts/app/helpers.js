@@ -152,7 +152,10 @@ function initFilterCallbacks(preparedData) {
         activeFilterValues = filterImages(filter, activeFilterValues);
         filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues);
         updateFragmentIdentifier(activeFilterValues[0]);
-        window.scrollTo(0, 0);
+
+        if (!(navigator.userAgent.indexOf("Safari") > -1)) {
+            window.scrollTo(0, 0);
+        }
     });
 }
 
@@ -222,10 +225,7 @@ function filterWithFragmentIdentifier() {
 
 function updateFragmentIdentifier(filterValue) {
     if (filterValue === "*") {
-        window.location.replace("#");
-        if (typeof window.history.replaceState == 'function') {
-            history.replaceState({}, '', window.location.href.slice(0, -1));
-        }
+        history.pushState("", document.title, window.location.pathname + window.location.search);
     } else {
         window.location.hash = filterValue.substring(1);
     }

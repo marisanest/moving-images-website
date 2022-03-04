@@ -561,6 +561,7 @@ a.student {
     padding: calc(2 * var(--small-gapping));
 
     display: flex;
+    gap: var(--image-filter-gap);
 }
 
 .image-info > .image-filters {
@@ -577,6 +578,32 @@ a.student {
     border-radius: 2rem;
     background: white;
     pointer-events: all;
+}
+
+@supports (not (translate: none)) and (background: -webkit-named-image(i)){
+    .filter-items > * + *,
+    .image-filters > * + *,
+    .students > * + * {
+        margin-left: var(--image-filter-gap);
+    }
+
+    .filter-items > .filter,
+    .image-filters > .filter,
+    .students > .student {
+        margin-bottom: var(--image-filter-gap);
+    }
+
+    .image-info > * + * {
+        margin-left: var(--image-filter-gap);
+    }
+
+    /*.category-menu > * + * {*/
+    /*    margin-left: 0.5%;*/
+    /*}*/
+
+    .category-menu > .filter-list {
+        margin-bottom: calc(2 * var(--small-gapping));
+    }
 }
 
 .filter-items > .filter,
