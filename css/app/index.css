@@ -636,7 +636,7 @@ a.student {
 
 .first-title .char {
     --delay: calc(var(--char-index) * 100ms);
-    --font-wght: calc(var(--char-index) * 20 + 200);
+    --font-wght: calc(var(--char-index) * 17 + 200);
     animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
     animation-fill-mode: forwards;
@@ -644,7 +644,7 @@ a.student {
 
 .second-title .char {
     --delay: calc((var(--char-total) - var(--char-index)) * 100ms);
-    --font-wght: calc((var(--char-total) - var(--char-index)) * 20 + 200);
+    --font-wght: calc((var(--char-total) - var(--char-index)) * 17 + 200);
     animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
     animation-fill-mode: forwards;
