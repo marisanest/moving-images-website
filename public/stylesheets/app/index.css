@@ -420,11 +420,11 @@
 }
 
 .first-title {
-    font-weight: 350;
+    font-weight: 250;
 }
 
 .second-title {
-    font-weight: 200;
+    font-weight: 250;
 }
 
 *,
@@ -795,7 +795,7 @@ a.student {
 
 @keyframes title {
     0% {
-        font-variation-settings: 'wght' 275, 'slnt' 0;
+        font-variation-settings: 'wght' 250, 'slnt' 0;
     }
     60% {
         font-variation-settings: 'wght' 600, 'slnt' -10;
