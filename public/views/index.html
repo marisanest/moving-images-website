@@ -37,7 +37,7 @@
             <div class="category-menu">
             {{#filters}}
             <div class="filter-list {{type.lower}}">
-                <div class="filter-type small slant">{{type.upper}}:</div>
+                <div class="filter-type small">{{type.upper}}:</div>
                 <div class="filter-items">
                     {{#values}}
                     <div class="filter small show" filter-value=".{{lower}}">{{upper}}</div>
@@ -78,10 +78,10 @@
                         pixels? What are the new possibilities that arise on top of those limits?
                     </div>
                     <div class="about-students">
-                        <div class="students-title small slant">Students:</div>
+                        <div class="students-title small">Students:</div>
                         <div class="students small">
                             {{#students}}
-                            <a class="student" href="{{link}}" target="_blank">{{name}}</a>
+                            <a data-splitting class="student" href="{{link}}" target="_blank">{{name}}</a>
                             {{/students}}
                         </div>
                     </div>

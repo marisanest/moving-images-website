@@ -771,26 +771,30 @@ a.student {
 }
 
 .first-title .char {
-    --delay: calc((var(--char-index) * 0.5) * 400ms);
-    animation: breathe 3000ms infinite both;
+    --delay: calc(var(--char-index) * 100ms);
+    --font-wght: calc(var(--char-index) * 17 + 200);
+    animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
+    animation-fill-mode: forwards;
 }
 
 .second-title .char {
-    --delay: calc((var(--char-index) * 0.5) * 400ms);
-    animation: breathe 4000ms infinite both;
+    --delay: calc((var(--char-total) - var(--char-index)) * 100ms);
+    --font-wght: calc((var(--char-total) - var(--char-index)) * 17 + 200);
+    animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
+    animation-fill-mode: forwards;
 }
 
-@keyframes breathe {
+@keyframes title {
     0% {
-        font-variation-settings: 'wght' 100, 'slnt' 0;
+        font-variation-settings: 'wght' 275, 'slnt' 0;
     }
     60% {
-        font-variation-settings: 'wght' 700, 'slnt' -13;
+        font-variation-settings: 'wght' 600, 'slnt' -10;
     }
     100% {
-        font-variation-settings: 'wght' 100, 'slnt' 0;
+        font-variation-settings: "wght" var(--font-wght), 'slnt' 0;
     }
 }
 
