@@ -64,7 +64,6 @@ function initIsotope() {
 }
 
 function filterImages(filter, activeFilterValues) {
-    filter = $(filter);
     let filterValue = filter.attr('filter-value');
 
         if(filter.is('.hide') || (filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active')))){
@@ -145,9 +144,15 @@ function initFilterCallbacks(preparedData) {
     let activeFilterValues = [];
 
     $('.filter').click(function() {
-        activeFilterValues = filterImages(this, activeFilterValues);
+        let filter = $(this);
+
+        if(filter.is('.hide') || (filter.is(".image-filter") && (window.matchMedia('(hover: none)').matches && !filter.closest(".body-grid-item").is('.active')))){
+            return;
+        }
+        activeFilterValues = filterImages(filter, activeFilterValues);
         filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues);
         updateFragmentIdentifier(activeFilterValues[0]);
+        window.scrollTo(0, 0);
     });
 }
 
@@ -224,7 +229,6 @@ function updateFragmentIdentifier(filterValue) {
     } else {
         window.location.hash = filterValue.substring(1);
     }
-    window.scrollTo(0, 0);
 }
 
 function initHtml(preparedData) {
