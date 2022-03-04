@@ -25,9 +25,9 @@
                 <a href="/app/index.html"><span class="first-title">Moving Images:</span><br/><span class="second-title">Design with Code</span></a>
             </div>
             <div class="menu">
-                <div class="about-menu-title filter small-medium" filter-value=".about">About</div>
+                <div class="about-menu-title filter medium" filter-value=".about">About</div>
                 <div class="filters">
-                    <div class="filters-menu-title collapsible small-medium"></div>
+                    <div class="filters-menu-title collapsible medium"></div>
                 </div>
             </div>
         </div>
@@ -35,10 +35,10 @@
             <div class="category-menu">
             {{#filters}}
             <div class="filter-list">
-                <div class="filter-type small-medium slant">{{type.upper}}:</div>
+                <div class="filter-type small slant">{{type.upper}}:</div>
                 <div class="filter-items">
                     {{#values}}
-                    <div class="filter small-medium show" filter-value=".{{lower}}">{{upper}}</div>
+                    <div class="filter small show" filter-value=".{{lower}}">{{upper}}</div>
                     {{/values}}
                 </div>
             </div>
@@ -54,18 +54,18 @@
                     <div class="image-filters">
                         {{#filters.separate}}
                         {{#values}}
-                        <div class="image-filter filter small-medium" filter-value=".{{lower}}">{{upper}}</div>
+                        <div class="image-filter filter font-image-filters" filter-value=".{{lower}}">{{upper}}</div>
                         {{/values}}
                         {{/filters.separate}}
                     </div>
                     <div class="image-actions">
-                        <div class="image-edit small-medium">Edit</div>
+                        <div class="image-edit font-image-filters">Edit</div>
                     </div>
                 </div>
             </div>
             {{/images}}
             <div class="body-grid-item grid-item--full about hidden">
-                <div class="about-body small-medium">
+                <div class="about-body small">
                     <div class="about-text">
                         In the course Moving Images we have been learning shader programming from the ground up. We have
                         been inspired by the early experimental analog video artists from the 50s and 60s, using the
@@ -76,8 +76,8 @@
                         pixels? What are the new possibilities that arise on top of those limits?
                     </div>
                     <div class="about-students">
-                        <div class="students-title small-medium slant">Students:</div>
-                        <div class="students small-medium">
+                        <div class="students-title small slant">Students:</div>
+                        <div class="students small">
                             {{#students}}
                             <a class="student" href="{{link}}" target="_blank">{{name}}</a>
                             {{/students}}
