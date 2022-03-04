@@ -147,7 +147,7 @@ function initFilterCallbacks(preparedData) {
     $('.filter').click(function() {
         activeFilterValues = filterImages(this, activeFilterValues);
         filterFilters(allFilterValues, allFilterValuesPerImage, activeFilterValues);
-        updateWithFragmentIdentifier(activeFilterValues[0]);
+        updateFragmentIdentifier(activeFilterValues[0]);
     });
 }
 
@@ -190,7 +190,7 @@ function initImageCallbacks() {
             let eventTarget = $(event.target);
 
             if (image.is('.active')){
-                if(eventTarget.is(".image-edit-title")){
+                if(eventTarget.is(".image-edit")){
                     window.location = image.attr('href');
                 } else if (!eventTarget.is(".image-filter")) {
                     image.removeClass("active");
@@ -215,8 +215,16 @@ function filterWithFragmentIdentifier() {
     }
 }
 
-function updateWithFragmentIdentifier(filterValue) {
-    window.location.hash = filterValue.substring(1);
+function updateFragmentIdentifier(filterValue) {
+    if (filterValue === "*") {
+        window.location.replace("#");
+        if (typeof window.history.replaceState == 'function') {
+            history.replaceState({}, '', window.location.href.slice(0, -1));
+        }
+    } else {
+        window.location.hash = filterValue.substring(1);
+    }
+    window.scrollTo(0, 0);
 }
 
 function initHtml(preparedData) {

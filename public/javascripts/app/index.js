@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    fetch("../data/data.json", {
+    fetch("/json/data.json", {
         headers: {
             'Concept-type': 'application/json',
             'Accept': 'application/json'

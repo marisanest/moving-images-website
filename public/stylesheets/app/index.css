@@ -1,6 +1,6 @@
 @font-face {
     font-family: "ABCOracle";
-    src: url("ABCOraclePlusVariable.woff") format("woff-variations");
+    src: url("/fonts/ABCOraclePlusVariable.woff") format("woff-variations");
     font-weight: 200 700;
 }
 
@@ -8,33 +8,38 @@
     :root {
         --alternative-font-color: #ea1f4c;
 
-        --grid-item--width: 20%;
+        --grid-item--width: 19.9%;
 
-        --font-size-extra-small: 12px;
-        --line-height-extra-small: 18px;
+        font-size: 16px;
 
-        --font-size-small: 14px;
-        --line-height-small: 24px;
+        --font-size-large: 50px;
+        --line-height-large: 50px;
 
-        --font-size-small-medium: 17px;
-        --line-height-small-medium: 26px;
+        --font-size-medium: 26px;
+        --line-height-medium: 32px;
 
-        --font-size-medium: 20px;
-        --line-height-medium: 28px;
+        --font-size-small: 20px;
+        --line-height-size-small: 30px;
 
-        --font-size-larg: 36px;
-        --line-height-large: 36px;
+        --font-size-image-filters: 18px;
+        --line-height-image-filters: 26px;
+
+        --font-size-extra-small: 15px;
+        --line-height-extra-small: 15px;
 
         --no-gapping: 0;
-        --large-gapping: 2.0rem;
-        --medium-gapping: 1.5rem;
-        --small-gapping: 0.5rem;
+        --large-gapping: 2.5rem;
+        --medium-gapping: 2.0rem;
+        --small-gapping: 0.75rem;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --menu-filter-padding: 0.6rem 1.15rem;
+        --menu-filter-gap: 0.4rem;
+
+        --image-filter-padding: 0.6rem 1.15rem;
+        --image-filter-gap: 0.3rem;
 
         --flex-flow-category-menu: row wrap;
-        --max-width-filter-list: 25%;
+        --max-width-filter-list: 24.625%;
 
         --grid-template-columns-about-body: 1.5fr 1fr;
         --grid-template-areas-about-body:
@@ -46,99 +51,189 @@
     }
 }
 
-@media only screen and (max-width: 1495px) {
+@media only screen and (max-width: 1685px) {
+    :root{
+        font-size: 15px;
+
+        --font-size-large: 48px;
+        --line-height-large: 48px;
+
+        --font-size-medium: 24px;
+        --line-height-medium: 28px;
+
+        --font-size-small: 19px;
+        --line-height-size-small: 28px;
+
+        --font-size-image-filters: 17px;
+        --line-height-image-filters: 24px;
+
+        --font-size-extra-small: 14px;
+        --line-height-extra-small: 14px;
+    }
+}
+
+@media only screen and (max-width: 1595px) {
     :root{
         --grid-item--width: 24.9%;
+
+        --font-size-image-filters: 18px;
+        --line-height-image-filters: 26px;
     }
 }
 
-@media only screen and (max-width: 1165px) {
+@media only screen and (max-width: 1350px) {
     :root{
-        --font-size-small: 13px;
-        --line-height-small: 22px;
-
-        --font-size-small-medium: 16px;
-        --line-height-small-medium: 24px;
-
-        --font-size-larg: 34px;
-        --line-height-large: 34px;
-
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --font-size-image-filters: 17px;
+        --line-height-image-filters: 24px;
     }
 }
 
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 1280px) {
+    :root{
+        font-size: 14px;
+
+        --font-size-large: 46px;
+        --line-height-large: 46px;
+
+        --font-size-medium: 22px;
+        --line-height-medium: 26px;
+
+        --font-size-small: 18px;
+        --line-height-size-small: 26px;
+
+        --font-size-image-filters: 16px;
+        --line-height-image-filters: 22px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
     :root {
         --grid-item--width: 33.3%;
 
-        --font-size-small: 14px;
-        --line-height-small: 24px;
+        --font-size-image-filters: 17px;
+        --line-height-image-filters: 24px;
+    }
+}
 
-        --font-size-small-medium: 17px;
-        --line-height-small-medium: 26px;
+@media only screen and (max-width: 950px) {
+    :root {
+        font-size: 14px;
 
-        --font-size-larg: 36px;
-        --line-height-large: 36px;
+        --font-size-large: 44px;
+        --line-height-large: 44px;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --font-size-medium: 21px;
+        --line-height-medium: 25px;
+
+        --font-size-small: 17px;
+        --line-height-size-small: 25px;
+
+        --font-size-image-filters: 16px;
+        --line-height-image-filters: 21px;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    :root{
+        --font-size-image-filters: 15px;
+        --line-height-image-filters: 20px;
+
+        --image-filter-gap: 0.2rem;
     }
 }
 
 @media only screen and (max-width: 890px) {
-    :root{
-        --font-size-small: 13px;
-        --line-height-small: 22px;
+    :root {
+        font-size: 13px;
 
-        --font-size-small-medium: 16px;
-        --line-height-small-medium: 24px;
+        --font-size-large: 42px;
+        --line-height-large: 42px;
 
-        --font-size-larg: 34px;
-        --line-height-large: 34px;
+        --font-size-medium: 20px;
+        --line-height-medium: 24px;
 
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --font-size-small: 16px;
+        --line-height-size-small: 24px;
     }
 }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 855px) {
     :root {
-        --grid-item--width: 50%;
+        --font-size-image-filters: 14px;
+        --line-height-image-filters: 18px;
+    }
+}
 
-        --font-size-small: 14px;
-        --line-height-small: 24px;
+@media only screen and (max-width: 855px) {
+    :root {
+        --image-filter-padding: 0.6rem 1.05rem;
+    }
+}
 
-        --font-size-small-medium: 17px;
-        --line-height-small-medium: 26px;
+@media only screen and (max-width: 805px) {
+    :root {
+        --grid-item--width: 49.9%;
 
-        --font-size-larg: 36px;
-        --line-height-large: 36px;
+        font-size: 14px;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --font-size-large: 44px;
+        --line-height-large: 44px;
+
+        --font-size-medium: 21px;
+        --line-height-medium: 25px;
+
+        --font-size-small: 17px;
+        --line-height-size-small: 25px;
+
+        --font-size-image-filters: 16px;
+        --line-height-image-filters: 21px;
+
+        --image-filter-padding: 0.6rem 1.15rem;
+        --image-filter-gap: 0.3rem;
 
         --grid-template-columns-about-body: reset;
         --grid-template-areas-about-body:
                 "text"
                 "students"
                 "thanks";
+
+        --flex-flow-category-menu: column;
+        --max-width-filter-list: 100%;
     }
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 645px) {
     :root{
-        --font-size-small: 13px;
-        --line-height-small: 22px;
+        font-size: 13px;
 
-        --font-size-small-medium: 16px;
-        --line-height-small-medium: 24px;
+        --font-size-large: 42px;
+        --line-height-large: 42px;
 
-        --font-size-larg: 34px;
-        --line-height-large: 34px;
+        --font-size-medium: 20px;
+        --line-height-medium: 24px;
 
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
+        --font-size-small: 16px;
+        --line-height-size-small: 24px;
+
+        --font-size-image-filters: 15px;
+        --line-height-image-filters: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    :root{
+        --font-size-image-filters: 14px;
+        --line-height-image-filters: 18px;
+
+        --image-filter-padding: 0.6rem 1.05rem;
+        --image-filter-gap: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    :root {
+        --font-size-image-filters: 13px;
+        --line-height-image-filters: 17px;
     }
 }
 
@@ -146,54 +241,72 @@
     :root {
         --grid-item--width: 100%;
 
-        --font-size-small: 14px;
-        --line-height-small: 24px;
+        font-size: 14px;
 
-        --font-size-small-medium: 17px;
-        --line-height-small-medium: 26px;
+        --font-size-large: 44px;
+        --line-height-large: 44px;
 
-        --font-size-larg: 36px;
-        --line-height-large: 36px;
+        --font-size-medium: 21px;
+        --line-height-medium: 25px;
 
-        --padding-box: .4rem .8rem;
-        --margin-box: .2rem;
+        --font-size-small: 17px;
+        --line-height-size-small: 25px;
 
-        --flex-flow-category-menu: column;
-        --max-width-filter-list: 100%;
+        --font-size-image-filters: 17px;
+        --line-height-image-filters: 25px;
+
+        --image-filter-padding: 0.6rem 1.15rem;
+        --image-filter-gap: 0.3rem;
+
+        --large-gapping: 2.0rem;
+        --medium-gapping: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 480px) {
     :root {
+        --large-gapping: 1.75rem;
+        --medium-gapping: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    :root {
+        font-size: 13px;
+
+        --font-size-large: 42px;
+        --line-height-large: 42px;
+
+        --font-size-medium: 20px;
+        --line-height-medium: 24px;
+
+        --font-size-small: 16px;
+        --line-height-size-small: 24px;
+
+        --font-size-image-filters: 16px;
+        --line-height-image-filters: 22px;
+
         --large-gapping: 1.5rem;
         --medium-gapping: 1.0rem;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    :root {
-        --font-size-small: 13px;
-        --line-height-small: 22px;
-
-        --font-size-small-medium: 16px;
-        --line-height-small-medium: 24px;
-
-        --font-size-larg: 34px;
-        --line-height-large: 34px;
-
-        --padding-box: .35rem .75rem;
-        --margin-box: .1rem;
 
         --slant-animation-font-spacing-to: 0;
     }
 }
+
+@media only screen and (max-width: 325px) {
+    :root{
+        --font-size-image-filters: 15px;
+        --line-height-image-filters: 20px;
+    }
+}
+
 
 @media (hover: hover) {
     a:hover,
     .about-menu-title:hover,
     .filters-menu-title:hover,
     .filter-items > .filter.show:hover,
-    .image-edit-title:hover,
+    .image-edit:hover,
     .image-filter:hover {
         color: var(--alternative-font-color) !important;
     }
@@ -217,6 +330,7 @@
         letter-spacing: 0;
         font-variation-settings: "slnt" 0, "TRIP" 0, "wght" 275;
         filter: none;
+        mix-blend-mode: normal;
         transition: all 0.5s ease;
     }
 
@@ -239,16 +353,16 @@
     }
 
     .student:nth-child(5):hover {
+        letter-spacing: 3px;
+    }
+
+    .student:nth-child(6):hover {
         font-variation-settings: "wght" 400;
         filter: blur(1px);
     }
 
-    .student:nth-child(6):hover {
-        letter-spacing: 3px;
-    }
-
     .student:nth-child(7):hover {
-        font-variation-settings: "slnt" -13;
+        filter: drop-shadow(5px 8px 8px var(--alternative-font-color));
     }
 
     .student:nth-child(8):hover {
@@ -260,6 +374,14 @@
     .student:nth-child(9):hover {
         letter-spacing: 3px;
         font-variation-settings: "slnt" -13, "wght" 500;
+    }
+
+    .student:nth-child(10):hover {
+        mix-blend-mode: darken;
+    }
+
+    .student:nth-child(11):hover {
+        font-variation-settings: "slnt" -13;
     }
 }
 
@@ -279,14 +401,14 @@
     line-height: var(--line-height-extra-small);
 }
 
-.small {
-    font-size: var(--font-size-small);
-    line-height: var(--line-height-small);
+.font-image-filters {
+    font-size: var(--font-size-image-filters);
+    line-height: var(--line-height-image-filters);
 }
 
-.small-medium {
-    font-size: var(--font-size-small-medium);
-    line-height: var(--line-height-small-medium);
+.small {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-size-small);
 }
 
 .medium {
@@ -295,15 +417,26 @@
 }
 
 .large {
-    font-size: var(--font-size-larg);
+    font-size: var(--font-size-large);
     line-height: var(--line-height-large);
-    font-weight: 300;
+}
+
+.first-title {
+    font-weight: 350;
+}
+
+.second-title {
+    font-weight: 200;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html, body {
@@ -321,10 +454,6 @@ body {
 
 a {
     color: black !important;
-}
-
-hr {
-    margin: 0;
 }
 
 .hidden {
@@ -383,6 +512,7 @@ a.student {
 }*/
 
 .menu {
+    padding-right: var(--small-gapping);
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -418,7 +548,8 @@ a.student {
     overflow: hidden;
     display: flex;
     flex-flow: var(--flex-flow-category-menu);
-    justify-content: space-between;
+    row-gap: calc(2 * var(--small-gapping));
+    column-gap: 0.5%;
 }
 
 .filter-type {
@@ -438,7 +569,7 @@ a.student {
     display: flex;
     flex-flow: row wrap;
     flex-basis: 33.3%;
-    gap: 0.35rem;
+    gap: var(--menu-filter-gap);
 }
 
 .body-grid-sizer {
@@ -466,8 +597,18 @@ a.student {
 
 .filter {
     cursor: pointer;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     transition: opacity 0.5s ease, filter 0.5s ease, font-variation-settings 0.5s ease, letter-spacing 0.5s ease;
+}
+
+.body-grid-item img {
+    opacity: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.image-edit {
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .filter.show {
@@ -503,7 +644,7 @@ a.student {
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 1.0rem;
+    padding: calc(2 * var(--small-gapping));
 
     display: flex;
 }
@@ -512,17 +653,26 @@ a.student {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
+    gap: var(--image-filter-gap);
 }
 
 .filter-items > .filter,
 .image-filter,
-.image-edit-title,
+.image-edit,
 .student {
     border-radius: 2rem;
     background: white;
-    padding: var(--padding-box);
-    margin: var(--margin-box);
     pointer-events: all;
+}
+
+.filter-items > .filter,
+.student {
+    padding: var(--menu-filter-padding);
+}
+
+.image-filter,
+.image-edit {
+    padding: var(--image-filter-padding);
 }
 
 .students-title {
@@ -533,25 +683,8 @@ a.student {
     padding-left: 0.3rem;
 }
 
-.student {
-    margin: 0;
-    /*filter: drop-shadow(12px 16px 18px var(--alternative-font-color));*/
-}
-
-.filter-list .filter {
-    margin: 0;
-}
-
 .image-filter {
     opacity: 0;
-}
-
-.image-edit {
-    opacity: 0;
-}
-
-.about-menu-title {
-    cursor: pointer;
 }
 
 .about {
@@ -569,12 +702,15 @@ a.student {
     grid-template-areas: var(--grid-template-areas-about-body);
 }
 
-.students {
+.about-students {
     grid-area: students;
+}
+
+.students {
     display: flex;
     flex-flow: row wrap;
     align-content: flex-start;
-    gap: 0.4rem;
+    gap: var(--menu-filter-gap);
 }
 
 .about-text {
