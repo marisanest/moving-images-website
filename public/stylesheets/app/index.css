@@ -385,7 +385,7 @@ a {
 
 .container {
     max-width: 100%;
-    padding: var(--large-gapping) var(--large-gapping) var(--medium-gapping) var(--large-gapping);
+    padding: var(--large-gapping) var(--large-gapping) var(--small-gapping) var(--large-gapping);
     flex: 1 0 auto;
 }
 
