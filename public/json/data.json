@@ -149,7 +149,7 @@
       "author": "Marisa",
       "filters": {
         "author": ["marisa"],
-        "color": ["pink", "green", "orange"],
+        "color": ["black", "white", "purple", "orange"],
         "shapes": ["circle", "line"],
         "category": ["pattern"]
       }
@@ -172,7 +172,7 @@
       "filters": {
         "author": ["marisa"],
         "color": ["black", "white"],
-        "shapes": ["circle", "rectangle"],
+        "shapes": ["circle", "line"],
         "category": ["pattern", "truchet"]
       }
     },

@@ -15,27 +15,27 @@
         --font-size-large: 50px;
         --line-height-large: 50px;
 
-        --font-size-medium: 26px;
-        --line-height-medium: 32px;
+        --font-size-medium: 22px;
+        --line-height-medium: 27px;
 
-        --font-size-small: 20px;
-        --line-height-size-small: 30px;
+        --font-size-small-medium: 17px;
+        --line-height-small-medium: 26px;
 
-        --font-size-image-filters: 18px;
-        --line-height-image-filters: 26px;
+        --font-size-small: 16px;
+        --line-height-small: 25px;
 
-        --font-size-extra-small: 15px;
-        --line-height-extra-small: 15px;
+        --font-size-extra-small: 14px;
+        --line-height-extra-small: 14px;
 
         --no-gapping: 0;
         --large-gapping: 2.5rem;
         --medium-gapping: 2.0rem;
         --small-gapping: 0.75rem;
 
-        --menu-filter-padding: 0.6rem 1.15rem;
+        --menu-filter-padding: 0.55rem 1.05rem;
         --menu-filter-gap: 0.4rem;
 
-        --image-filter-padding: 0.6rem 1.15rem;
+        --image-filter-padding: 0.55rem 1.05rem;
         --image-filter-gap: 0.3rem;
 
         --flex-flow-category-menu: row wrap;
@@ -51,145 +51,93 @@
     }
 }
 
-@media only screen and (max-width: 1685px) {
+@media only screen and (max-width: 1950px) {
+    :root{
+        --font-size-small: 15px;
+        --line-height-small: 23px;
+    }
+}
+
+@media only screen and (max-width: 1725px) {
+    :root{
+        --grid-item--width: 24.9%;
+
+        --font-size-small: 16px;
+        --line-height-small: 25px;
+    }
+}
+
+@media only screen and (max-width: 1575px) {
     :root{
         font-size: 15px;
 
         --font-size-large: 48px;
         --line-height-large: 48px;
 
-        --font-size-medium: 24px;
-        --line-height-medium: 28px;
+        --font-size-medium: 21px;
+        --line-height-medium: 26px;
 
-        --font-size-small: 19px;
-        --line-height-size-small: 28px;
+        --font-size-small-medium: 16px;
+        --line-height-small-medium: 24px;
 
-        --font-size-image-filters: 17px;
-        --line-height-image-filters: 24px;
+        --font-size-small: 15px;
+        --line-height-small: 23px;
 
-        --font-size-extra-small: 14px;
-        --line-height-extra-small: 14px;
+        --font-size-extra-small: 13px;
+        --line-height-extra-small: 13px;
     }
 }
 
-@media only screen and (max-width: 1595px) {
-    :root{
-        --grid-item--width: 24.9%;
-
-        --font-size-image-filters: 18px;
-        --line-height-image-filters: 26px;
+@media only screen and (max-width: 1420px) {
+    :root {
+        --font-size-small: 14px;
+        --line-height-small: 22px;
     }
 }
 
-@media only screen and (max-width: 1350px) {
-    :root{
-        --font-size-image-filters: 17px;
-        --line-height-image-filters: 24px;
+@media only screen and (max-width: 1320px) {
+    :root {
+        --grid-item--width: 33.3%;
+
+        --font-size-small: 15px;
+        --line-height-small: 23px;
     }
 }
 
-@media only screen and (max-width: 1280px) {
-    :root{
+@media only screen and (max-width: 1150px) {
+    :root {
         font-size: 14px;
 
         --font-size-large: 46px;
         --line-height-large: 46px;
 
-        --font-size-medium: 22px;
-        --line-height-medium: 26px;
-
-        --font-size-small: 18px;
-        --line-height-size-small: 26px;
-
-        --font-size-image-filters: 16px;
-        --line-height-image-filters: 22px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    :root {
-        --grid-item--width: 33.3%;
-
-        --font-size-image-filters: 17px;
-        --line-height-image-filters: 24px;
-    }
-}
-
-@media only screen and (max-width: 950px) {
-    :root {
-        font-size: 14px;
-
-        --font-size-large: 44px;
-        --line-height-large: 44px;
-
-        --font-size-medium: 21px;
+        --font-size-medium: 20px;
         --line-height-medium: 25px;
 
-        --font-size-small: 17px;
-        --line-height-size-small: 25px;
+        --font-size-small-medium: 15px;
+        --line-height-small-medium: 23px;
 
-        --font-size-image-filters: 16px;
-        --line-height-image-filters: 21px;
+        --font-size-small: 14px;
+        --line-height-small: 22px;
+
+        --font-size-extra-small: 12px;
+        --line-height-extra-small: 12px;
     }
 }
 
-@media only screen and (max-width: 920px) {
-    :root{
-        --font-size-image-filters: 15px;
-        --line-height-image-filters: 20px;
-
-        --image-filter-gap: 0.2rem;
-    }
-}
-
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1000px) {
     :root {
-        font-size: 13px;
-
-        --font-size-large: 42px;
-        --line-height-large: 42px;
-
-        --font-size-medium: 20px;
-        --line-height-medium: 24px;
-
-        --font-size-small: 16px;
-        --line-height-size-small: 24px;
+        --font-size-small: 13px;
+        --line-height-small: 21px;
     }
 }
 
-@media only screen and (max-width: 855px) {
-    :root {
-        --font-size-image-filters: 14px;
-        --line-height-image-filters: 18px;
-    }
-}
-
-@media only screen and (max-width: 855px) {
-    :root {
-        --image-filter-padding: 0.6rem 1.05rem;
-    }
-}
-
-@media only screen and (max-width: 805px) {
+@media only screen and (max-width: 900px) {
     :root {
         --grid-item--width: 49.9%;
 
-        font-size: 14px;
-
-        --font-size-large: 44px;
-        --line-height-large: 44px;
-
-        --font-size-medium: 21px;
-        --line-height-medium: 25px;
-
-        --font-size-small: 17px;
-        --line-height-size-small: 25px;
-
-        --font-size-image-filters: 16px;
-        --line-height-image-filters: 21px;
-
-        --image-filter-padding: 0.6rem 1.15rem;
-        --image-filter-gap: 0.3rem;
+        --font-size-small: 14px;
+        --line-height-small: 22px;
 
         --grid-template-columns-about-body: reset;
         --grid-template-areas-about-body:
@@ -202,104 +150,155 @@
     }
 }
 
-@media only screen and (max-width: 645px) {
-    :root{
+@media only screen and (max-width: 790px) {
+    :root {
+        --grid-item--width: 49.9%;
+
         font-size: 13px;
-
-        --font-size-large: 42px;
-        --line-height-large: 42px;
-
-        --font-size-medium: 20px;
-        --line-height-medium: 24px;
-
-        --font-size-small: 16px;
-        --line-height-size-small: 24px;
-
-        --font-size-image-filters: 15px;
-        --line-height-image-filters: 20px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    :root{
-        --font-size-image-filters: 14px;
-        --line-height-image-filters: 18px;
-
-        --image-filter-padding: 0.6rem 1.05rem;
-        --image-filter-gap: 0.2rem;
-    }
-}
-
-@media only screen and (max-width: 565px) {
-    :root {
-        --font-size-image-filters: 13px;
-        --line-height-image-filters: 17px;
-    }
-}
-
-@media only screen and (max-width: 550px) {
-    :root {
-        --grid-item--width: 100%;
-
-        font-size: 14px;
 
         --font-size-large: 44px;
         --line-height-large: 44px;
 
-        --font-size-medium: 21px;
-        --line-height-medium: 25px;
+        --font-size-medium: 19px;
+        --line-height-medium: 22px;
 
-        --font-size-small: 17px;
-        --line-height-size-small: 25px;
+        --font-size-small: 13px;
+        --line-height-small: 21px;
+    }
+}
 
-        --font-size-image-filters: 17px;
-        --line-height-image-filters: 25px;
+@media only screen and (max-width: 630px) {
+    :root {
+        --grid-item--width: 100%;
 
-        --image-filter-padding: 0.6rem 1.15rem;
-        --image-filter-gap: 0.3rem;
+        --font-size-small: 14px;
+        --line-height-small: 22px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    :root {
+        --font-size-large: 40px;
+        --line-height-large: 40px;
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    :root {
+        --font-size-large: 38px;
+        --line-height-large: 38px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    :root {
+        font-size: 12px;
+
+        --font-size-large: 36px;
+        --line-height-large: 36px;
+
+        --font-size-medium: 18px;
+        --line-height-medium: 21px;
+
+        --font-size-small-medium: 15px;
+        --line-height-small-medium: 22px;
+
+        --font-size-extra-small: 11px;
+        --line-height-extra-small: 11px;
 
         --large-gapping: 2.0rem;
         --medium-gapping: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 469px) {
     :root {
-        --large-gapping: 1.75rem;
-        --medium-gapping: 1.25rem;
+        --font-size-large: 34px;
+        --line-height-large: 34px;
+
+        --font-size-medium: 17px;
+        --line-height-medium: 19px;
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 453px) {
     :root {
-        font-size: 13px;
+        --font-size-large: 32px;
+        --line-height-large: 32px;
 
-        --font-size-large: 42px;
-        --line-height-large: 42px;
+        --font-size-small-medium: 14px;
+        --line-height-small-medium: 20px;
+    }
+}
 
-        --font-size-medium: 20px;
-        --line-height-medium: 24px;
+@media only screen and (max-width: 436px) {
+    :root {
+        --font-size-large: 30px;
+        --line-height-large: 30px;
 
-        --font-size-small: 16px;
-        --line-height-size-small: 24px;
+        --font-size-medium: 16px;
+        --line-height-medium: 17px;
+    }
+}
 
-        --font-size-image-filters: 16px;
-        --line-height-image-filters: 22px;
+@media only screen and (max-width: 420px) {
+    :root {
+        --font-size-large: 28px;
+        --line-height-large: 28px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
+        --font-size-small: 13px;
+        --line-height-small: 19px;
 
         --large-gapping: 1.5rem;
-        --medium-gapping: 1.0rem;
-
-        --slant-animation-font-spacing-to: 0;
     }
 }
 
-@media only screen and (max-width: 325px) {
-    :root{
-        --font-size-image-filters: 15px;
-        --line-height-image-filters: 20px;
+@media only screen and (max-width: 388px) {
+    :root {
+        --font-size-large: 26px;
+        --line-height-large: 26px;
+
+        --font-size-medium: 15px;
+        --line-height-medium: 16px;
     }
 }
 
+@media only screen and (max-width: 372px) {
+    :root {
+        --font-size-large: 24px;
+        --line-height-large: 24px;
+
+        --font-size-medium: 14px;
+        --line-height-medium: 15px;
+
+        --font-size-small-medium: 13px;
+        --line-height-small-medium: 19px;
+    }
+}
+
+@media only screen and (max-width: 354px) {
+    :root {
+        --font-size-large: 22px;
+        --line-height-large: 22px;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    :root {
+        --font-size-large: 20px;
+        --line-height-large: 20px;
+
+        --font-size-medium: 13px;
+        --line-height-medium: 14px;
+
+        --font-size-extra-small: 10px;
+        --line-height-extra-small: 10px;
+    }
+}
 
 @media (hover: hover) {
     a:hover,
@@ -400,14 +399,14 @@
     line-height: var(--line-height-extra-small);
 }
 
-.font-image-filters {
-    font-size: var(--font-size-image-filters);
-    line-height: var(--line-height-image-filters);
+.small-medium {
+    font-size: var(--font-size-small-medium);
+    line-height: var(--line-height-small-medium);
 }
 
 .small {
     font-size: var(--font-size-small);
-    line-height: var(--line-height-size-small);
+    line-height: var(--line-height-small);
 }
 
 .medium {
@@ -444,7 +443,7 @@ html, body {
 
 body {
     font-family: 'ABCOracle';
-    font-weight: 275;
+    font-weight: 250;
     font-feature-settings: "ss09";
     background: #F5F5F5;
     display: flex;
@@ -469,7 +468,7 @@ a {
 
 .container {
     max-width: 100%;
-    padding: var(--large-gapping) var(--large-gapping) var(--medium-gapping) var(--large-gapping);
+    padding: var(--large-gapping) var(--large-gapping) var(--small-gapping) var(--large-gapping);
     flex: 1 0 auto;
 }
 
@@ -628,6 +627,7 @@ a.student {
     padding: calc(2 * var(--small-gapping));
 
     display: flex;
+    gap: var(--image-filter-gap);
 }
 
 .image-info > .image-filters {
@@ -644,6 +644,32 @@ a.student {
     border-radius: 2rem;
     background: white;
     pointer-events: all;
+}
+
+@supports (not (translate: none)) and (background: -webkit-named-image(i)){
+    .filter-items > * + *,
+    .image-filters > * + *,
+    .students > * + * {
+        margin-left: var(--image-filter-gap);
+    }
+
+    .filter-items > .filter,
+    .image-filters > .filter,
+    .students > .student {
+        margin-bottom: var(--image-filter-gap);
+    }
+
+    .image-info > * + * {
+        margin-left: var(--image-filter-gap);
+    }
+
+    /*.category-menu > * + * {*/
+    /*    margin-left: 0.5%;*/
+    /*}*/
+
+    .category-menu > .filter-list {
+        margin-bottom: calc(2 * var(--small-gapping));
+    }
 }
 
 .filter-items > .filter,
@@ -752,7 +778,7 @@ a.student {
 }
 
 .first-title .char {
-    --delay: calc(var(--char-index) * 100ms);
+    --delay: calc(var(--char-index) * 90ms);
     --font-wght: calc(var(--char-index) * 17 + 200);
     animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
@@ -760,7 +786,7 @@ a.student {
 }
 
 .second-title .char {
-    --delay: calc((var(--char-total) - var(--char-index)) * 100ms);
+    --delay: calc((var(--char-total) - var(--char-index)) * 90ms);
     --font-wght: calc((var(--char-total) - var(--char-index)) * 17 + 200);
     animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
