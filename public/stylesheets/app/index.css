@@ -22,7 +22,7 @@
         --line-height-small-medium: 26px;
 
         --font-size-small: 16px;
-        --line-height-size-small: 25px;
+        --line-height-small: 25px;
 
         --font-size-extra-small: 14px;
         --line-height-extra-small: 14px;
@@ -54,7 +54,7 @@
 @media only screen and (max-width: 1950px) {
     :root{
         --font-size-small: 15px;
-        --line-height-size-small: 23px;
+        --line-height-small: 23px;
     }
 }
 
@@ -63,7 +63,7 @@
         --grid-item--width: 24.9%;
 
         --font-size-small: 16px;
-        --line-height-size-small: 25px;
+        --line-height-small: 25px;
     }
 }
 
@@ -81,7 +81,7 @@
         --line-height-small-medium: 24px;
 
         --font-size-small: 15px;
-        --line-height-size-small: 23px;
+        --line-height-small: 23px;
 
         --font-size-extra-small: 13px;
         --line-height-extra-small: 13px;
@@ -91,7 +91,7 @@
 @media only screen and (max-width: 1420px) {
     :root {
         --font-size-small: 14px;
-        --line-height-size-small: 22px;
+        --line-height-small: 22px;
     }
 }
 
@@ -100,7 +100,7 @@
         --grid-item--width: 33.3%;
 
         --font-size-small: 15px;
-        --line-height-size-small: 23px;
+        --line-height-small: 23px;
     }
 }
 
@@ -118,7 +118,7 @@
         --line-height-small-medium: 23px;
 
         --font-size-small: 14px;
-        --line-height-size-small: 22px;
+        --line-height-small: 22px;
 
         --font-size-extra-small: 12px;
         --line-height-extra-small: 12px;
@@ -128,7 +128,7 @@
 @media only screen and (max-width: 1000px) {
     :root {
         --font-size-small: 13px;
-        --line-height-size-small: 21px;
+        --line-height-small: 21px;
     }
 }
 
@@ -137,7 +137,7 @@
         --grid-item--width: 49.9%;
 
         --font-size-small: 14px;
-        --line-height-size-small: 22px;
+        --line-height-small: 22px;
 
         --grid-template-columns-about-body: reset;
         --grid-template-areas-about-body:
@@ -163,7 +163,7 @@
         --line-height-medium: 22px;
 
         --font-size-small: 13px;
-        --line-height-size-small: 21px;
+        --line-height-small: 21px;
     }
 }
 
@@ -172,22 +172,36 @@
         --grid-item--width: 100%;
 
         --font-size-small: 14px;
-        --line-height-size-small: 22px;
+        --line-height-small: 22px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
+    :root {
+        --font-size-large: 40px;
+        --line-height-large: 40px;
+    }
+}
+
+@media only screen and (max-width: 527px) {
+    :root {
+        --font-size-large: 38px;
+        --line-height-large: 38px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
     :root {
         font-size: 12px;
 
-        --font-size-large: 42px;
-        --line-height-large: 42px;
+        --font-size-large: 36px;
+        --line-height-large: 36px;
 
         --font-size-medium: 18px;
         --line-height-medium: 21px;
 
-        --font-size-small-medium: 16px;
-        --line-height-small-medium: 24px;
+        --font-size-small-medium: 15px;
+        --line-height-small-medium: 22px;
 
         --font-size-extra-small: 11px;
         --line-height-extra-small: 11px;
@@ -197,21 +211,92 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 469px) {
     :root {
-        --font-size-large: 38px;
-        --line-height-large: 38px;
+        --font-size-large: 34px;
+        --line-height-large: 34px;
 
         --font-size-medium: 17px;
-        --line-height-medium: 20px;
+        --line-height-medium: 19px;
+    }
+}
+
+@media only screen and (max-width: 453px) {
+    :root {
+        --font-size-large: 32px;
+        --line-height-large: 32px;
 
         --font-size-small-medium: 14px;
         --line-height-small-medium: 20px;
+    }
+}
 
+@media only screen and (max-width: 436px) {
+    :root {
+        --font-size-large: 30px;
+        --line-height-large: 30px;
+
+        --font-size-medium: 16px;
+        --line-height-medium: 17px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    :root {
+        --font-size-large: 28px;
+        --line-height-large: 28px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
         --font-size-small: 13px;
-        --line-height-size-small: 21px;
+        --line-height-small: 19px;
 
         --large-gapping: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 388px) {
+    :root {
+        --font-size-large: 26px;
+        --line-height-large: 26px;
+
+        --font-size-medium: 15px;
+        --line-height-medium: 16px;
+    }
+}
+
+@media only screen and (max-width: 372px) {
+    :root {
+        --font-size-large: 24px;
+        --line-height-large: 24px;
+
+        --font-size-medium: 14px;
+        --line-height-medium: 15px;
+
+        --font-size-small-medium: 13px;
+        --line-height-small-medium: 19px;
+    }
+}
+
+@media only screen and (max-width: 354px) {
+    :root {
+        --font-size-large: 22px;
+        --line-height-large: 22px;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    :root {
+        --font-size-large: 20px;
+        --line-height-large: 20px;
+
+        --font-size-medium: 13px;
+        --line-height-medium: 14px;
+
+        --font-size-extra-small: 10px;
+        --line-height-extra-small: 10px;
     }
 }
 
@@ -321,7 +406,7 @@
 
 .small {
     font-size: var(--font-size-small);
-    line-height: var(--line-height-size-small);
+    line-height: var(--line-height-small);
 }
 
 .medium {
@@ -693,7 +778,7 @@ a.student {
 }
 
 .first-title .char {
-    --delay: calc(var(--char-index) * 100ms);
+    --delay: calc(var(--char-index) * 90ms);
     --font-wght: calc(var(--char-index) * 17 + 200);
     animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
@@ -701,7 +786,7 @@ a.student {
 }
 
 .second-title .char {
-    --delay: calc((var(--char-total) - var(--char-index)) * 100ms);
+    --delay: calc((var(--char-total) - var(--char-index)) * 90ms);
     --font-wght: calc((var(--char-total) - var(--char-index)) * 17 + 200);
     animation: title 2s normal ease-in-out;
     animation-delay: var(--delay);
