@@ -319,8 +319,8 @@
         opacity: 1;
     }
 
-    .filter-items > .filter:hover,
-    .image-filter:hover {
+    .filter-items > .filter.show:hover,
+    .image-filter.show:hover {
         letter-spacing: 2px;
     }
 
