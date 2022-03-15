@@ -4,7 +4,7 @@ precision mediump float;
 
 #define PI 3.14159265359
 
-uniform sampler2D u_tex0; // /data/textures/tree2j3.jpg
+uniform sampler2D u_tex0; // /textures/tree2j3.jpg
 uniform float u_time;
 uniform vec2 u_resolution;
 float circle(vec2 uv, float radius){
