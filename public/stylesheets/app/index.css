@@ -736,7 +736,7 @@ a.student {
 
 .about .dinamo:after {
     content: '\F8FF';
-    font-size: 40px;
+    font-size: 28px;
     vertical-align: middle;
 
     animation-name: trip-animation;
